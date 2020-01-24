@@ -1,0 +1,83 @@
+/* Default theme imported */
+
+@import "../themes/default/ui-elements/breadcrumb/breadcrumb.variables.less";
+
+/* Loading theme in configuration */
+
+@import "../config.less";
+
+@import (optional) "../themes/@{breadcrumb}/ui-elements/breadcrumb/breadcrumb.variables.less";
+
+/* rtl files loading */
+
+@import (multiple,optional) "../themes/default/global/@{direction}.less";
+
+@import (multiple,optional) "../themes/@{breadcrumb}/global/@{direction}.less";
+
+/* Loading custom themes */
+
+@import (optional) "../overrides/ui-elements/breadcrumb.variables.less";
+
+/* Breadcrumb styles BEGINS */
+
+lyte-breadcrumb,
+.lyte-breadcrumb-structure {
+	display: inline-block;
+}
+lyte-breadcrumb-body {
+	.breadcrumbBody();
+	font-family: @primaryFont;
+	font-size: @font-size;
+	color: @color;
+	cursor: pointer;
+}
+lyte-breadcrumb-body:hover {
+	.breadcrumbBodyhover();
+	color: @color;
+}
+.lyteActive lyte-breadcrumb-body {
+	.ActiveBreadcrumb();
+	color: @color;
+}
+lyte-breadcrumb-item {
+	.breadcrumbItem();
+	padding: @padding;
+	font-size: @font-size;
+    @{property-margin-right}: @margin-right;
+	display: inline-block;
+	position: relative;
+}
+lyte-breadcrumb-item::after {
+	.breadcrumbItemafter();
+	content: '';
+	background-image: @bg-img;
+	background-position: @bg-pos;
+	width: @w;
+	height: @h;
+	position: absolute;
+    @{property-right}: @right;
+	top: @top;
+	opacity: @opacity;
+    & when (@rtlEnabled = true) {
+        transform: @value-rotate-0deg;
+    }
+}
+lyte-breadcrumb-item:last-child {
+    .breadCrumbItemLastChild();
+    @{property-margin-right}: @margin-right;
+}
+lyte-breadcrumb-item:last-child::after {
+	content: none;
+}
+
+
+/* import theme overrides - styles */
+@import (optional) "../themes/@{breadcrumb}/ui-elements/breadcrumb/breadcrumb.styles.less";
+
+
+
+
+/* import custom css - final tweaks by the user */
+@import (optional) "../overrides/ui-elements/breadcrumb.overrides.less";
+
+/* Breadcrumb styles ENDS */

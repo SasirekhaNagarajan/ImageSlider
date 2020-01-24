@@ -1,0 +1,146 @@
+.lyteMessageBox {
+	box-shadow: 0 0 6px 2px rgba(0,0,0,0.2);
+    padding: 0 50px 0 0;
+    z-index: 11000;
+    background: #fff;
+    border-radius: 2px;
+    color: #333;
+    font-size: 15px;
+    transition: .3s all ease;
+    display: block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    animation-duration: .5s;
+    -webkit-animation-duration: .5s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+
+    border : 1px solid;
+    position: absolute;
+    /*top: 20px;*/
+    min-width: 200px;
+    visibility: hidden;
+}
+
+.lyteMessageBoxSlideFromTop{
+    transition: all 0.5s !important;
+}
+.lyteMessageBoxFadeIn{
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
+}
+@keyframes fadeIn{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.lyteMessageBoxFadeOut{
+    animation-name: fadeOut;
+    -webkit-animation-name: fadeOut;
+}
+@keyframes fadeOut{
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+.lyteMessageBox .lyteMessageBoxSymbol {
+	width: 45px;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+}
+.lyteMessageBox .lyteMessageBoxSymbol:before{
+	content: "";
+    background: url(../images/lyte_ui_sprite.svg) no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 12px;
+    top: 25%;
+    display: inline-block;
+}
+.lyteMessageBox .lyteMessageBoxSymbol:after{
+	content: "";
+    border-left: 8px solid #3fbd5f;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    position: absolute;
+    left: 43px;
+    top: 35%;
+}
+.lyteMessageBox .lyteMessageBoxContent {
+	display: inline-block;
+    max-width: 100%;
+    vertical-align: top;
+    padding: 10px 0 10px 60px;
+}
+.lyteMessageBox .lyteMessageBoxClose{
+	background: url(../images/lyte_ui_sprite.svg) no-repeat -125px -4px;
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 15px;
+}
+/*Message band model design for success*/
+.lyteMessageBox.successMessageIcon{
+	border-color: #3fbd5f;
+}
+.lyteMessageBox.successMessageIcon .lyteMessageBoxSymbol{
+	background: #3fbd5f;
+}
+.lyteMessageBox.successMessageIcon .lyteMessageBoxSymbol:before{
+	content: "";
+	background-position: -166px 0;
+}
+.lyteMessageBox.successMessageIcon .lyteMessageBoxSymbol:after{
+	content: "";
+	border-left-color: #3fbd5f;
+}
+/*Message band model design for Error*/
+.lyteMessageBox.errorMessageIcon{
+	border-color: #ee4242;
+}
+.lyteMessageBox.errorMessageIcon .lyteMessageBoxSymbol{
+	background: #ee4242;
+}
+.lyteMessageBox.errorMessageIcon .lyteMessageBoxSymbol:before{
+	content: "";
+	background-position: -139px 0;
+	width: 21px !important;
+}
+.lyteMessageBox.errorMessageIcon .lyteMessageBoxSymbol:after{
+	content: "";
+	border-left-color: #ee4242;
+}
+/*Message band model design for Warning*/
+.lyteMessageBox.warningMessageIcon{
+	border-color: #e98432;
+}
+.lyteMessageBox.warningMessageIcon .lyteMessageBoxSymbol{
+	background: #e98432;
+}
+.lyteMessageBox.warningMessageIcon .lyteMessageBoxSymbol:before{
+	content: "";
+	background-position: -192px 0;
+}
+.lyteMessageBox.warningMessageIcon .lyteMessageBoxSymbol:after{
+	content: "";
+	border-left-color: #e98432;
+}
+/*Message band model design for Warning*/
+.lyteMessageBox.infoMessageIcon{
+	border-color: #188bc7;
+}
+.lyteMessageBox.infoMessageIcon .lyteMessageBoxSymbol{
+	background: #188bc7;
+}
+.lyteMessageBox.infoMessageIcon .lyteMessageBoxSymbol:before{
+	content: "";
+	background-position:-218px 0;
+}
+.lyteMessageBox.infoMessageIcon .lyteMessageBoxSymbol:after{
+	content: "";
+	border-left-color: #188bc7;
+}

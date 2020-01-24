@@ -1,0 +1,243 @@
+/* Default theme imported */
+@import "../themes/default/ui-elements/calendar/calendar.variables.less";
+
+
+
+
+/* Loading theme in configuration */
+@import "../config.less";
+@import (optional) "../themes/@{calendar}/ui-elements/calendar/calendar.variables.less";
+
+/* rtl files loading */
+
+@import (multiple,optional) "../themes/default/global/@{direction}.less";
+
+@import (multiple,optional) "../themes/@{calendar}/global/@{direction}.less";
+
+
+/* Loading final tweaks to your variables */
+@import (optional) "../overrides/ui-elements/calendar.variables.less";
+
+
+/*  Calendar related CSS BEGINS     */
+
+lyte-calendar {
+	display: inline-block;
+}
+.lyteCalendarPopup {
+	.CalendarPopup();
+	background: @bg;
+	z-index: @z-index;
+	box-shadow: @box-shadow;
+	font-family: @primaryFont;
+	font-size: @font-size;
+	display: inline-block;
+	border: @border;
+}
+.lyteCalendarNavigator {
+	.CalendarNavigator();
+	padding: @padding;
+	display: flex;
+	align-items: center;
+}
+.lyteCalMonthDD {
+	.CalMonthDD();
+	max-width: @max-w;
+	width: auto;
+}
+.lyteCalYearDD {
+	width: auto;
+}
+.lyteCalendarPopup lyte-dropdown lyte-drop-button {
+    .calPopDropBtn();
+    box-sizing: border-box;
+    color: @color;
+	padding: @padding;
+    border: 0;
+}
+.lyteCalMonthDD lyte-drop-button {
+    .calMonthDropBtn();
+    font-size: @font-size;
+}
+.lyteCalYearDD lyte-drop-button {
+    .calYearDropBtn();
+    font-size: @font-size;
+}
+.lyteCalendarPopup lyte-dropdown lyte-icon.dropdown {
+    .calPopDropicon();
+    top: @top;
+}
+.lyteCalendarPopup lyte-dropdown lyte-drop-button.lyteDropButtonDown,
+.lyteCalendarPopup lyte-dropdown lyte-drop-button.lyteDropButtonUp,
+.lyteCalendarPopup lyte-dropdown lyte-drop-button:hover {
+    .calPopDropBtnHover();
+    color: @color;
+	padding: @padding;
+    border: 0;
+}
+.lyteCalendarDropdown lyte-drop-item[selected="true"]::before {
+    display: none;
+}
+.lyteCalendarDropdown lyte-drop-item {
+    .calPopDropItem();
+    min-width: @min-w;
+    @{property-padding-left}: @padding-left;
+}
+.lyteCalNav {
+	.CalNav();
+	width: @w;
+	height: @h;
+	display: inline-block;
+	cursor: pointer;
+    position: relative;
+    order: 2;
+    border: @border;
+    border-radius: 50%;
+    & when (@rtlEnabled = true) {
+        transform: @value-rotate-0deg;
+    }
+}
+.lyteCalNav:hover {
+    .CalNavHover();
+    border: @border;
+}
+.lyteCaldLft::before,
+.lyteCaldRgt::before {
+	.CaldLft();
+    content: '';
+    position: absolute;
+    top: @top;
+    @{property-left}: @left;
+    width: @w;
+    height: @h;
+	background-image: @bg-img;
+	background-position: @bg-pos;
+    opacity: @opacity;
+}
+.lyteCaldRgt {
+    .lyteCaldRgt();
+    @{property-margin-left}: @margin-left;
+}
+.lyteCaldLft::before {
+    .caldLftBefore();
+    top: @top;
+    transform: rotate(180deg);
+}
+.lyteCalNav:hover::before {
+    .CalNavHoverBefore();
+	opacity: @opacity;
+}
+.lyteCalsCalMon {
+    .CalMonthYear();
+    flex-grow: 3;
+    text-align: @value-textalign-left;
+    order: 1;
+    cursor: default;
+    color: @color;
+}
+.lyteCalsCalMonth {
+    .CalMonthText();
+    font-size: @font-size;
+}
+.lyteCalsCalYear {
+    .CalYearText();
+    font-size: @font-size;
+}
+.lyteCalTableContainer {
+	.CalTableContainer();
+	border-spacing: @border-spacing;
+	box-sizing: border-box;
+	display: table;
+	padding: @padding;
+	width: 100%;
+}
+.lyteCalTableRow,
+.lyteCalTableRowHeader {
+	display: table-row;
+}
+.lyteCalTableCellHeader {
+	.CalTableCellHeader();
+	color: @color;
+	cursor: default;
+	display: table-cell;
+	font-size: @font-size;
+	text-transform: uppercase;
+	text-align: center;
+    padding-bottom: @padding-bottom;
+}
+.lyteCalTableCell {
+    .CalTableCell();
+    border: @border;
+    color: @color;
+    cursor: pointer;
+    font-size: @font-size;
+    display: table-cell;
+    line-height: @line-height;
+    padding: @padding;
+    text-align: center;
+    width: @w;
+    min-width: @w;
+    height: @h;
+    border-radius: @border-radius;
+}
+.lyteCalGray {
+    .CalGray();
+    opacity: @opacity;
+}
+.lyteCalGray:hover,
+.lyteCalGray.lyteCalSel {
+    opacity: 1;
+}
+.lyteCalToday {
+	.CalToday();
+	background: @bg;
+	color: @color;
+	border: @border;
+}
+.lyteCalTableCell:hover,
+.lyteCalToday:hover {
+	.CalTodayHover();
+	background: @bg;
+}
+.lyteCalSel,
+.lyteCalSel:hover {
+	.CalSelHover();
+	background: @bg;
+	color: @color;
+	border: @border;
+}
+.lyteCalBtns .lyteCalCurrentDate {
+	.CalBtns();
+	padding: @padding;
+	border-top: @border-top;
+	text-align: center;
+}
+.lyteCalCurrentDate a {
+	.CalCurrentDate();
+	color: @color;
+	cursor: pointer;
+}
+.lyteCalEmpty {
+	display: table-cell;
+}
+.lyteCalendarHidden,
+.lyteCalyearNavLft,
+.lyteCalyearNavRgt {
+	display: none;
+}
+.lyteCalendarPopup lyte-drop-button.lyteDropButtonUp,
+.lyteCalendarPopup lyte-drop-button.lyteDropButtonDown {
+    box-shadow: none;
+}
+
+
+/* import theme overrides - styles */
+@import (optional) "../themes/@{calendar}/ui-elements/calendar/calendar.styles.less";
+
+
+
+
+/* import custom css */
+@import (optional) "../overrides/ui-elements/calendar.overrides.less";
+
+/*  Calendar related CSS ENDS     */

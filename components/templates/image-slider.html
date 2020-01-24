@@ -1,0 +1,24 @@
+<template tag-name='image-slider'>
+	<div class="mainContent">
+		<input id="sliderSwitch" class="sliderCheck" type="checkbox" name="sliderSwitch"  onchange="{{action('autoplay')}}" hidden />	
+		<div class="slider">
+			<div id="sliderList" class="sliderList">	
+				<% images.forEach(function(item, index){ %> 					
+					<div class="sliderSlide">
+						<img src="{{item}}" alt="img" />
+					</div>
+				<% }) %>
+				</div>
+		</div>
+
+		<div class="sliderControl"><label for="sliderSwitch"></label></div>
+		
+		<div class="leftDiv {{if(leftDivFlag, '', 'none')}}" onclick="{{action('leftClick')}}">
+				<div id="arrowleft" onclick="{{action('leftClick')}}" class="arrow">&#10094;</div>
+		</div>
+
+		<div class="rightDiv {{if(rightDivFlag, '', 'none')}}" onclick="{{action('rightClick')}}">
+				<div id="arrowright" onclick="{{action('rightClick')}}" class="arrow">&#10095;</div>
+		</div>
+	  </div>
+</template>

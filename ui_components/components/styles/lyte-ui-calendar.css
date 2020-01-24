@@ -1,0 +1,140 @@
+.lyteCalendarPopup{
+	background: rgb(255, 255, 255);
+    z-index: 100;
+    padding: 15px 20px 20px;
+    border: none!important;
+    box-shadow: 0 1px 16px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0 1px 16px rgba(0,0,0,0.3);
+    font-family:ProximaNovaRegular,arial,sans-serif; 
+    font-size:12px;
+    display: inline-block;
+}
+
+.lyteCalendarNavigator {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.lyteCalNav{
+    width:20px;
+    height:15px; 
+    display:inline-block; 
+    cursor:pointer
+}
+.lyteCaldLft {
+    right:10px;
+    background: url('../images/lyte_ui_sprite.svg') no-repeat -273px -1px;
+    opacity:0.6; 
+}
+.lyteCaldRgt{
+    left:10px;
+    background: url('../images/lyte_ui_sprite.svg') no-repeat -298px -1px;
+    opacity:0.6;
+}
+.lyteCalyearNavLft {
+    right:15px;    
+    background: url('../images/lyte_ui_sprite.svg') no-repeat -244px -1px;
+    opacity:0.6;
+}
+.lyteCalyearNavRgt {
+    left:15px;
+    background:url('../images/lyte_ui_sprite.svg') no-repeat -322px -1px;
+    opacity:0.6;
+}
+.lyteCalyearNavLft:hover,.lyteCalyearNavRgt:hover,.lyteCaldRgt:hover,.lyteCaldLft:hover{
+    opacity:1;
+}
+
+/************Calendar Widget*************/
+
+.lyteCalsCalMon {
+    cursor:default; 
+    width:185px; 
+    display:inline-block; 
+    color:#868686; 
+    font-size:13px; 
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.lyteCalTableRow, .lyteCalTableRowHeader {
+    display: table-row;
+}
+
+
+.lyteCalTableContainer, .lyteCalTableContainerHeader {
+    color:#555; 
+    border-spacing:12px; 
+    width: 100%;
+    display: table;
+}
+
+
+
+
+.lyteCalTableCellHeader {
+    font-size:12px; 
+    cursor:default;
+    border-radius:3px; 
+    text-align:center;  
+    padding:3px 5px;
+    font-family: ProximaNovaLight,arial,sans-serif !important;
+    display: table-cell; 
+}
+
+.lyteCalTableCell {
+    font-size:12px; 
+    cursor:default;
+    border-radius:3px; 
+    text-align:center;  
+    padding:3px 5px;
+    font-family: ProximaNovaLight,arial,sans-serif !important;
+    display:table-cell; 
+}
+
+.lyteCalTableCellHeader {
+    color:#868686; 
+    padding:0; 
+    width: 30px; 
+}
+
+.lyteCalGray {
+    color:#d8d8d8;
+}
+
+/* Change start */
+.lyteCalSel{
+    box-shadow: 0 0 0 1px #cbcbcb;
+    
+}
+
+.lyteCalToday {
+    color:#fff; 
+    background:#b3b3b3; 
+    border-radius:3px
+}
+
+.lyteCalSel:hover {
+    color:#fff; 
+    background:#b3b3b3; 
+    border-radius:3px
+}
+/* Change end */
+
+.lyteCalTableCell {
+    cursor:pointer
+}
+
+.lyteCalTableCell:hover:not(.lyteCalSel){
+    background:#e8e8e8; 
+}
+
+.lyteCalEmpty {
+    display: table-cell;
+}
+
+.lyteCalBtns .lyteCalCurrentDate {
+	float: left;
+}
+.lyteCalBtns .lyteCalCurrentDate a {
+	cursor: pointer;
+}

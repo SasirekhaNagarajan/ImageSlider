@@ -1,0 +1,46 @@
+.DateSelect() {
+	@bg: #e8e8e8;
+}
+.dateSelectArrow() {
+	@w: 10px;
+	@h: 10px;
+	@bg: @dateSelectBg;
+	@right: -4px;
+	@top: calc(50% - 5px);
+	@box-shadow: 1px -1px @dateSelectBorderColor;
+}
+.dateSelectleftArrow() {
+    @left: -4px;
+    @box-shadow: -1px 1px @dateSelectBorderColor;
+}
+.dateSelectcalMixin() {
+    @z-index: @dateSelectzIndex;
+    @bg: @themeBodyBackground;
+}
+.specificDateCustomRangeCont() {
+	@border: 1px solid @dateSelectBorderColor;
+	@box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.15);
+    @border-radius: 2px;
+}
+.specificDateCalendar() {
+	@border-bottom: 1px solid #f0f0f0;
+    @border-radius: 2px 2px 0 0;
+}
+.specificDateCalPop() {
+    @border-radius: 2px 2px 0 0;    
+}
+.dateSelectcalDoneBtn() {
+	@padding: 10px;
+}
+.dateSelectDropitem() {
+    @padding-right: 25px;
+}
+.dateSelectRightArrow() {
+    @bg-pos: -1px -2px;
+    @w: 8px;
+    @h: 4px;
+    @transform: rotate(-90deg);
+    @right: 10px;
+    @top: 17px;
+    @opacity: 0.5;
+}

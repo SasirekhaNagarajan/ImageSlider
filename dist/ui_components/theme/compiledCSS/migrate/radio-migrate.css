@@ -1,0 +1,55 @@
+/*Radio button css*/
+lyte-radiobutton {
+    font-size: inherit;
+}
+.lyteRadioBtn .lyteRadioLayer{
+    width: 11px;
+    height: 11px;
+    margin-right: 0;
+}
+lyte-radiobutton label.lyteSecondary:hover .lyteRadioLayer,
+lyte-radiobutton .lyteSecondary input[type="radio"]:checked + .lyteRadioLayer,
+lyte-radiobutton label:hover .lyteRadioLayer,
+lyte-radiobutton input[type="radio"]:checked + .lyteRadioLayer {
+    border: 1px solid #aaa;
+}
+.lyteRadioLayer .lyteRadioCheck {
+    width: 7px;
+    height: 7px;
+    top: 2px;
+    left: 2px;
+}
+.lyteDefault .lyteRadioLayer .lyteRadioCheck {
+    background: #aaa;
+}
+lyte-radiobutton .lyteSecondary .lyteRadioLayer .lyteRadioCheck {
+    background: #333;
+}
+.lyteRadioLabel {
+    vertical-align: top;
+}
+.lyteRadioBtn .lyteRadioLabel {
+    font-size: .929rem;
+    margin-right: 5px;
+    vertical-align: middle;
+    display: inline-block;
+}
+.lyteRadioBtn.lyteHorizontal {
+    display: inline-block;
+    margin-right: 10px;
+}
+.lyteRadioSwitch {
+    width: 35px;
+    height: 20px;
+}
+.lyteRadioSwitch .on-btn {
+    width: 16px;
+    height: 16px;
+    top: 2px;
+}
+.on-off-sw:checked + .lyteRadioSwitch {
+    background: #72c98a;
+}
+input[type="radio"].on-off-sw:checked+.lyteRadioSwitch .on-btn{
+    left: 17px;
+}

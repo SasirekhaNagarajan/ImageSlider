@@ -1,0 +1,5 @@
+lyte-text {
+	display: inline-block;
+	text-overflow: ellipsis;
+	overflow-x: hidden;
+}

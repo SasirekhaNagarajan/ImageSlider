@@ -1,0 +1,24 @@
+{
+  "name": "lyte-framework",
+  "version": "2.0.0",
+  "description": "CLIENT FRAMEWORK WITH COMPONENTS,ROUTER AND DATA LAYER",
+  "author": [
+    "sasirekha.n <sasirekha.n@zohocorp.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "faker": "Faker#^4.1.0",
+    "pretender": "^1.4.2",
+    "lyte": "http://build/zoho/lyte/milestones/master/LYTE_V2_0_4/Lyte.zip",
+    "ui-components": "http://build/zoho/lyte_ui_component/milestones/master/LYTE_UI_COMPONENTS_M4/Lyte_ui_component.zip",
+    "lyte-dom":"https://git.csez.zohocorpin.com/lyte.js/lyte-dom.git"
+  },  
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+  }
+}
+  

@@ -1,0 +1,11 @@
+.lyteProgressBar.lyteHorizontal{
+	height: 12px;
+}
+.lyteProgressBar.lyteProgressCompleted .lyteProgressStatus {
+	background: #3fbd5f;
+}
+.lyteProgressBar .lyteProgressPercentage {
+    left: auto;
+    right: -5px;
+    font-size: 11px;
+}

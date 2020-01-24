@@ -1,0 +1,71 @@
+.tableStructure() {
+	@bg: @tableBg;
+}
+.th() {
+	@bg: @tableThBg;
+	@color: @tableThTextColor;
+	@font-size: 14px;
+	@padding: 12px 15px;
+	@min-w: 50px;
+}
+.TableFixed() {
+    @box-shadow: 3px 0 7px -2px @tableFixedBoxShadow;
+}
+.thLastOfType() {
+	@h: 0px;
+}
+.td() {
+	@border-bottom: 1px solid @tableBorderColor;
+	@bg: @tableBg;
+	@min-w: 50px;
+	@padding: 15px;
+	@font-size: 15px;
+	@color: @tableTdTextColor;
+}
+.lyteTableStructureBorder() {
+    @border-bottom: 1px solid @tableBorderColor;
+    @border-right: 1px solid @tableBorderColor;
+}
+.tableBorderTh() {
+	@border: 1px solid @tableBorderColor;
+}
+.tableBorderTd() {
+	@border: 1px solid @tableBorderColor;
+}
+.tableheadResize() {
+	@w: 21px;
+}
+.tableResizeHeadAfter() {
+    @bg: @themeActiveElementBg;
+    @opacity: 0.7;
+}
+.tableResizeHeadHoverAfter() {
+    @bg: @themeActiveElementBg;
+    @opacity: 1;
+}
+.tableResize() {
+	@w: 15px;
+	@h: 15px;
+}
+.tableResizeHover() {
+    @border-bottom: 2px solid @themeActiveElementBg;
+    @border-right: 2px solid @themeActiveElementBg;
+}
+.tableHorizontalResize() {
+	@w: 15px;
+}
+.tableHorizontalResizeHover() {
+    @border-right: 2px solid @themeActiveElementBg;
+}
+.tableVerticalResize() {
+	@h: 15px;
+}
+.tableVerticalResizeHover() {
+    @border-bottom: 2px solid @themeActiveElementBg;
+}
+.lyteTableSortHelper() {
+	@bg: @tableBg;
+    @border: 1px solid @tableSortHelperBg;
+    @padding: 12px 15px;
+    @font-size: 14px;
+}

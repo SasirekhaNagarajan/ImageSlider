@@ -1,0 +1,208 @@
+/* Default theme imported */
+@import "../themes/default/ui-elements/checkbox/checkbox.variables.less";
+
+
+
+
+/* Loading theme in configuration */
+@import "../config.less";
+@import (optional) "../themes/@{checkbox}/ui-elements/checkbox/checkbox.variables.less";
+
+/* rtl files loading */
+
+@import (multiple,optional) "../themes/default/global/@{direction}.less";
+
+@import (multiple,optional) "../themes/@{checkbox}/global/@{direction}.less";
+
+
+/* Loading final tweaks to your variables */
+@import (optional) "../overrides/ui-elements/checkbox.variables.less";
+
+
+/*  Checkbox related CSS BEGINS   */
+
+lyte-checkbox {
+	.checkbox();
+	color: @color;
+	font-family: @primaryFont;
+	font-size: @font-size;
+	display: inline-block;
+    position: relative;
+}
+lyte-checkbox label {
+    display: inline-block;
+    cursor: pointer;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+lyte-checkbox input[type="checkbox"] {
+	position: absolute;
+    visibility: hidden;
+}
+.lyteCheckBoxDefault::before {
+	.CheckBoxDefaultBefore();
+	content: '';
+	background-image: @bg-img;
+	background-position: @bg-pos;
+	width: @w;
+	height: @h;
+	display: inline-block;
+	vertical-align: middle;
+    @{property-margin-right}: @margin-right;
+}
+lyte-checkbox input[type="checkbox"]:active + .lyteCheckBoxDefault::before,
+.lyteCheckBoxDefault:hover::before {
+	.CheckBoxDefaultHoverBefore();
+	background-position: @bg-pos;
+}
+lyte-checkbox input[type="checkbox"]:disabled + .lyteCheckBoxDefault:hover::before {
+	.disabledCheckbox();
+	background-position: @bg-pos;
+}
+lyte-checkbox input[type="checkbox"]:checked:disabled + .lyteCheckBoxDefault:hover::before,
+lyte-checkbox input[type="checkbox"]:checked + .lyteCheckBoxDefault::before {
+	.disabledCheckedCheckbox();
+	background-position: @bg-pos;
+}
+lyte-checkbox[lt-prop-disabled="true"] label {
+    cursor: not-allowed;
+}
+.lyteCheckBoxPrimary::before {
+    .checkBoxPrimaryBefore();
+    content: '';
+    background-image: @bg-img;
+    background-position: @bg-pos;
+    width: @w;
+    height: @h;
+    margin-right: @margin-right;
+	display: inline-block;
+	vertical-align: middle;
+    & when (@rtlEnabled = true) {
+        margin-left: @margin-left;
+    }
+}
+lyte-checkbox input[type="checkbox"]:checked + .lyteCheckBoxPrimary::before {
+    .checkBoxPrimaryCheckedBefore();
+    background-position: @bg-pos;
+    width: @w;
+    margin-right: @margin-right;
+}
+.lyteCheckBoxPrimary span,
+.lyteCheckBoxDefault span {
+	display: inline-block;
+	vertical-align: middle;
+    -ms-user-select: auto;
+    -moz-user-select: auto;
+    -webkit-user-select: auto;
+    user-select: auto;
+}
+lyte-checkbox:hover span {
+    .checkBoxTextHover();
+    color: @color;
+}
+lyte-checkbox[lt-prop-disabled="true"]:hover span {
+    .disabledCheckBoxTextHover();
+    color: @color;
+}
+.lyteCheckSwitch {
+	.CheckSwitch();
+	vertical-align: middle;
+	width: @w;
+	height: @h;
+	display: inline-block;
+	border-radius: @border-radius;
+	position: relative;
+	background: @bg;
+}
+.lyteCheckSwitch .on-btn {
+	.switchOnBtn();
+	width: @w;
+	height: @h;
+	background: @bg;
+	display: inline-block;
+	border-radius: @border-radius;
+	position: absolute;
+    @{property-left}: @left;
+	top: @top;
+    @{property-right}: auto;
+	transition: @value-transition-left 200ms ease;
+}
+input[type="checkbox"].on-off-sw:checked + .lyteCheckSwitch {
+	.checkSwitchBg();
+	background: @bg;
+}
+input[type="checkbox"].on-off-sw:checked + .lyteCheckSwitch .on-btn {
+	.checkSwitchCircle();
+    @{property-left}: @left;
+}
+.lyteCheckSwitch + span {
+	.checkSwitchLabel();
+	vertical-align: middle;
+	display: inline-block;
+    @{property-margin-left}: @margin-left;
+}
+
+.lyteCheckSliderLabel {
+	box-sizing: border-box;
+	position: relative;
+}
+.lyteCheckSlider {
+    .checkboxSlider();
+	position: relative;
+	display: inline-block;
+	height: @h;
+}
+.lyteCheckSlider::before {
+    .checkboxSliderCircle();
+	content: '';
+	display: inline-block;
+	position: absolute;
+	z-index: 1;
+	width: @w;
+	height: @h;
+	background: @bg;
+	box-shadow: @box-shadow;
+	border-radius: @border-radius;
+    @{property-left}: @left;
+	transition: @value-transition-left 200ms ease;
+}
+input[type="checkbox"]:checked + .lyteCheckSlider::before {
+    .checkboxSliderCheckedCircle();
+    @{property-left}: @left;
+}
+.lyteCheckSlider::after {
+    .checkboxSliderBar();
+	content: '';
+	cursor: pointer;
+	display: inline-block;
+	position: absolute;
+	z-index: 0;
+	width: @w;
+	height: @h;
+	background: @bg;
+	top: @top;
+    @{property-left}: @left;
+}
+input[type="checkbox"]:checked + .lyteCheckSlider::after {
+    .checkboxSliderCheckedBar();
+	background: @bg;
+}
+.lyteCheckSliderText {
+    .checkboxSliderText();
+    @{property-padding-left}: @padding-left;
+	vertical-align: middle;
+}
+
+
+/* import theme overrides - styles */
+@import (optional) "../themes/@{checkbox}/ui-elements/checkbox/checkbox.styles.less";
+
+
+
+
+/* import custom css */
+@import (optional) "../overrides/ui-elements/checkbox.overrides.less";
+
+/*  Checkbox related CSS ENDS   */

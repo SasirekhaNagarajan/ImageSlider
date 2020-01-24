@@ -1,0 +1,173 @@
+/* Default theme imported */
+
+@import "../themes/default/ui-elements/gridstack/gridstack.variables.less";
+
+/* Loading theme in configuration */
+
+@import "../config.less";
+
+@import (optional) "../themes/@{gridstack}/ui-elements/gridstack/gridstack.variables.less";
+
+/* rtl files loading */
+
+@import (multiple,optional) "../themes/default/global/@{direction}.less";
+
+@import (multiple,optional) "../themes/@{gridstack}/global/@{direction}.less";
+
+/* Loading custom themes */
+
+@import (optional) "../overrides/ui-elements/gridstack.variables.less";
+
+/* Gridstack styles BEGINS  */
+
+lyte-gridstack {
+	.gridstack();
+	display: block;
+	position: relative;
+	height: auto;
+	width: @w;
+	color: @color;
+	font-family: @primaryFont;
+	font-size: @font-size;
+}
+.lyteGridstackScope {
+	.GridstackScope();
+	outline: none;
+	overflow: auto;
+	position: relative;
+	transition: height 0.3s ease;
+	background: @bg;
+	background-repeat: repeat;
+	min-height: @min-height;
+}
+.lyteGridstackHandler {
+	.GridStackItem();
+	background: @bg;
+	border: @border;
+	position: absolute;
+	overflow: auto;
+	cursor: move;
+	box-sizing: border-box;
+    border-radius: @border-radius;
+    transition: all 0.2s linear;
+}
+.lyteGridstackHandler:hover {
+	.GridStackItemHover();
+	border-color: @border-color;
+}
+.lyteGridstackHandler.gridSelected,
+.lyteGridstackHandler.lyteGridFocused {
+	.gridStackItem_Gridfocused();
+	z-index: 22;
+	position: absolute;
+	cursor: move;
+	box-sizing: border-box;
+	border: @border;
+	overflow: visible;
+    transition: none;
+}
+.lyteGridstackHandler .lyteGridResize {
+	display: none;
+}
+.lyteGridstackHandler.lyteGridFocused .lyteGridResize {
+	display: block;
+}
+.lyteGridstackHandler.lyteGridStackMove .lyteGridResize {
+	display: none;
+}
+lyte-gridstack:not(.gridFreezeMode) .lyteBestFit {
+	z-index: 0;
+	position: absolute;
+	opacity: 0.4;
+}
+lyte-gridstack:not(.gridFreezeMode) .lyteBestFit.lyteGrid {
+	.lyteGridBg();
+	background: @bg;
+}
+lyte-grid-content {
+	.gridContent();
+	top: @top;
+	bottom: @bottom;
+    @{property-left}: @left;
+    @{property-right}: @right;
+	position: absolute;
+}
+lyte-gridstack .lyteGridResize {
+	.gridResizeBox();
+	height: @h;
+	width: @w;
+	z-index: 20;
+	border: @border;
+	background: @bg;
+	position: absolute;
+}
+lyte-gridstack .lyteGridStackTop {
+	.gridStackTop();
+	@{property-left}: @left;
+	top: @top;
+	cursor: n-resize;
+}
+lyte-gridstack .lyteGridStackTopLeft {
+	.gridStackTopLeft();
+	@{property-left}: @left;
+	top: @top;
+	cursor: @value-nw-resize;
+}
+lyte-gridstack .lyteGridStackTopRight {
+	.gridStackTopRight();
+	@{property-right}: @right;
+	top: @top;
+	cursor: @value-ne-resize;
+}
+lyte-gridstack .lyteGridStackBottom {
+	.gridStackBottom();
+	@{property-left}: @left;
+	bottom: @bottom;
+	cursor: s-resize;
+}
+lyte-gridstack .lyteGridStackBottomLeft {
+	.gridStackBottomLeft();
+	@{property-left}: @left;
+	bottom: @bottom;
+	cursor: @value-sw-resize;
+}
+lyte-gridstack .lyteGridStackBottomRight {
+	.gridStackBottomRight();
+	@{property-right}: @right;
+	bottom: @bottom;
+	cursor: @value-se-resize;
+}
+lyte-gridstack .lyteGridStackRight {
+	.gridStackRight();
+	top: @top;
+	@{property-right}: @right;
+	cursor: col-resize;
+}
+lyte-gridstack .lyteGridStackLeft {
+	.gridStackLeft();
+	top: @top;
+	@{property-left}: @left;
+	cursor: col-resize;
+}
+lyte-gridstack.gridFreezeMode .lyteGridstackHandler {
+	cursor: default;
+}
+lyte-gridstack.gridFreezeMode .lyteGridstackHandler.lyteGridFocused {
+	.gridFreezeModeGridFocused();
+	border-color: @border-color;
+}
+lyte-gridstack.gridFreezeMode .lyteGridstackHandler .lyteGridResize {
+	display: none;
+}
+
+
+/* import theme overrides - styles */
+@import (optional) "../themes/@{gridstack}/ui-elements/gridstack/gridstack.styles.less";
+
+
+
+
+/* import custom css - final tweaks by the user */
+@import (optional) "../overrides/ui-elements/gridstack.overrides.less";
+
+/* Gridstack styles ENDS  */

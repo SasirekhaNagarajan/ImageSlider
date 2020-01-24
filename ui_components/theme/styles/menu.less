@@ -1,0 +1,193 @@
+/* Default theme imported */
+
+@import "../themes/default/ui-elements/menu/menu.variables.less";
+
+/* Loading theme in configuration */
+
+@import "../config.less";
+
+@import (optional) "../themes/@{menu}/ui-elements/menu/menu.variables.less";
+
+/* rtl files loading */
+
+@import (multiple,optional) "../themes/default/global/@{direction}.less";
+
+@import (multiple,optional) "../themes/@{menu}/global/@{direction}.less";
+
+/* Loading custom themes */
+
+@import (optional) "../overrides/ui-elements/menu/menu.variables.less";
+
+/* Menu CSS BEGINS  */
+lyte-menu-box {
+	.menuBox();
+	box-sizing: border-box;
+	z-index: @z-index;
+	vertical-align: middle;
+	width: auto;
+	position: absolute;
+	top: @top;
+	outline: none;
+	font-family: @primaryFont;
+    box-shadow: @box-shadow;
+    margin-top: @margin-top;
+    border-radius: @border-radius;
+}
+lyte-menu-body {
+	.menuBody();
+	overflow: auto;
+	display: block;
+	outline: none;
+	background: @bg;
+	border: @border;
+    border-radius: @border-radius;
+    padding: @padding;
+}
+lyte-menu-item {
+	.menuItem();
+	position: relative;
+	cursor: pointer;
+	display: flex;
+    white-space: nowrap;
+	text-align: @value-textalign-left;
+	font-size: @font-size;
+	padding: @padding;
+}
+lyte-menu-item:hover {
+	.menuItemhover();
+	background: @bg;
+}
+lyte-menu-label {
+	.menuLabel();
+	font-size: @font-size;
+	color: @color;
+    @{property-margin-right}: @margin-right;
+}
+lyte-menu-header {
+	.menuHeader();
+	display: block;
+	height: auto;
+	color: @color;
+	font-family: @secondaryFont;
+	font-size: @font-size;
+	text-align: @value-textalign-left;
+	cursor: default;
+	padding: @padding;
+}
+lyte-menu-description {
+	.menuDescription();
+	font-size: @font-size;
+    @{property-margin-left}: auto;
+	opacity: @opacity;
+    color: @color;
+}
+lyte-menu-group {
+	.menuGroup();
+	border-bottom: @border-bottom;
+	display: block;
+	padding: @padding;
+}
+lyte-menu-group:first-of-type {
+    .menuGroupFirstOfType();
+	border-top: @border-top;
+    padding-top: @padding-top;
+}
+lyte-menu-group:last-of-type {
+    .menuGroupLastOfType();
+	border-bottom: @border-bottom;
+    padding-bottom: @padding-bottom;
+}
+lyte-menu-group:last-of-type ~ lyte-menu-item {
+	.lastMenuItem();
+	border-top: @border-top;
+}
+lyte-menu {
+	display: inline-block;
+	width: auto;
+}
+.lytemenufreezelayer {
+	.menufreezelayer();
+	opacity: @opacity;
+	background: @bg;
+	position: fixed;
+	z-index: @z-index;
+}
+.lytemenufreezelayer.top {
+	top: 0;
+	width: 100%;
+}
+.lytemenufreezelayer.bottom {
+	bottom: 0;
+	width: 100%;
+}
+.lytemenufreezelayer.left {
+	left: 0;
+}
+.lytemenufreezelayer.right {
+	right: 0;
+	width: 100%;
+}
+.lytemenufreezelayer.nogroup {
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+.lyteMenuWrapperDiv {
+	overflow: auto;
+}
+lyte-menu-box .lyteArrow {
+    .menuArrowIcon();
+    width: @w;
+    height: @h;
+    position: absolute;
+    background: @bg;
+    transform: rotate(45deg);
+}
+lyte-menu-box .lyteArrow::after,
+lyte-menu-box .lyteArrow::before {
+    content: none;
+}
+lyte-menu-box .lyteArrow.lyteArrowTop {
+    .menuArrowIconTop();
+    box-shadow: @box-shadow;
+    top: @top;
+}
+lyte-menu-box .lyteArrow.lyteArrowBottom {
+    .menuArrowIconBottom();
+    box-shadow: @box-shadow;
+    bottom: @bottom;
+}
+lyte-menu-box .lyteArrow.lyteArrowLeft {
+    .menuArrowIconLeft();
+    box-shadow: @box-shadow;
+    @{property-left}: @left;
+}
+lyte-menu-box .lyteArrow.lyteArrowRight {
+    .menuArrowIconRight();
+    box-shadow: @box-shadow;
+    @{property-right}: @right;
+    @{property-left}: unset;
+}
+.lyteMenuHidden {
+	display: none !important;
+}
+lyte-menu-box.lyteAnimate {
+    transition: top 0.4s ease;
+}
+lyte-menu-box.lyteAnimate lyte-menu-body{
+    transition: height 0.4s ease;
+    overflow: hidden;
+}
+
+
+/* import theme overrides - styles */
+@import (optional) "../themes/@{menu}/ui-elements/menu/menu.styles.less";
+
+
+
+
+/* import custom css - final tweaks by the user */
+@import (optional) "../overrides/ui-elements/menu.overrides.less";
+
+/* Menu CSS ENDS  */

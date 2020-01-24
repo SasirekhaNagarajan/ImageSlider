@@ -1,0 +1,1745 @@
+Building components ....
+[Time] : copyAppDir =>0.001 s
+[Time] => components completed : 0.001 s
+========== Components compiled ==========
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.009 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.171 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Error in components/javascript/image-slider.js
+[Delete] components/javascript/image-slider.js
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.005 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.163 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Error in components/javascript/image-slider.js
+[Delete] components/javascript/image-slider.js
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.004 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.162 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.004 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.18 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.001 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.165 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.002 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.159 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.002 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.15 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.001 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.164 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.001 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.16 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.002 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.15 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.001 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.159 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.001 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.17 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.001 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.165 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.001 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.153 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.001 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.164 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.002 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.15 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.001 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.145 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.002 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.167 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.001 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.156 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.001 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.159 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.001 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.161 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.001 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.15 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.001 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.168 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.001 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.166 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.001 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.151 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.002 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.16 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.002 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.156 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.001 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.163 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.001 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.154 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.002 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.163 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.002 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.306 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.001 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.239 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.001 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.168 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.001 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.157 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.002 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.15 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.001 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.185 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.001 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.165 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.001 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.162 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.003 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.146 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.001 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.153 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.001 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.178 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.002 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.185 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.001 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.158 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.002 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.169 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.001 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.151 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.001 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.151 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/styles/image-slider.css calling buildComponents
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.001 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.175 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/templates/image-slider.html calling buildComponents
+Searching for syntax errors.....
+[UnclosedTags Success] =>components/templates/image-slider.html
+[Time] => find unclosedTags => 0.002 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0.154 s
+Callback to templateProcessing function initated
+Generating dist components...
+
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents
+[Watch] Running componentCopy rule
+[Watch] Dist changes done
+========== Components compiled ==========
+Consolidated file created in the dist/app.js
+
+Consolidated file created in the dist/app.js
+
+[Watch] => file changed components/javascript/image-slider.js calling buildComponents

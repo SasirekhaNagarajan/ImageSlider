@@ -1,0 +1,76 @@
+.menuBox() {
+	@z-index: @menuzIndex;
+	@top: 27px;
+    @border-radius: 2px;
+    @box-shadow: 0px 1px 3px 0px rgba(134, 134, 134, 0.4);
+    @margin-top: 1px;
+}
+.menuBody() {
+	@bg: @menuBg;
+	@border: 1px solid @menuBorderColor;
+    @border-radius: 2px;
+    @padding: 5px 0;
+}
+.menuItem() {
+	@font-size: 15px;
+	@padding: 5px 15px;
+}
+.menuItemhover() {
+	@bg: @menuItemHover;
+}
+.menuLabel() {
+	@font-size: 14px;
+	@color: @menuLabelColor;
+	@margin-right: 30px;
+}
+.menuHeader() {
+	@color: @menuHeaderColor;
+	@font-size: 14px;
+	@padding: 3px 15px 4px 15px;
+}
+.menuDescription() {
+	@font-size: 14px;
+    @color: @menuDescColor;
+	@opacity: 0.5;
+}
+.menuGroup() {
+	@border-bottom: 1px solid @menuGroupBorder;
+	@padding: 5px 0;
+}
+.menuGroupFirstOfType() {
+	@border-top: 0;
+    @padding-top: 0;
+}
+.menuGroupLastOfType() {
+    @border-bottom: 0;
+    @padding-bottom: 0;
+}
+.lastMenuItem() {
+	@border-top: 1px solid @menuGroupBorder;
+}
+.menufreezelayer() {
+	@bg: @menuBg;
+	@opacity: 0.1;
+	@z-index: @menuzIndex - 5;
+}
+.menuArrowIcon() {
+    @w: 11px;
+    @h: 11px;
+    @bg: @menuBg;
+}
+.menuArrowIconTop() {
+    @box-shadow: -1px -1px 0 0 @menuBorderColor;
+    @top: -4px;
+}
+.menuArrowIconBottom() {
+    @box-shadow: 1px 1px 0 0 @menuBorderColor;
+    @bottom: -4px;
+}
+.menuArrowIconLeft() {
+    @box-shadow: -1px 1px 0 0 @menuBorderColor;
+    @left: -4px;
+}
+.menuArrowIconRight() {
+    @box-shadow: 1px -1px 0 0 @menuBorderColor;
+    @right: -4px;
+}

@@ -1,0 +1,517 @@
+/* Default theme imported */
+@import "../themes/default/ui-elements/dropdown/dropdown.variables.less";
+
+
+
+
+/* Loading theme in configuration */
+@import "../config.less";
+@import (optional) "../themes/@{dropdown}/ui-elements/dropdown/dropdown.variables.less";
+
+/* rtl files loading */
+
+@import (multiple,optional) "../themes/default/global/@{direction}.less";
+
+@import (multiple,optional) "../themes/@{dropdown}/global/@{direction}.less";
+
+
+/* Loading final tweaks to your variables */
+@import (optional) "../overrides/ui-elements/dropdown.variables.less";
+
+/*  Dropdown related style BEGINS   */
+lyte-dropdown,
+lyte-drop-box {
+	.dropBox();
+	font-family: @primaryFont;
+	font-size: @font-size;
+	color: @color;
+	display: inline-block;
+	max-width: @max-w;
+}
+lyte-dropdown {
+	.dropdown();
+    max-width: @max-w;
+}
+lyte-drop-button {
+	.dropdownBtn();
+	border: @border;
+	border-radius: @border-radius;
+	cursor: pointer;
+	text-align: @value-textalign-left;
+	position: relative;
+	display: inline-block;
+	padding: @padding;
+	width: 100%;
+	box-sizing: border-box;
+	color: @color;
+	background: @bg;
+}
+lyte-dropdown lyte-drop-button:hover {
+	.dropdownBtnHover();
+	border: @border;
+}
+lyte-drop-button.lyteDropButtonUp {
+    .dropBoxOnUpside();
+    border-radius: @border-radius;
+    box-shadow: @box-shadow;
+}
+lyte-drop-button.lyteDropButtonDown {
+    .dropBoxOnDownside();
+    border-radius: @border-radius;
+    box-shadow: @box-shadow;
+}
+lyte-drop-button.lyteDropButtonUp:hover,
+lyte-drop-button.lyteDropButtonDown:hover {
+    .dropdownBtn();
+	border: @border;
+}
+
+lyte-dropdown.calloutDrop lyte-drop-button {
+    .calloutDropbutton();
+    box-shadow: none;
+    border-radius: @border-radius;
+}
+
+.lyteDropPlaceholderNormal,
+.lyteDropdownLabel {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: block;
+}
+.lyteDummyEventContainer {
+	outline: none;
+}
+lyte-drop-item {
+	.dropItem();
+	position: relative;
+	cursor: pointer;
+	display: block;
+	text-align: @value-textalign-left;
+	color: @color;
+	padding: @padding;
+	font-size: @font-size;
+}
+lyte-drop-item.lyteDropdownActive,
+lyte-drop-item.lyteSearchHidden {
+	display: none;
+}
+.lyteDropdownSelection {
+	.dropCurrentItem();
+	background: @bg;
+}
+lyte-drop-item[selected="true"]::before {
+	.dropSelectionTick();
+	content: '';
+	background-image: @bg-img;
+	background-position: @bg-pos;
+	width: @w;
+	height: @h;
+	position: absolute;
+    @{property-left}: @left;
+	top: @top;
+}
+lyte-dropdown lyte-icon.dropdown {
+	.dropSelectionArrow();
+	background-image: @bg-img;
+	background-position: @bg-pos;
+	width: @w;
+	height: @h;
+	top: @top;
+	display: inline-block;
+	opacity: @opacity;
+	position: absolute;
+    @{property-right}: @right;
+}
+/*  Multi select releated CSS--BEGINS   */
+lyte-dropdown[lt-prop-type="multisearch"] lyte-drop-button,
+lyte-dropdown[lt-prop-type="multiple"] lyte-drop-button {
+	.dropdownMultipleBtn();
+    @{property-padding-right}: @padding-right;
+	min-height: @min-height;
+	white-space: normal;
+}
+lyte-dropdown[lt-prop-type="multisearch"] lyte-drop-button::after,
+lyte-dropdown[lt-prop-type="multiple"] lyte-drop-button::after {
+	.dropdownMultipleArrow();
+	content: '';
+	background-image: @bg-img;
+	background-position: @bg-pos;
+	width: @w;
+	height: @h;
+	display: inline-block;
+	position: absolute;
+    @{property-right}: @right;
+	top: @top;
+	opacity: @opacity;
+}
+.lyteMultipleSelect li {
+	.MultipleSelect();
+	background: @bg;
+	color: @color;
+	border: @border;
+	margin: @margin;
+	border-radius: @border-radius;
+	font-size: @font-size;
+	padding: @padding;
+	display: inline-block;
+	position: relative;
+    cursor: default;
+}
+lyte-dropdown[lt-prop-remove-multiple="true"] .lyteMultipleSelect li {
+    cursor: pointer;
+}
+lyte-dropdown[lt-prop-type="multisearch"] .lyteMultipleSelect li.lyteMultiselectInput {
+    .multipleSelectInputLi();
+    background: @bg;
+    border: @border;
+    padding: @padding;
+    margin: @margin;
+    width: @w;
+}
+lyte-dropdown[lt-prop-type="multisearch"] .lyteMultipleSelect .lyteMultiselectInput:only-of-type {
+    width: 100%;
+}
+.lyteDropPlaceholderMultiple {
+	.DropPlaceholderMultiple();
+    @{property-padding-left}: @padding-left;
+	font-size: @font-size;
+	color: @color;
+	vertical-align: top;
+}
+.lyteMultipleSelect .lyteCloseIcon {
+    .multiSelectCloseContainer();
+    position: absolute;
+    cursor: pointer;
+    top: @top;
+    bottom: @bottom;
+    @{property-right}: @right;
+    height: @h;
+    width: @w;
+    border-radius: @border-radius;
+}
+.lyteMultipleSelect li:hover .lyteCloseIcon {
+    .multiSelectCloseHover();
+    background: @bg;
+}
+.lyteMultipleSelect .lyteCloseIcon::before {
+	.multiSelectClose();
+    content: '';
+	background-image: @bg-img;
+	background-position: @bg-pos;
+	width: @w;
+	height: @h;
+	top: @top;
+    @{property-right}: @right;
+	opacity: @opacity;
+	display: inline-block;
+	position: absolute;
+	cursor: pointer;    
+}
+.lyteMultipleSelect .lyteCloseIcon:hover::before {
+    .multiSelectCloseHover();
+	opacity: @opacity;
+}
+.lyteDropdownNoResult {
+	.DropdownNoResult();
+	padding: @padding;
+	text-align: center;
+	font-size: @font-size;
+	color: @color;
+}
+lyte-drop-button input {
+	.dropButton();
+    width: @w;
+	border: none;
+	background: transparent;
+	font-size: @font-size;
+	color: @color;
+	padding: @padding;
+	box-sizing: border-box;
+}
+lyte-drop-button input:focus {
+	outline: none;
+}
+.lyte-dropdown-filtered {
+	display: none !important;
+}
+.lyteMultiSelectDropdown lyte-drop-item {
+	.multiSelectDropdown();
+	padding: @padding;
+}
+/*  Multi select releated CSS--ENDS   */
+/*lyte-list-box dropbox related css--BEGINS     */
+lyte-drop-box {
+	.dropBox1();
+	background: @bg;
+	box-sizing: border-box;
+	border: @border;
+	box-shadow: @box-shadow;
+	z-index: @z-index;
+	position: absolute;
+	border-radius: @border-radius;
+	display: block;
+	width: auto;
+	transform: @transform;
+}
+lyte-drop-box.lyteDropdownCurve {
+    .dropBoxCurve();
+    border-radius: @border-radius;
+}
+lyte-drop-box.lyteDropdownUp {
+    .dropBoxUpside();
+    border-radius: @border-radius;
+    box-shadow: @box-shadow;
+    transform: @transform;
+}
+lyte-drop-box.lyteDropBodyCallout {
+    .callOutDropBox();
+    border-radius: @border-radius;
+    box-shadow: @box-shadow;
+}
+lyte-drop-box:not(.lyteDropBodyCallout) .lyteArrow {
+	.dropBoxArrow();
+	background: @bg;
+	width: @w;
+	height: @h;
+	display: block;
+	position: absolute;
+	top: @top;
+    @{property-left}: @left;
+}
+.lyteDropdownUp:not(.lyteDropBodyCallout) .lyteArrow {
+    .dropBoxUpsideArrow();
+    top: @top;
+    bottom: @bottom;
+}
+.lyteDropdownUp.lyteDropdownCurve {
+    .dropBoxUpsideCurve();
+    border-radius: @border-radius;
+}
+
+lyte-drop-box lyte-input.lyteInput .lyteSearch {
+	.dropboxSearch();
+    @{property-padding-left}: @padding-left;
+}
+lyte-drop-box.lyteDropdownUp lyte-input.lyteInput .lyteSearch {
+    .dropboxUpsideSearchInput();
+    border-radius: @border-radius;
+}
+lyte-drop-box.lyteDropdownHidden {
+	display: none;
+}
+lyte-drop-footer,
+lyte-drop-header {
+	display: block;
+}
+lyte-drop-footer {
+	.dropFooter();
+	border-top: @border-top;
+	text-align: center;
+}
+lyte-drop-body {
+	.dropBody();
+	padding: @padding;
+	display: block;
+	max-height: @max-height;
+	overflow-y: auto;
+	position: relative;
+}
+lyte-drop-header lyte-search .searchIcon {
+	.dropBoxSearchIcon();
+	top: @top;
+    @{property-left}: @left;
+}
+lyte-drop-box .lyteDropdownFooter {
+	.dropBoxFooter();
+	border-top: @border-top;
+}
+lyte-drop-box .lyteDropdownFooter .lyteDropdownAction {
+	.lyteDropdownAction();
+	padding: @padding;
+	font-size: @font-size;
+}
+lyte-drop-label {
+	.dropLabel();
+	display: block;
+	height: auto;
+	padding: @padding;
+	font-weight: 400;
+	text-align: @value-textalign-left;
+	font-size: @font-size;
+	font-family: @secondaryFont;
+}
+lyte-drop-label:first-child {
+    .dropLabelFirst();
+    padding-top: @padding-top;
+}
+/*lyte-list-box dropbox related css--ENDS     */
+.lyteDropdownFiltered {
+	display: none!important;
+}
+.lyteDropdownZIndex {
+    .lyteDropdownZIndex();
+	z-index: @z-index;
+}
+/*Dropdown element disabled option -- BEGINS*/
+lyte-dropdown[lt-prop-disabled="true"] {
+	cursor: not-allowed;
+}
+.lyteDropdown-disabled {
+	pointer-events: none;
+}
+.lyteDropdown-disabled lyte-drop-button {
+	.disableDropBtn();
+	background: @bg;
+	color: @color;
+}
+lyte-dropdown .lyteDropdown-disabled lyte-icon.dropdown {
+    .disabledDropdownArrow();
+	opacity: @opacity;
+}
+/*Dropdown element disabled option -- ENDS*/
+.lyteDropPlaceholderNormal {    //lt-prop-placeholder
+	.DropPlaceholderNormal();
+    @{property-margin-right}: @margin-right;
+	color: @color;
+}
+.lyteMultipleSelect li.lyteDropMark {
+    .multiSelectDropMark();
+    background: @bg;
+    border: @border;
+}
+.lyteMultipleSelect li.lyteDropMark:hover .lyteCloseIcon {
+    .multiSelectDropMarkHover();
+    background: @bg;
+}
+/*  Callout hook related CSS -- BEGINS    */
+/*Dropdown with arrow */
+lyte-drop-box .lyteArrowIcon {
+	.lyteArrowIcon();
+	width: 0;
+	height: 0;
+	border-bottom: @border-bottom;
+	position: absolute;
+}
+lyte-drop-box .lyteArrowTop::after,
+lyte-drop-box .lyteArrowTop::before,
+lyte-drop-box .lyteArrowBottom::after,
+lyte-drop-box .lyteArrowBottom::before,
+lyte-drop-box .lyteArrowRight::after,
+lyte-drop-box .lyteArrowRight::before,
+lyte-drop-box .lyteArrowLeft::after,
+lyte-drop-box .lyteArrowLeft::before {
+	.lyteArrowBeforeAfter();
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border: @border;
+}
+/*Arrow Top*/
+lyte-drop-box .lyteArrowTop {
+	top: 0;
+}
+lyte-drop-box .lyteArrowTop::after,
+lyte-drop-box .lyteArrowTop::before {
+    .lyteArrowTopBeforeAfter();
+	bottom: @bottom;
+    @{property-left}: @left;
+}
+lyte-drop-box .lyteArrowTop::after {
+	.ArrowTopAfter();
+	border-bottom-color: @border-bottom-color;
+    @{property-margin-left}: @margin-left;
+}
+lyte-drop-box .lyteArrowTop::before {
+	.arrowTopBefore();
+	border-bottom-color: @border-bottom-color;
+	border-width: @border-width;
+    @{property-margin-left}: @margin-left;
+}
+/*Arrow bottom*/
+lyte-drop-box .lyteArrowBottom {
+	.arrowbottom();
+	bottom: @bottom;
+	top: unset;
+}
+lyte-drop-box .lyteArrowBottom::after,
+lyte-drop-box .lyteArrowBottom::before {
+    .lyteArrowBottomBeforeAfter();
+	top: @top;
+	left: @left;
+}
+lyte-drop-box .lyteArrowBottom::after {
+	.ArrowBottomAfter();
+	border-top-color: @border-top-color;
+    margin-left: @margin-left;
+}
+lyte-drop-box .lyteArrowBottom::before {
+	.arrowBottomBefore();
+	border-top-color: @border-top-color;
+	border-width: @border-width;
+    margin-left: @margin-left;
+}
+/*Arrow Right*/
+lyte-drop-box .lyteArrowRight {
+    right: 0;
+}
+lyte-drop-box .lyteArrowRight::after,
+lyte-drop-box .lyteArrowRight::before {
+    .lyteArrowRightBeforeAfter();
+    left: @left;
+	top: @top;
+}
+lyte-drop-box .lyteArrowRight::after {
+	.ArrowRightAfter();
+    border-left-color: @border-left-color;
+	margin-top: @margin-top;
+}
+lyte-drop-box .lyteArrowRight::before {
+	.arrowRightBefore();
+	border-left-color: @border-left-color;
+	border-width: @border-width;
+	margin-top: @margin-top;
+}
+/*Arrow Left*/
+lyte-drop-box .lyteArrowLeft {
+    left: 0;
+}
+lyte-drop-box .lyteArrowLeft::after,
+lyte-drop-box .lyteArrowLeft::before {
+    .lyteArrowLeftBeforeAfter();
+    right: @right;
+	top: @top;
+}
+lyte-drop-box .lyteArrowLeft::after {
+	.arrowLeftAfter();
+    border-right-color: @border-right-color;
+	margin-top: @margin-top;
+}
+lyte-drop-box .lyteArrowLeft::before {
+	.arrowLeftBefore();
+    border-right-color: @border-right-color;
+	border-width: @border-width;
+	margin-top: @margin-top;
+}
+/*  Callout hook related CSS -- ENDS    */
+lyte-drop-box.lyteAnimate {
+    transition: top 0.4s ease;
+}
+lyte-drop-box.lyteAnimate lyte-drop-body {
+    transition: height 0.4s ease;
+    overflow: hidden;
+}
+
+
+/* import theme overrides - styles */
+@import (optional) "../themes/@{dropdown}/ui-elements/dropdown/dropdown.styles.less";
+
+
+
+
+/* import custom css */
+@import (optional) "../overrides/ui-elements/dropdown.overrides.less";
+
+/*  Dropdown related style ENDS   */

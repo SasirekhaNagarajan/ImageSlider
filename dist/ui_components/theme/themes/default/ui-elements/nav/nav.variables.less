@@ -1,0 +1,48 @@
+.nav() {
+	@bg: @navBarBg;
+}
+.navItem() {
+	@padding: 10px 20px;
+	@font-size: 15px;
+	@color: @navBarTextColor;
+}
+.navItemHover() {
+	@bg: @navBarHoverBg;
+}
+.navActive() {
+	@bg: @navBarActive;
+    @color: @navBarActiveText;
+}
+.navVertical() {
+	@h: 200px;
+}
+.navArrow() {
+	@h: 15px;
+	@box-shadow: 0 1px 1px 1px @navBarBoxShadowColor;
+}
+.lyteNavDivArrow() {
+	@box-shadow: 0 -1px 1px 1px @navBarBoxShadowColor;
+}
+.navArrowUp() {
+	@top: 5px;
+	@left: calc(50% - 5px);
+	@border-left: 5px solid transparent;
+	@border-right: 5px solid transparent;
+	@border-bottom: 5px solid @navBarTriangleBg;
+}
+.navArrowDown() {
+    @top: 4px;
+	@border-top: 5px solid @navBarTriangleBg;
+}
+.navKebabMenu() {
+    @bg-img: @lytesprite;
+    @bg-pos: -294px -165px;
+    @w: 17px;
+    @h: 5px;
+}
+.navKebabIconCont() {
+    @padding: 10px 20px;
+}
+.navKebabIconContHover() {
+    @background: @navBarHoverBg;
+}

@@ -1,0 +1,49 @@
+.bodyWrapper {
+    position: absolute;
+    z-index: 9999;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.modalWrapper {
+	overflow: auto;
+    z-index: 10001;
+}
+.lyteModal {
+	z-index: 10001;
+}
+lyte-modal-header {
+	padding: 10px 30px;
+	border-bottom: 1px solid #e6e6e6;
+    font-size: 20px;
+}
+lyte-modal-content {
+	padding: 20px 30px;
+    font-size: inherit;
+}
+lyte-modal-footer {
+	padding: 10px 30px;
+	border-top: 1px solid #e6e6e6;
+}
+.modalWrapper.scrollable {
+	overflow: hidden;
+}
+.modalWrapper.scrollable lyte-modal-content {
+	overflow: auto;
+}
+lyte-modal-freeze { 
+	z-index:10000;
+	transition-duration: .15s;
+}
+.lyteModalClose{
+	background: url(../images/lyte_ui_sprite.svg) no-repeat -14px -1px;
+	width: 12px;
+	height: 11px;
+    top: 20px;
+    z-index:10001;
+    transform: none;
+}
+lyte-modal-header.draggable{
+	cursor: move;
+}

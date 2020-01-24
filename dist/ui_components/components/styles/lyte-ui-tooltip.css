@@ -1,0 +1,104 @@
+span.lyteTooltip{
+    position: absolute !important;
+    background-color: #222;
+    border-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 5px 5px; 
+    border-radius: 2px; 
+    font-size: 1em;
+    z-index: 99999;
+    pointer-events: none;
+    white-space: pre-wrap;
+}
+span.lyteTooltip.lyteLeft::before{
+    content: "";
+    position: absolute;
+    bottom: 25%;
+    right: -10px;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color:  transparent transparent transparent #222;
+    border-left-color: inherit !important;
+}
+.lyteRight::after{
+    content: "";
+    position: absolute;
+    bottom: 25%;
+    left: -5px;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color:  transparent #222 transparent transparent ;
+    border-right-color: inherit !important;
+}
+span.lyteTooltip.lyteBottom::after{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color:  transparent transparent #222 transparent ;
+    border-bottom-color: inherit !important;
+}
+span.lyteTooltip.lyteTop::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color:  #222 transparent transparent transparent ;
+    border-top-color: inherit !important;
+}
+span.lyteTooltip.lyteBottomright::after{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 20%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color:  transparent transparent #222 transparent ;
+    border-bottom-color: inherit !important;
+}
+span.lyteTooltip.lyteTopright::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 20%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color:  #222 transparent transparent transparent ;
+    border-top-color: inherit !important;
+}
+span.lyteTooltip.lyteBottomleft::after{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 80%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color:  transparent transparent #222 transparent ;
+    border-bottom-color: inherit !important;
+}
+span.lyteTooltip.lyteTopleft::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 80%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color:   #222 transparent transparent transparent ;
+    border-top-color: inherit !important;
+}
+span.lyteTooltip.lyteTooltipHidden{
+    display: none !important;
+}

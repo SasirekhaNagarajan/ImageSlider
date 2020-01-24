@@ -1,0 +1,49 @@
+lyte-accordion-item {
+    margin: 0;
+    border-bottom: 0;
+}
+lyte-accordion-header{
+    padding: 15px;
+    background: #f9f9f9;
+    color: #333;
+}
+.lyteAccordionActive lyte-accordion-header {
+    color: #333;
+}
+lyte-accordion-body{
+    width: auto;
+    padding: 0px;
+    margin-bottom: 0px;
+    padding-left: 15px;
+}
+lyte-icon.lyteAccordionArrow {
+    background: url(../images/lyte_ui_sprite.svg) no-repeat -45px -3px;
+    width: 11px;
+    height: 6px;
+    float: right;
+    margin-top: 5px;
+    position: static;
+}
+.lyteAccordionActive lyte-icon.lyteAccordionArrow{
+    transform: rotate(180deg);
+    background-position: -45px -3px;
+    width: 11px;
+    height: 6px;
+}
+lyte-icon.lyteAccordionPlus {
+    background: url(../images/lyte_ui_sprite.svg) no-repeat -30px -1px;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    float: right;
+    margin-top: 5px;
+}
+.lyteAccordionActive lyte-accordion-body {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.lyteAccordionActive lyte-icon.lyteAccordionPlus{
+    background-position: -30px -165px;
+    height: 3px;
+    margin-top: 8px;
+}

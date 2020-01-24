@@ -1,0 +1,82 @@
+lyte-th.lyteFixedColumn:not(.lytePreventIcon)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #222 transparent transparent transparent;
+  z-index: 7;
+}
+lyte-table {
+  display: block;
+  height: inherit;
+}
+lyte-table-structure {
+  text-align: left;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 0;
+}
+lyte-tr {
+    background: #fff;
+}
+lyte-th {
+  background: #fff;
+  font-size: 0.929rem;
+  padding: 8px 10px 8px 10px;
+  border-bottom: 3px double #e5e5e5;
+  white-space: normal;
+  vertical-align: inherit;
+}
+lyte-th.lyteTableFixed,
+lyte-td.lyteTableFixed {
+    box-shadow: none;
+}
+lyte-th.tableRowFixed {
+  position: relative !important;
+  z-index: 6;
+}
+lyte-table:not([dual-resize = true]) lyte-th:last-of-type lyte-tablehead-resize {
+  cursor: default;
+  position: absolute;
+  right: 0px;
+  height: 0px;
+  width: 0px;
+  top: 0px;
+  z-index: 0;
+  pointer-events: none;
+}
+ lyte-td {
+  padding: 8px 10px 8px 10px;
+  font-size: 1rem;
+  white-space: normal;
+  color: #666;
+  background: inherit;
+}
+lyte-table:not(.infinitescroll) lyte-tr:hover {
+  background: #f7f7f7;
+}
+lyte-table.border lyte-th {
+  border-bottom: 1px solid #e2e2e2;
+}
+.lyteTableSortHelper {
+  background: #e5cce6;
+  opacity: 0.4;
+  padding: 10px 60px;
+}
+lyte-table.infinitescroll lyte-td > div {
+   overflow: hidden;
+   height: 20px;
+}
+.infinitescroll .lytePreventInfiniteScroll lyte-td > div {
+   overflow: hidden;
+   height: 26px;
+}
+.lyteHidden {
+    display: none !important;
+}
+.resizing .lyteScrollContainer.lyteScrollContainerY{
+  visibility: hidden !important;
+}

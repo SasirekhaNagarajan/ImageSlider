@@ -1,0 +1,60 @@
+.tree() {
+    @bg: @treeBg;
+	@padding-left: 50px;
+}
+.treeBody() {
+	@margin-top: 20px;
+}
+.treeBodylastoftype() {
+	@w: 3px;
+	@h: calc(100% - 18px);
+	@bg: @treeBg;
+	@left: -43px;
+	@top: 9px;
+}
+.treeContentBefore() {
+	@w: 30px;
+	@h: 1px;
+	@border-bottom: 1px dashed @treeBorderColor;
+	@left: -38px;
+	@top: 9px;
+}
+.treeMainContainerBefore() {
+	@w: 1px;
+	@h: calc(100% - 34px);
+	@border-left: 1px dashed @treeBorderColor;
+	@top: 25px;
+	@left: 8px;
+}
+.iconCollpaseBox() {
+	@w: 16px;
+	@h: 16px;
+}
+.iconHoverCollpaseBox() {
+	@border-color: @treeCollpaseHoverBorder;
+}
+.treeValue() {
+	@font-size: 14px;
+	@color: @treeTextcolor;
+	@margin-left: 5px;
+}
+.iconHoverTreeValue() {
+	@color: @treeTextHovercolor;
+}
+.treeOpenIconArrow() {
+	@bg-img: @lytesprite;
+	@bg-pos: -25px -107px;
+	@w: 16px;
+	@h: 16px;
+}
+.treeCloseIconArrow() {
+	@bg-img: @lytesprite;
+	@bg-pos: -1px -107px;
+	@w: 16px;
+	@h: 16px;
+}
+.treeNoChildText() {
+    @margin-left: 0;
+    @margin-top: -3px;
+    @color: @treeTextcolor;
+}

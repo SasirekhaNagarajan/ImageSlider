@@ -1,0 +1,278 @@
+.dropBox() {
+	@font-size: 15px;
+	@color: @dropdownTextColor;
+	@max-w: 430px;
+}
+.dropdown() {
+    @max-w: 330px;
+}
+.dropdownBtn() {
+	@border: 1px solid @dropdownBtnBorderColor;
+	@border-radius: @dropboxBorderRadius;
+	@padding: 7px 25px 7px 10px;
+	@color: @dropdownTextColor;
+	@bg: @dropdownBg;
+}
+.dropdownBtnHover() {
+	@border: 1px solid @dropdownBtnBorderHoverColor;
+}
+.dropBoxOnUpside() {
+    @border-radius: 0 0 @dropboxBorderRadius @dropboxBorderRadius;
+    @box-shadow: 0px 0px 6px 0px @dropBoxBoxShadowColor;
+}
+.dropBoxOnDownside() {
+	@border-radius: @dropboxBorderRadius @dropboxBorderRadius 0 0;    
+    @box-shadow: 0px 0px 6px 0px @dropBoxBoxShadowColor;
+}
+.calloutDropbutton() {
+    @border-radius: @dropboxBorderRadius;
+}
+.dropItem() {
+	@color: @dropdownTextColor;
+	@padding: 7px 15px 7px 25px;
+	@font-size: 15px;
+}
+.dropCurrentItem() {
+	@bg: @dropBoxItemHoverBg;
+}
+.dropSelectionTick() {
+	@bg-img: @lytesprite;
+	@bg-pos: -33px -15px;
+	@w: 9px;
+	@h: 7px;
+	@left: 10px;
+	@top: 15px;
+}
+.dropSelectionArrow() {
+	@bg-img: @lytesprite;
+	@bg-pos: -1px -2px;
+	@w: 8px;
+	@h: 4px;
+	@top: calc(50% - 2px);
+	@right: 10px;
+    @opacity: 0.5;
+}
+.dropdownMultipleBtn() {
+	@min-height: 25px;
+    @padding-right: 17px;
+}
+.dropdownMultipleArrow() {
+	@bg-img: @lytesprite;
+	@bg-pos: -1px -2px;
+	@w: 8px;
+	@h: 4px;
+	@right: 10px;
+	@top: 15px;
+    @opacity: 0.5;
+}
+.MultipleSelect() {
+	@bg: #f1f1f1;
+	@color: @dropdownTextColor;
+	@border: 1px solid #e8e8e8;
+	@margin: 3px 1px;
+	@border-radius: @dropboxBorderRadius;
+	@font-size: 15px;
+	@padding: 1px 25px 3px 7px;
+}
+.multipleSelectInputLi() {
+    @bg: @dropdownBg;
+    @border: 0;
+    @padding: 0;
+    @margin: 0;
+    @w: 150px;
+}
+.DropPlaceholderMultiple() {
+	@font-size: 14px;
+	@color: #999;
+    @padding-left: 0;
+}
+.multiSelectCloseContainer() {
+    @w: 18px;
+    @h: 100%;
+    @top: 0;
+    @bottom: 0;
+    @right: 0;
+    @border-radius: 0 @dropboxBorderRadius @dropboxBorderRadius 0;
+}
+.multiSelectCloseHover() {
+    @bg: #e8e8e8;
+}
+.multiSelectClose() {
+	@bg-img: @lytesprite;
+	@bg-pos: -54px -2px;
+	@w: 8px;
+	@h: 8px;
+	@top: calc(50% - 4px);
+	@right: 5px;
+    @opacity: 0.7;
+}
+.multiSelectCloseHover() {
+    @opacity: 1;
+}
+.DropdownNoResult() {
+	@padding: 5px 15px 15px;
+	@font-size: 14px;
+	@color: #8a8a8a;
+}
+.dropButton() {
+    @w: 100%;
+	@font-size: 14px;
+	@color: @dropdownTextColor;
+	@padding: 0;
+}
+.multiSelectDropdown() {
+	@padding: 7px 10px;
+}
+.dropBox1() {
+	@bg: @dropdownBg;
+	@border: 1px solid @dropBoxBorderColor;
+    @box-shadow: 0px 2px 6px 0px @dropBoxBoxShadowColor;
+	@z-index: @dropboxzIndex;
+	@border-radius: 0 0 @dropboxBorderRadius @dropboxBorderRadius;
+	@transform: translateY(-1px);
+}
+.dropBoxCurve() {
+    @border-radius: 0 @dropboxBorderRadius @dropboxBorderRadius @dropboxBorderRadius;
+}
+.dropBoxUpside() {
+    @border-radius: @dropboxBorderRadius @dropboxBorderRadius 0 0;
+    @box-shadow: 0px -2px 6px 0px @dropBoxBoxShadowColor;
+    @transform: translateY(1px);
+}
+.callOutDropBox() {
+    @border-radius: @dropboxBorderRadius;
+    @box-shadow: 0 0 3px 0 @dropBoxBoxShadowColor;
+}
+.dropBoxArrow() {
+	@bg: #ededed;
+	@w: 328px;
+	@h: 1px;
+	@top: -1px;
+    @left: -1px;
+}
+.dropBoxUpsideArrow() {
+    @top: unset;
+    @bottom: -1px;
+}
+.dropBoxUpsideCurve() {
+    @border-radius: @dropboxBorderRadius @dropboxBorderRadius @dropboxBorderRadius 0;
+}
+.dropboxSearch() {
+	@padding-left: 35px;
+}
+.dropboxUpsideSearchInput() {
+    @border-radius: @dropboxBorderRadius @dropboxBorderRadius 0 0;
+}
+.dropFooter() {
+	@border-top: 1px solid #ddd;
+}
+.dropBody() {
+	@padding: 5px 0;
+	@max-height: 210px;
+}
+.dropBoxSearchIcon() {
+	@top: 10px;
+	@left: 10px;
+}
+.dropBoxFooter() {
+	@border-top: 1px solid #ddd;
+}
+.lyteDropdownAction() {
+	@padding: 7px 10px;
+	@font-size: 14px;
+}
+.dropLabel() {
+	@font-size: 15px;
+    @padding: 10px 10px 3px;
+}
+.dropLabelFirst() {
+    @padding-top: 5px;
+}
+.lyteDropdownZIndex() {
+    @z-index: @dropboxzIndex - 5;
+}
+.disableDropBtn() {
+	@bg: #f3f3f3;
+	@color: #999;
+}
+.disabledDropdownArrow() {
+	@opacity: 0.3;
+}
+.DropPlaceholderNormal() {
+	@margin-right: 20px;
+	@color: #828282;
+}
+.multiSelectDropMark() {
+    @bg: #eef5fa;
+    @border: 1px solid #3ea7fc;
+}
+.multiSelectDropMarkHover() {
+    @bg: #daebf7;
+}
+.MarginRight() {
+	@margin-right: 20px;
+}
+.DropdownText() {
+	@margin-right: 20px;
+}
+.lyteArrowIcon() {
+	@border-bottom: 8px solid @dropdownBg;
+}
+.lyteArrowBeforeAfter() {
+	@border: 8px solid transparent;
+}
+.lyteArrowTopBeforeAfter() {
+	@bottom: 0;
+	@left: 0;
+}
+.ArrowTopAfter() {
+	@border-bottom-color: @dropdownBg;
+	@margin-left: -8px;
+}
+.arrowTopBefore() {
+	@border-bottom-color: @dropBoxArrowBg;
+	@border-width: 10px;
+	@margin-left: -10px;
+}
+.arrowbottom() {
+	@bottom: -8px;
+}
+.lyteArrowBottomBeforeAfter() {
+	@top: 0;
+	@left: 0;
+}
+.ArrowBottomAfter() {
+	@border-top-color: @dropdownBg;
+	@margin-left: -8px;
+}
+.arrowBottomBefore() {
+	@border-top-color: @dropBoxArrowBg;
+	@border-width: 10px;
+	@margin-left: -10px;
+}
+.lyteArrowRightBeforeAfter() {
+	@left: 0;
+	@top: 0;
+}
+.ArrowRightAfter() {
+	@border-left-color: @dropdownBg;
+	@margin-top: -8px;
+}
+.arrowRightBefore() {
+	@border-left-color: @dropBoxArrowBg;
+	@border-width: 10px;
+	@margin-top: -10px;
+}
+.lyteArrowLeftBeforeAfter() {
+	@right: 0;
+	@top: 0;
+}
+.arrowLeftAfter() {
+	@border-right-color: @dropdownBg;
+	@margin-top: -8px;
+}
+.arrowLeftBefore() {
+	@border-right-color: @dropBoxArrowBg;
+	@border-width: 10px;
+	@margin-top: -10px;
+}

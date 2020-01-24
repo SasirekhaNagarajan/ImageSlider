@@ -1,0 +1,37 @@
+/* Default theme imported */
+
+@import "../themes/default/ui-elements/search/search.variables.less";
+
+/* Loading theme in configuration */
+
+@import "../config.less";
+
+@import (optional) "../themes/@{search}/ui-elements/search/search.variables.less";
+
+/* rtl files loading */
+
+@import (multiple,optional) "../themes/default/global/@{direction}.less";
+
+@import (multiple,optional) "../themes/@{search}/global/@{direction}.less";
+
+/* Loading custom themes */
+
+@import (optional) "../overrides/ui-elements/search.variables.less";
+
+/* Search CSS BEGINS */
+
+.lyteSearchHidden {
+	display: none !important;
+}
+
+
+/* import theme overrides - styles */
+@import (optional) "../themes/@{search}/ui-elements/search/search.styles.less";
+
+
+
+
+/* import custom css - final tweaks by the user */
+@import (optional) "../overrides/ui-elements/search.overrides.less";
+
+/* Search CSS ENDS */

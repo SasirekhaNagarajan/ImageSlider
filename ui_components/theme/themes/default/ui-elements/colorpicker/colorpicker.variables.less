@@ -1,0 +1,209 @@
+.ColorPicker() {
+	@border: 1px solid @LCP_BorderColor;
+	@box-shadow: 0 0 5px 1px @LCP_boxShadowColor;
+}
+.ColorPicker__showhidecontainer() {
+	@padding: 0;
+    @font-size: 13px;
+}
+.ColorPicker__default() {
+    @w: 220px;
+}
+.ColorPicker__nocolorbutton() {
+    @padding: 8px 15px 8px;
+    @border-bottom: 1px solid @LCP_BorderColor;
+}
+.nocolorIcon() {
+    @w: 11px;
+    @h: 11px;
+    @bg-pos: -43px -79px;
+    @opacity: 0.6;
+	@margin-right: 5px;
+}
+.ColorPicker__nocolorbuttonHover() {
+    @bg: @LCP_morelinkHoverBg;
+}
+.ColorPicker__palettecontainer() {
+	@border-bottom: 1px solid @LCP_BorderColor;
+	@padding: 8px 15px 15px;
+}
+.ColorPicker__paletteheading() {
+    @color: @LCP_commonText;
+	@margin-bottom: 10px;
+}
+.ColorPicker__navigatable() {
+	@padding: 10px 15px;
+    @border-radius: 0 0 2px 2px;
+}
+.ColorPicker__navigatableHover() {
+	@bg: @LCP_morelinkHoverBg;
+}
+.ColorPicker__colorpan() {
+	@w: 15px;
+	@h: 15px;
+	@margin: 0 2px;
+	@border: 1px solid @LCP_colorpanBorderColor;
+}
+.default__colors() {
+	@border: 1px solid transparent;
+}
+.default__colorsFirstChild() {
+	@margin-bottom: 5px;
+	@border: 1px solid @LCP_colorpanBorderColor;
+}
+.colorpickerColorPanHover() {
+    @border-color: @LCP_colorpanHoverBorderColor;
+}
+.LCP_SelectedColorBefore() {
+	@w: 8px;
+	@h: 4px;
+    @border-left: 1px solid #fff;
+    @border-bottom: 1px solid #fff;
+	@top: 2px;
+	@left: 2px;
+}
+.LCP_WhiteSelectedColorBefore() {
+    @border-left: 1px solid #333;
+    @border-bottom: 1px solid #333;
+}
+.ColorPicker__text() {
+	@color: @LCP_advancedLink;
+}
+.LCP_rightArrow() {
+	@bg-img: @lytesprite;
+	@w: 4px;
+	@h: 7px;
+	@bg-pos: -97px -26px;
+    @margin-top: 3px;
+}
+.ColorPicker__icon() {
+	@w: 14px;
+	@h: 11px;
+	@bg-pos: -110px -58px;
+	@margin-right: 5px;
+    @opacity: 0.6;
+}
+.ColorPickerAdvanced() {
+	@padding: 10px;
+	@w: 260px;
+}
+.colorDivMixin() {
+    @border: 1px solid @LCP_inputBorder;
+    @border-radius: 2px;
+}
+.lyteCPImgDiv() {
+	@h: 160px;
+	@bg-img: url(../../images/lyteCPbgGradient.png);
+}
+.colorSlider_palette_circle() {
+	@border: 2px solid @LCP_colorSliderHandle;
+	@h: 8px;
+	@w: 8px;
+}
+.ColorPicker__previewDiv() {
+	@padding: 3px 0px;
+}
+.ColorPicker__sliderDiv() {
+    @margin: 15px 0;
+}
+.colorSlider_hue_mixin() {
+    @margin-bottom: 15px;
+}
+.colorSlider_sliderHandle() {
+	@w: 5px;
+	@h: 10px;
+	@border-radius: 2px;
+	@border: 1px solid #000;
+	@top: 0;
+    @bg: #fff;
+}
+.colorSlider_hueBar_border() {
+	@w: 210px;
+    @border-radius: 6px;
+}
+.colorSlider_hueBar() {
+	@bg-img: linear-gradient(to right, red, #ff00dd, blue, aqua, #00ff00, yellow, red);
+	@h: 10px;
+	@border-radius: 6px;
+    @border: 1px solid rgba(0,0,0,0.3);
+}
+.previewDiv() {
+	@w: 32px;
+	@h: 32px;
+    @border-radius: 50%;
+    @border: 1px solid rgba(0,0,0,0.3);
+}
+.ColorPicker__commandbar() {
+	@margin: 10px 0 5px;
+}
+.selectFormat() {
+	@w: 70px;
+	@margin-right: 10px;
+}
+.selectFormatDropdown() {
+	@w: 70px;
+}
+.selectFormatDropbtn() {
+	@font-size: 12px;
+}
+.CPDropbox() {
+	@w: 70px;
+}
+.LCPDropboxItem() {
+	@padding: 5px;
+	@font-size: 12px;
+	@color: @LCP_formatdropdownColor;
+}
+.LCPDropItemSelection() {
+	@color: @LCP_formatdropdownActiveColor;
+}
+.colorPickerDD() {
+	@padding: 5px;
+}
+.selectFormatDropIcon() {
+	@bg-pos: -14px -2px;
+	@w: 9px;
+	@h: 5px;
+}
+.showValue() {
+	@w: calc(100% - 85px);
+}
+.cpValFormatIpSecondRowTd() {
+	@font-size: 12px;
+	@color: #9b9b9b;
+}
+.cpValFormatIpTd() {
+	@padding: 0;
+}
+.cpValFormatFirstRowTd() {
+    @padding-left: 5px;
+}
+.showValueField() {
+	@border: 1px solid @LCP_inputBorder;
+}
+.showValueInput() {
+	@padding: 5px 4px;
+	@font-size: 12px;
+}
+.showValueInputHover() {
+	@border: 1px solid @LCP_inputHoverBorder;
+}
+.showValueInputFocus() {
+	@border: 1px solid @LCP_inputHoverBorder;
+}
+.showValueInputBox() {
+	@w: 40px;
+}
+.lyteCPShowValueMixin() {
+	@w: 128px;
+}
+.ColorPicker__transparentbg() {
+    @border-radius: 6px;
+    @bg: url(../../images/lyteCP_op_slider_bg.png);
+}
+.CP__transparentbg() {
+    @bg: url(../../images/lyteCP_op_slider_bg.png);
+    @border-radius: 50%;
+    @w: 34px;
+    @h: 34px;
+}

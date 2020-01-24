@@ -1,0 +1,426 @@
+/* Default theme imported */
+@import "../themes/default/ui-elements/colorpicker/colorpicker.variables.less";
+
+
+
+
+/* Loading theme in configuration */
+@import "../config.less";
+@import (optional) "../themes/@{colorpicker}/ui-elements/colorpicker/colorpicker.variables.less";
+
+
+/* rtl files loading */
+
+@import (multiple,optional) "../themes/default/global/@{direction}.less";
+
+@import (multiple,optional) "../themes/@{colorpicker}/global/@{direction}.less";
+
+/* Loading final tweaks to your variables */
+@import (optional) "../overrides/ui-elements/colorpicker.variables.less";
+
+
+
+/* LYTE-COLORPICKER BEGINS */
+
+.lyteColorPicker {
+	.ColorPicker();
+	display: inline-block;
+	border: @border;
+	box-shadow: @box-shadow;
+}
+.lyteColorPicker.popColorPicker {
+    display: none;
+}
+.lyteColorPicker__showhidecontainer {
+	.ColorPicker__showhidecontainer();
+	overflow: hidden;
+	padding: @padding;
+	position: relative;
+	text-align: @value-textalign-left;
+	font-size: @font-size;
+    font-family: @proxima;
+}
+/*  Colorpicker basic section related code begins    */
+.lyteColorPicker__default {
+    .ColorPicker__default();
+    width: @w;
+	display: flex;
+	flex-direction: column;
+}
+.lyteColorPicker__nocolorbutton {
+    .ColorPicker__nocolorbutton();
+    padding: @padding;
+    border-bottom: @border-bottom;
+    cursor: pointer;
+}
+.lyteColorPicker__noFill {
+    .nocolorIcon();
+	background: @lytesprite;
+	width: @w;
+	height: @h;
+	background-position: @bg-pos;
+	opacity: @opacity;
+    @{property-margin-right}: @margin-right;
+	display: inline-block;
+	vertical-align: middle;
+}
+.lyteColorPicker__nocolorbutton svg {
+    display: none;
+}
+.lyteColorPicker__nocolorbutton:hover {
+    .ColorPicker__nocolorbuttonHover();
+    background: @bg;
+}
+.lyteColorPicker__palettecontainer {
+	.ColorPicker__palettecontainer();
+	border-bottom: @border-bottom;
+	order: 0;
+	padding: @padding;
+}
+.lyteColorPicker__palette {
+	font-size: 0;
+}
+.lyteColorPicker__paletteheading {
+	.ColorPicker__paletteheading();
+	cursor: default;
+    color: @color;
+	margin-bottom: @margin-bottom;
+}
+.lyteColorPicker__palettecontainer.usedColor__container {
+	order: 1;
+}
+.lyteColorPicker__navigatable {
+	.ColorPicker__navigatable();
+	order: 2;
+	padding: @padding;
+    border-radius: @border-radius;
+	cursor: pointer;
+}
+.lyteColorPicker__navigatable:hover {
+	.ColorPicker__navigatableHover();
+	background: @bg;
+}
+.lyteColorPicker__colorfieldcontainer {
+	display: none;
+	order: 3;
+}
+.lyteColorPicker__palette ul {
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+}
+.lyteColorPicker__colorpan {
+	.ColorPicker__colorpan();
+	width: @w;
+	height: @h;
+	margin: @margin;
+	border: @border;
+	border-radius: 0;
+	display: inline-block;
+	cursor: pointer;
+	box-sizing: border-box;
+	position: relative;
+}
+.default__colors .lyteColorPicker__colorpan {
+	.default__colors();
+	border: @border;
+}
+.default__colors:first-child .lyteColorPicker__colorpan {
+	.default__colorsFirstChild();
+	margin-bottom: @margin-bottom;
+	border: @border;
+}
+.default__colors:nth-child(2),
+.default__colors:nth-child(3) {
+    display: none;
+}
+.lyteColorPicker__colorpan:hover {
+    .colorpickerColorPanHover();
+	border-color: @border-color;
+}
+.default__colors:first-child .lyteColorPicker__colorpan:hover {
+	border-color: rgba(17, 17, 17, 0.3);
+}
+.lyteColorPicker__colorpan.lyteCPSelectedColor::before {
+	.LCP_SelectedColorBefore();
+	content: '';
+	position: absolute;
+    border-left: @border-left;
+    border-bottom: @border-bottom;
+	width: @w;
+	height: @h;
+	top: @top;
+    left: @left;
+    transform: rotate(-45deg)
+}
+.lyteColorPicker__colorpan.lyteCPSelectedColor[lt-prop-title="#FFFFFF"]::before {
+    .LCP_WhiteSelectedColorBefore();
+    border-left: @border-left;
+    border-bottom: @border-bottom;
+}
+.lyteColorPicker__text {
+	.ColorPicker__text();
+	display: inline-block;
+	vertical-align: middle;
+	color: @color;
+}
+.LCP_rightArrow {
+	.LCP_rightArrow();
+	background-image: @bg-img;
+	width: @w;
+	height: @h;
+	background-position: @bg-pos;
+	display: inline-block;
+	vertical-align: middle;
+    margin-top: @margin-top;
+    & when (@rtlEnabled = true) {
+        transform: @value-rotate-0deg;
+    }
+}
+.lyteColorPicker__icon {
+	.ColorPicker__icon();
+	background: @lytesprite;
+	width: @w;
+	height: @h;
+	background-position: @bg-pos;
+	opacity: @opacity;
+    @{property-margin-right}: @margin-right;
+	display: inline-block;
+	vertical-align: middle;
+}
+/*  Colorpicker basic section related code ends    */
+/*  Colorpicker advanced section related code begins    */
+.lyteColorPicker--advanced {
+	.ColorPickerAdvanced();
+	padding: @padding;
+	width: @w;
+}
+.colorDiv {
+    .colorDivMixin();
+	overflow: hidden;
+	position: relative;
+	cursor: default;
+    touch-action: none;
+    border: @border;
+    border-radius: @border-radius;
+}
+#lyteCPImgDiv {
+	.lyteCPImgDiv();
+	height: @h;
+	background-image: @bg-img;
+	background-repeat: round;
+}
+.colorSlider_palette_circle {
+	.colorSlider_palette_circle();
+	border: @border;
+	border-radius: 50%;
+	height: @h;
+	width: @w;
+	cursor: pointer;
+	position: absolute;
+	z-index: 10;
+}
+.lyteColorPicker__previewDiv {
+	.ColorPicker__previewDiv();
+	padding: @padding;
+	position: relative;
+}
+.lyteColorPicker__opacityslider,
+.colorSlider_hue {
+    position: relative;
+	vertical-align: middle;
+    touch-action: none;
+}
+.lyteColorPicker__sliderDiv {
+    .ColorPicker__sliderDiv();
+    display: flex;
+    margin: @margin;
+}
+.colorSlider_hue {
+    .colorSlider_hue_mixin();
+    margin-bottom: @margin-bottom;
+}
+.opacityslider__circlethumb,
+.colorSlider_sliderHandle {
+	.colorSlider_sliderHandle();
+	width: @w;
+	height: @h;
+	border-radius: @border-radius;
+	border: @border;
+	position: absolute;
+	z-index: 14;
+	top: @top;
+    background: @bg;
+}
+.lyteColorPicker__transparentbg,
+.colorSlider_hueBar_border {
+	.colorSlider_hueBar_border();
+    width: @w;
+    border-radius: @border-radius;
+}
+.opacityslider__track,
+.colorSlider_hueBar {
+	.colorSlider_hueBar();
+	background-image: @bg-img;
+	height: @h;
+	border-radius: @border-radius;
+    border: @border;
+}
+.opacityslider__track {
+    background-image: none;
+}
+.opacityPreviewDiv__transparentbg,
+.previewDiv {
+	.previewDiv();
+	width: @w;
+	height: @h;
+	cursor: pointer;
+    border-radius: @border-radius;
+    border: @border;
+}
+.lyteColorPicker__commandbar {
+	.ColorPicker__commandbar();
+	margin: @margin;
+	display: flex;
+}
+.LCP_backbtn {
+    @{property-margin-right}: auto;
+}
+.selectFormat {
+	.selectFormat();
+	width: @w;
+	display: inline-block;
+	vertical-align: top;
+    @{property-margin-right}: @margin-right;
+}
+.selectFormat lyte-dropdown {
+	.selectFormatDropdown();
+	display: block;
+	width: @w;
+}
+.selectFormat lyte-dropdown lyte-drop-button {
+	.selectFormatDropbtn();
+	font-size: @font-size;
+}
+.lyteCPDropbox {
+	.CPDropbox();
+	width: @w;
+}
+.lyteCPDropbox .lyteArrow {
+    .CPDropbox();
+    width: @w;
+}
+.lyteCPDropbox lyte-drop-item {
+	.LCPDropboxItem();
+	padding: @padding;
+	font-size: @font-size;
+	color: @color;
+}
+.lyteCPDropbox lyte-drop-item[selected="true"] {
+	.LCPDropItemSelection();
+	color: @color;
+}
+.lyteCPDropbox lyte-drop-item[selected="true"]::before {
+	content: none;
+}
+.selectFormat .colorPickerDD {
+	.colorPickerDD();
+	padding: @padding;
+}
+.selectFormat lyte-dropdown lyte-icon.dropdown {
+	.selectFormatDropIcon();
+	background-position: @bg-pos;
+	width: @w;
+	height: @h;
+}
+.showValue {
+	.showValue();
+	display: inline-block;
+	vertical-align: top;
+	width: @w;
+}
+.cpValFormatIp {
+	border-spacing: 0;
+}
+.cpValFormatIp lyte-tr:nth-child(2) lyte-td {
+	.cpValFormatIpSecondRowTd();
+	font-size: @font-size;
+	color: @color;
+	text-align: center;
+}
+.cpValFormatIp lyte-td {
+	.cpValFormatIpTd();
+    vertical-align: top;
+	padding: @padding;
+    border-bottom: 0;
+    min-width: auto;
+}
+.cpValFormatIp lyte-tr:first-child lyte-td {
+    .cpValFormatFirstRowTd();
+    @{property-padding-left}: @padding-left;
+}
+
+.cpValFormatIp lyte-tr:first-child lyte-td:first-child {
+    @{property-padding-left}: 0;
+}
+
+.showValue .lyteField {
+    .showValueField();
+	border: @border;
+}
+.showValue .lyteInputBox input {
+	.showValueInput();
+	padding: @padding;
+	font-size: @font-size;
+	min-width: auto;
+	text-align: center;
+}
+.showValue .lyteInputBox .lyteField:hover {
+	.showValueInputHover();
+	border: @border;
+}
+.showValue .lyteInputBox.lyteInputFocus .lyteField {
+	.showValueInputFocus();
+	outline: none;
+	border: @border;
+}
+.showValue .lyteInputBox.vertical {
+	.showValueInputBox();
+	width: @w;
+}
+#lyteCPShowValue {
+    .lyteCPShowValueMixin();
+	width: @w;
+}
+#lyteCPShowValue.lyteInputBox input {
+    text-align: @value-textalign-left;
+}
+.lyteColorPicker__transparentbg{
+    .ColorPicker__transparentbg();
+    border-radius: @border-radius;
+    background: @bg;
+}
+.lyteCP__transparentbg {
+    .CP__transparentbg();
+    background: @bg;
+    border-radius: @border-radius;
+    width: @w;
+    height: @h;
+    @{property-margin-left}: auto;
+}
+.lyteCPHexText lyte-td:first-child {
+    visibility: hidden;
+}
+/*  Colorpicker advanced section related code ends    */
+
+
+/* import theme overrides - styles */
+@import (optional) "../themes/@{colorpicker}/ui-elements/colorpicker/colorpicker.styles.less";
+
+
+
+
+/* import custom css - final tweaks by the user */
+@import (optional) "../overrides/ui-elements/colorpicker.overrides.less";
+
+/* LYTE-COLORPICKER ENDS */

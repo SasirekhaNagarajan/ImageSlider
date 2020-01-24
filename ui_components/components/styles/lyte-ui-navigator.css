@@ -1,0 +1,118 @@
+lyte-navigator {
+	display: block;
+}
+.lyteNavigator {
+	width: 100%;
+	white-space: nowrap;
+	display: block;
+	text-align: center;
+	-webkit-user-select: none; /* webkit (safari, chrome) browsers */ -moz-user-select: none; /* mozilla browsers */ -khtml-user-select: none; /* webkit (konqueror) browsers */ -ms-user-select: none; /* IE10+ */
+
+}
+.lyteDoubleBack, .lyteSingleBack, .lyteNavigatorMidPoint, .lyteDoubleFront, .lyteSingleFront {
+	display: inline-block;
+	
+}
+.lyteNavigatorMidPoint {
+	vertical-align: top;
+}
+.lyteIconDoubleBack, .lyteIconSingleBack, .lyteIconSingleFront, .lyteIconDoubleFront {
+	cursor: pointer;
+	opacity: 0.7;
+}	
+.lyteIconDoubleBack {
+	background: url('../images/lyte_ui_sprite.svg') no-repeat -244px -1px;
+	width: 29px;
+	height: 20px;
+	display: inline-block;
+}
+.lyteIconSingleBack {
+	background: url('../images/lyte_ui_sprite.svg') no-repeat -273px -1px;
+	width: 25px;
+	height: 20px;
+	display: inline-block;
+}
+.lyteIconSingleFront {
+	background: url('../images/lyte_ui_sprite.svg') no-repeat -298px -1px;
+	width: 25px;
+	height: 20px;
+	display: inline-block;
+}
+.lyteIconDoubleFront {
+	background: url('../images/lyte_ui_sprite.svg') no-repeat -322px -1px;
+	width: 29px;
+	height: 20px;
+	display: inline-block;
+}
+div.lyteDisabled{
+	pointer-events: none;
+	opacity: 0.2;
+}
+a.lyteDisabled{
+	pointer-events: none;
+	opacity: 0.5;
+	cursor:default !important;
+}
+lyte-navigator span.lyteNavigatorText{
+	display: inline-block;
+	color: #bbb;
+}
+.lytepagination {
+    display: inline-block;
+    -webkit-user-select: none; /* webkit (safari, chrome) browsers */ -moz-user-select: none; /* mozilla browsers */ -khtml-user-select: none; /* webkit (konqueror) browsers */ -ms-user-select: none; /* IE10+ */
+
+}
+.lyteNavArrow{
+	color: black;
+    float: left;
+    padding: 8px 16px;
+     width: auto;
+	height: auto;
+    display: inline-block;cursor: pointer;margin-right: 10px; 
+}
+.lyteNavArrowBorder{
+	color: black;
+    float: left;
+    padding: 8px 16px;
+     width: auto;
+	height: auto;
+    display: inline-block;cursor: pointer;
+}
+.lytepage {
+   	color: black;
+    float: left;
+    
+    width: auto;
+	height: auto;
+    display: inline-block;
+}
+.lytepagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.lytepaginationborder {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.lyteborder{
+	border: 1px solid #ddd; box-shadow: 0 2px 2px grey;
+}
+.lyteActiveAdd {
+    background-color: #72c880 ;
+    color: white;
+}
+.lyteNavArrow:hover
+{
+	background-color: #ddd;
+	text-transform: none;
+}
+.lyteNavArrowBorder:hover
+{
+	background-color: #ddd;
+	text-transform: none;
+}
+.lytepagination a:hover {background-color: #ddd;}

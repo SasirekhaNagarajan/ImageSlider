@@ -1,0 +1,57 @@
+.popoverWrapper() {
+    @top: 0;
+    @bottom: 0;
+    @left: 0;
+    @right: 0;
+    @z-index: @popoverzIndex;
+}
+.Popover() {
+	@bg: @popoverBg;
+	@border: 1px solid @popoverOuterBorder;
+	@box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.1);
+    @z-index: @popoverzIndex + 10;
+	@border-radius: 3px;
+}
+.popoverZoom() {
+    @transition: transform 0.4s ease, opacity 0.4s ease;
+}
+.popoverHeader() {
+	@font-size: 16px;
+	@color: @popoverTextColor;
+}
+.popoverFreeze() {
+	@z-index: 5;
+	@bg: @popoverFreezeBg;
+}
+.PopoverClose() {
+	@bg-img: @lytesprite;
+	@bg-pos: -52px 0px;
+	@w: 13px;
+	@h: 13px;
+	@right: 20px;
+	@top: 14px;
+}
+.popoverFooterButton() {
+    @margin-left: 7px;
+}
+.popoverArrow() {
+    @w: 11px;
+    @h: 11px;
+    @bg: @popoverBg;
+}
+.popoverArrowTop() {
+    @box-shadow: -1px -1px 0 0 @popoverOuterBorder;
+    @top: -5px;
+}
+.popoverArrowBottom() {
+    @box-shadow: 1px 1px 0 0 @popoverOuterBorder;
+    @bottom: -5px;
+}
+.popoverArrowRight() {
+    @box-shadow: 1px -1px 0 0 @popoverOuterBorder;
+    @right: -5px;
+}
+.popoverArrowLeft() {
+    @box-shadow: -1px 1px 0 0 @popoverOuterBorder;
+    @left: -5px;
+}

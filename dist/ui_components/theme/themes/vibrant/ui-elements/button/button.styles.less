@@ -1,0 +1,99 @@
+lyte-button button {
+	.lyteButtonCommon();
+	font-weight: @fontWeight;
+}
+
+lyte-button .lyteDefaultBtn:hover {
+    .lyteDefaultButtonHover();
+	background-color: @backgroundColor; 
+}
+
+lyte-button .lyteDefaultBtn:not(.lyteFailure):not(.lyteSuccess):focus {
+    .lyteDefaultButtonFocus();
+	background-color: @backgroundColor;
+	border: @border; 
+}
+
+lyte-button .lyteDefaultBtn:not(.lyteFailure):not(.lyteSuccess):active {
+    .lyteDefaultButtonActive();
+	background-color: @backgroundColor;
+	border: @border; 
+}
+
+.lytePrimaryBtn:active{
+    .lytePrimaryButtonActive();
+	border: @border;
+	background-color: @backgroundColor;
+}
+
+.lyteSecondary:hover{
+    .lyteSecondaryButtonHover();
+	border: @border;
+	background-color: @backgroundColor;
+}
+
+.lyteSecondary:active{
+    .lyteSecondaryButtonActive();
+	border: @border;
+	background-color: @backgroundColor;
+}
+
+.lyteFailure.lyteDefaultBtn{
+	background-color: @white;
+}
+
+.lyteSuccess.lyteDefaultBtn{
+   	background-color: @white;
+}
+
+.lyteSuccess.lyteDefaultBtn:hover{
+	.lyteSuccessDefaultButtonHover();
+	border: @border;
+}
+
+.lyteFailure:not(.lyteDefaultBtn):active{
+    .lyteFailureButtonActive();
+	border: @border;
+	background-color: @backgroundColor;
+    border-bottom: @borderBottom;
+}
+
+.lyteSuccess:not(.lyteDefaultBtn):active{
+    .lyteSuccessButtonActive();
+	border: @border;
+	background-color: @backgroundColor!important;
+    border-bottom: @borderBottom!important;
+}
+
+.lyteColorBtn {
+	.lyteColorBtn();
+	transition: @transition;
+	border: @border;
+}
+
+.lyteColorBtn:hover {
+	.lyteColorBtnHover();
+	transform: @transform;
+}
+
+.lyteColorBtn:focus {
+	.lyteColorBtnFocus();
+	transform: @transform;
+}
+
+.lyteBackgroundColorBtn {
+	.lyteBackgroundColorBtn();
+	transition: @transition;
+	border: @border;
+}
+
+.lyteBackgroundColorBtn:hover {
+	.lyteBackgroundColorBtnHover();
+	transform: @transform;
+}
+
+.lyteBackgroundColorBtn:focus {
+	.lyteBackgroundColorBtnFocus();
+	transform: @transform;
+}
+

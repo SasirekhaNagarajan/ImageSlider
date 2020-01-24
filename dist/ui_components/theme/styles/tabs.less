@@ -1,0 +1,268 @@
+/* Default theme imported */
+@import "../themes/default/ui-elements/tabs/tabs.variables.less";
+
+
+
+
+/* Loading theme in configuration */
+@import "../config.less";
+@import (optional) "../themes/@{tabs}/ui-elements/tabs/tabs.variables.less";
+
+/* rtl files loading */
+
+@import (multiple,optional) "../themes/default/global/@{direction}.less";
+
+@import (multiple,optional) "../themes/@{tabs}/global/@{direction}.less";
+
+
+/* Loading final tweaks to your variables */
+@import (optional) "../overrides/ui-elements/tabs.variables.less";
+
+
+
+/* LYTE-TABS CSS BEGINS */
+
+lyte-tabs {
+	.tabs();
+	display: block;
+	background: @bg;
+	position: relative;
+	width: 100%;
+	font-family: @primaryFont;
+}
+lyte-tab-head {
+	.tabHead();
+	display: flex;
+	border: @border;
+    box-sizing: border-box;
+}
+lyte-tab-title {
+	.tabTitle();
+	display: inline-block;
+	font-size: @font-size;
+	color: @color;
+	padding: @padding;
+    margin: @margin;
+	cursor: pointer;
+	box-sizing: border-box;
+	background: @bg;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+lyte-tab-title span {
+    display: inline-block;
+    vertical-align: middle;
+}
+lyte-tab-title:hover {
+	.tabTitlehover();
+	color: @color;
+}
+lyte-tab-title.lyteTabActive,
+lyte-tab-title.lyteTabActive:hover {
+	.tabactivehover();
+	color: @color;
+	font-weight: normal;
+}
+lyte-tab-body {
+	.tabBody();
+	display: block;
+	border: @border;
+	padding: @padding;
+	font-size: @font-size;
+	text-align: @value-textalign-left;
+    overflow: auto;
+    box-sizing: border-box;
+}
+lyte-tab-content {
+    .tabContent();
+    color: @color;
+}
+.lyteTabShow {
+	display: block;
+    flex-grow: 1;
+}
+.lyteTabHide {
+	display: none;
+}
+/*  Tab top starts */
+.lyteTabDefaultTop lyte-tab-body {
+    .tabTopBody();
+	border-top: @border-top;
+}
+.lyteTabDefaultTop lyte-tab-head {
+	.tabTopHead();
+	border-bottom-color: @border-bottom-color;
+}
+.lyteTabDefaultTop lyte-tab-title {
+	.tabTopTitle();
+	margin-bottom: @margin-bottom;
+	border-bottom: @border-bottom;
+}
+.lyteTabDefaultTop lyte-tab-title.lyteTabActive {
+	.tabTopActiveTitle();
+	border-bottom: @border-bottom;
+}
+.lyteTabDefaultTop lyte-tab-title:hover {
+	.tabTopTitleHover();
+	border-bottom-color: @border-bottom-color;
+}
+.lyteTabDefaultTop lyte-tab-title.lyteTabActive:hover {
+	.tabTopActiveTitleHover();
+	border-bottom-color: @border-bottom-color;
+}
+/*  Tab top ends */
+/*  Tab bottom starts */
+.lyteTabDefaultBottom lyte-yield {
+	display: flex;
+	flex-direction: column;
+}
+.lyteTabDefaultBottom lyte-tab-head {
+	.tabBottomTabHead();
+	order: 2;
+	border-top-color: @border-top-color;
+}
+.lyteTabDefaultBottom lyte-tab-body {
+    .tabBottomBody();
+	order: 1;
+	border-bottom: @border-bottom;
+}
+.lyteTabDefaultBottom lyte-tab-title {
+	.tabBottomTitle();
+	border-top: @border-top;
+	margin-top: @margin-top;
+}
+.lyteTabDefaultBottom lyte-tab-title.lyteTabActive {
+	.tabBottomActiveTitle();
+	border-top: @border-top;
+}
+.lyteTabDefaultBottom lyte-tab-title:hover {
+	.tabBottomTitleHover();
+	border-top-color: @border-top-color;
+}
+.lyteTabDefaultBottom lyte-tab-title.lyteTabActive:hover {
+	.TabBottomActiveTitleHover();
+	border-top-color: @border-top-color;
+}
+/*  Tab bottom ends */
+/*  Tab left and right starts */
+.lyteTabDefaultLeft lyte-yield {
+	display: flex;
+}
+.lyteTabDefaultLeft lyte-tab-head,
+.lyteTabDefaultRight lyte-tab-head {
+	.TabDefaultRight();
+	flex-direction: column;
+	flex-grow: 1;
+	padding: @padding;
+	width: @w;
+	text-align: @value-textalign-left;
+}
+.lyteTabDefaultLeft lyte-tab-head {
+    .tableLeftHead();
+    @{property-border-right}: @border-right;
+}
+.lyteTabDefaultLeft lyte-tab-body,
+.lyteTabDefaultRight lyte-tab-body {
+	.TabDefaultRightBody();
+	flex-grow: 10;
+	width: @w;
+    padding-top: @padding-top;
+}
+.lyteTabDefaultLeft lyte-tab-title.lyteTabActive,
+.lyteTabDefaultLeft lyte-tab-title.lyteTabActive:hover,
+.lyteTabDefaultRight lyte-tab-title.lyteTabActive,
+.lyteTabDefaultRight lyte-tab-title.lyteTabActive:hover {
+	.tabDefaultLeftActiveTitle();
+    @{property-border-left}: @border-left;
+	background: @bg;
+    @{property-margin-left}: @margin-left;
+    position: relative;
+    z-index: 10;
+}
+.lyteTabDefaultRight lyte-yield {
+	display: flex;
+	flex-direction: row-reverse;
+}
+.lyteTabDefaultRight lyte-tab-head {
+    .tabRightHead();
+	@{property-border-left}: @border-left;
+}
+.lyteTabDefaultLeft lyte-tab-title,
+.lyteTabDefaultRight lyte-tab-title {
+    .tabLeftRightTitle();
+    margin: @margin;
+    padding: @padding;
+}
+.lyteTabDefaultLeft lyte-tab-title:hover,
+.lyteTabDefaultRight lyte-tab-title:hover {
+	.tabDefaultRightTitleHover();
+	background: @bg;
+}
+/*  Tab left and right ends */
+
+.lyteTabCloseIcon {
+    .lyteTabCloseIcon();
+	background-image: @lytesprite;
+	background-position: @bg-pos;
+	width: @w;
+	height: @h;
+	display: inline-block;
+	vertical-align: middle;
+    @{property-margin-left}: @margin-left;
+    margin-top: @margin-top;
+}
+.lyteTabAlignStart {
+    justify-content: flex-start;
+}
+.lyteTabAlignCenter {
+    justify-content: center;
+}
+.lyteTabAlignEnd {
+    justify-content: flex-end;
+}
+.lyteTabOverflowV lyte-tab-title {
+    overflow: visible;
+}
+.lyteTabForceHide {
+    display: none;
+}
+#moreMenu {
+    .tabMoreMenu();
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    opacity: @opacity;
+    padding: @padding;
+}
+#moreMenu.lyteMenuSelected,
+#moreMenu:hover {
+    .tabMoreMenuHover();
+    opacity: @opacity;
+}
+#moreMenu span {
+    .tabKebebMenu();
+    background-image: @bg-img;
+    background-position: @bg-pos;
+    width: @w;
+    height: @h;
+}
+.lyteTabRightCollapse {
+    flex-flow: row-reverse;
+    justify-content: flex-start;
+}
+.lyteTabVH{
+	visibility: hidden;
+}
+
+/* import theme overrides - styles */
+@import (optional) "../themes/@{tabs}/ui-elements/tabs/tabs.styles.less";
+
+
+
+
+/* import custom css - final tweaks by the user */
+@import (optional) "../overrides/ui-elements/tabs.overrides.less";
+
+/* LYTE-TABS CSS ENDS   */

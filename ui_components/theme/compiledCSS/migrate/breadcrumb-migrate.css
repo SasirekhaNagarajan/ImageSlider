@@ -1,0 +1,161 @@
+lyte-breadcrumb-structure{
+	line-height: 1;
+    display: inline-block;
+    margin: 0 0;
+    vertical-align: middle;
+}
+ lyte-breadcrumb-item {
+	float: left;
+	margin-right: 10px;
+	padding : 0;
+	font-size: 14px;
+	position: relative;
+}
+lyte-breadcrumb-body {
+	font-size: 14px;    
+}
+.lyteBreadcrumbSlash lyte-breadcrumb-item:not(:last-of-type), .lyteBreadcrumbArrow lyte-breadcrumb-item:not(:last-of-type){
+	margin-right: 20px;
+}
+lyte-breadcrumb-item.lyteActive{
+	color: #2C7BD0;
+}
+.lyteBreadcrumbSlash lyte-breadcrumb-item:not(:last-of-type):after{
+	content: '/';
+	position: absolute;
+	right: -12px;
+	top:0;
+	color: #666;
+	opacity: 0.5;
+    background-image: none;
+}
+.lyteBreadcrumbArrow lyte-breadcrumb-item:not(:last-of-type):after{
+	content: '';
+	background: url(../images/lyte_ui_sprite.svg) no-repeat -191px -29px;
+	position: absolute;
+	right: -12px;
+	top:3px;
+	color: #666;
+	width: 4px;
+	height: 7px;
+	opacity: 0.5;
+}
+/*Stage css*/
+.lyteBreadcrumbBullet , .lyteBreadcrumbPlain, .lyteBreadcrumbFlat{
+	position: relative;
+	white-space: nowrap;
+}
+.lyteBreadcrumbBullet:before{
+	content: "";
+    display: block;
+    position: absolute;
+    top: 48%;
+    bottom: 38px;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    height: 1px;
+    background: #e3e3e3;
+}
+.lyteBreadcrumbBullet .lyteCompleted lyte-breadcrumb-head{
+	background: #2d7bd0 !important;
+	color: #fff;
+}
+.lyteBreadcrumbBullet .lyteCompleted:not(:first-child):before {
+	content: "";
+	display: block;
+    position: absolute;
+    top: 48%;
+    bottom: 38px;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    height: 1px;
+    background: #2d7bd0;
+}
+.lyteBreadcrumbBullet lyte-breadcrumb-head{
+    border: 1px solid #2d7bd0;
+    border-radius: 50%;
+    display: inline-block;
+    background: #fff;
+    position: relative;
+    text-align: center;
+    font-size: 11px;
+    box-sizing: border-box;
+    padding: 2px 5px;
+}
+.lyteBreadcrumbBullet lyte-breadcrumb-item{
+	margin-right: 0;
+}
+.lyteBreadcrumbBullet lyte-breadcrumb-body{
+	position: absolute;
+	top: -15px;
+	right: 0;
+	font-size: 12px;
+	color: #666;
+}
+.lyteBreadcrumbBullet lyte-breadcrumb-item:not(:first-child) {
+	padding-left: 60px;
+}
+/*lyte-breadcrumb-structure.lyteStageTwo {
+	overflow: hidden;
+}*/
+.lyteBreadcrumbPlain lyte-breadcrumb-item, .lyteBreadcrumbFlat lyte-breadcrumb-item {
+	margin-right: 0px;
+}
+.lyteBreadcrumbPlain lyte-breadcrumb-body, .lyteBreadcrumbFlat lyte-breadcrumb-body{
+	display: block;
+	float: left;
+	background: #eaeaea;
+	text-align: center;
+	padding: 10px 20px 10px 30px;
+	position: relative;
+	margin: 0 2px 0 0; 
+	font-size: 14px;
+	text-decoration: none;
+	color: #333;
+}
+.lyteBreadcrumbPlain lyte-breadcrumb-body:after,.lyteBreadcrumbFlat lyte-breadcrumb-body:after {
+	content: "";  
+	border-top: 17px solid transparent;
+	border-bottom: 17px solid transparent;
+	border-left: 17px solid #eaeaea;
+	position: absolute; right: -17px; top: 0;z-index: 1;
+}
+.lyteBreadcrumbPlain lyte-breadcrumb-body:before, .lyteBreadcrumbFlat lyte-breadcrumb-body:before {
+	content: "";  
+	border-top: 17px solid transparent;
+	border-bottom: 17px solid transparent;
+	border-left: 17px solid #fff;
+	position: absolute; left: 0; top: 0;
+}
+/*On progress css*/
+.lyteBreadcrumbFlat .lyteActive lyte-breadcrumb-body, .lyteBreadcrumbPlain .lyteActive lyte-breadcrumb-body{
+	background: #2d7bd0 !important;
+	color: #fff !important;
+}
+.lyteBreadcrumbFlat .lyteActive lyte-breadcrumb-body:after, .lyteBreadcrumbPlain .lyteActive lyte-breadcrumb-body:after{
+	border-left-color: #2d7bd0 !important;
+}
+/*Warning css*/
+.lyteBreadcrumbFlat .lyteWarning lyte-breadcrumb-body, .lyteBreadcrumbPlain .lyteWarning lyte-breadcrumb-body{
+	background: #ffb130 !important;
+	color: #fff !important;
+}
+.lyteBreadcrumbFlat .lyteWarning lyte-breadcrumb-body:after, .lyteBreadcrumbPlain .lyteWarning lyte-breadcrumb-body:after{
+	border-left-color: #ffb130 !important;
+}
+/*Completed css*/
+.lyteBreadcrumbFlat .lyteCompleted lyte-breadcrumb-body, .lyteBreadcrumbPlain .lyteCompleted lyte-breadcrumb-body{
+	background: #72c880 !important;
+	color: #fff !important;
+}
+.lyteBreadcrumbFlat .lyteCompleted lyte-breadcrumb-body:after, .lyteBreadcrumbPlain .lyteCompleted lyte-breadcrumb-body:after{
+	border-left-color: #72c880 !important;
+}
+.lyteBreadcrumbPlain lyte-breadcrumb-item:first-child lyte-breadcrumb-body:before{
+	border-left-color: transparent;
+} 
+lyte-breadcrumb{
+	display: inline-block;
+}

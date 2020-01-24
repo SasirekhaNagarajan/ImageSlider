@@ -1,0 +1,231 @@
+.calculatorOuter() {
+	@box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.1);
+	@border-radius: 3px;
+}
+.calculatorDiv() {
+	@border: 1px solid @calculatorBorder;
+	@border-radius: 3px;
+	@w: 220px;
+}
+.calculatorAdvanced() {
+	@w: 450px;
+}
+.calculatorDisplay() {
+	@bg: #fafafa;
+	@border-bottom: 1px solid @calculatorBorder;
+	@padding: 5px 20px;
+	@border-radius: 3px 3px 0 0;
+    @h: 45px;
+}
+.calculatorrad() {
+	@font-size: 12px;
+	@bottom: 5px;
+}
+.advancedCalculatorDisplay() {
+	@padding: 5px 15px;
+}
+.CalculatorTextField() {
+	@bg: #fafafa;
+	@font-size: 20px;
+	@color: @calculatorMainTextColor;
+	@h: 25px;
+}
+.calcDisplayEqualBtnTextField() {
+	@font-size: 14px;
+	@color: #777;
+	@h: 21px;
+}
+.advancedCalcBtnsCont() {
+	@w: 250px;
+}
+.calculatorSpanButtons() {
+	@w: 55px;
+	@h: 38px;
+	@border-right: 1px solid @calculatorBorder;
+	@border-bottom: 1px solid @calculatorBorder;
+	@bg: #f4f4f4;
+	@line-height: 40px;
+	@font-size: 15px;
+	@color: @calculatorMainTextColor;
+}
+.calcClearAc() {
+	@font-size: 14px;
+}
+.bacicCalcDoubleWidthSpan() {
+	@w: 110px;
+}
+.advancedCalculatorSpanButtons() {
+	@w: 50px;
+	@font-size: 14px;
+}
+.advanceModeCalcBasicButtons() {
+	@w: 50px;
+}
+.advanceModeCalcBasicDoubleWidthSpan() {
+	@w: 100px;
+}
+.advanceModeCalcBasicCalcCont() {
+	@w: 200px;
+}
+.calculatorButtonsHover() {
+	@bg: #eee;
+}
+.calculatorBasicOp() {
+	@bg: #6f92e9;
+	@font-size: 25px;
+}
+.calculatorEqualBtn() {
+    @color: #fff;
+}
+.calculatorDispspan() {
+	@font-size: 14px;
+	@color: #777;
+	@h: 22px;
+}
+.calcEqualBtnDispspan() {
+	@font-size: 20px;
+	@color: @calculatorMainTextColor;
+	@h: 25px;
+}
+.calculatorToggleMixin() {
+	@left: -18px;
+	@border: 1px solid @calculatorBorder;
+	@padding: 5px 3px;
+	@bg: #f0f0f0;
+	@top: 43px;
+}
+.calculatorsmallerMixin() {
+	@color: #f0f0f0;
+	@bg-img: @lytesprite;
+	@bg-pos: -40px -1px;
+	@w: 10px;
+	@h: 10px;
+	@transform: @value-rotate-180deg;
+}
+.advancedCalculatorSmaller() {
+	@transform: @value-rotate-0deg;
+}
+.calc15pxBtn() {
+	@font-size: 15px;
+}
+.calc16pxBtn() {
+	@font-size: 16px;
+}
+.calc17pxBtn() {
+	@font-size: 17px;
+}
+.advancedCalcSecond() {
+	@bg: #e4e4e4;
+}
+.memorymrActive() {
+	@bg: #e4e4e4;
+}
+.memorymrActiveBefore() {
+	@right: 5px;
+	@top: 5px;
+	@bg: #3663d4;
+	@w: 5px;
+	@h: 5px;
+}
+.calcLeft() {
+	@border-bottom-left-radius: 2px;
+}
+.advanceModeCalcBasicLeft() {
+	@border-bottom-left-radius: 0px;
+}
+.calcRight() {
+	@border-bottom-right-radius: 2px;
+}
+.calcMultiplyAfter() {
+	@bg-pos: -325px -110px;
+	@w: 14px;
+	@h: 12px;
+	@top: calc(50% - 6px);
+	@left: calc(50% - 7px);
+}
+.calcDivideAfter() {
+	@bg-pos: -348px -108px;
+	@w: 14px;
+	@h: 14px;
+	@top: calc(50% - 7px);
+	@left: calc(50% - 7px);
+}
+.calcAddAfter() {
+    @bg-pos: -73px -58px;
+    @w: 11px;
+    @h: 11px;
+    @top: calc(50% - 5px);
+    @left: calc(50% - 5px);
+}
+.calcSubAfter() {
+	@bg-pos: -309px -116px;
+	@w: 12px;
+	@h: 2px;
+    @top: calc(50% - 1px);
+	@left: calc(50% - 6px);
+}
+.squarerootInverseBefore() {
+	@bg-pos: -374px -107px;
+	@w: 20px;
+	@h: 18px;
+	@top: calc(50% - 9px);
+	@left: calc(50% - 10px);
+	@color: #222;
+	@font-size: 13px;
+	@line-height: 10px;
+	@text-indent: -2px;
+}
+.cuberootInverseBefore() {
+	@line-height: 6px;
+}
+.squarerootInverseAfter() {
+	@color: #222;
+	@top: 14px;
+	@line-height: 6px;
+	@text-indent: 1px;
+}
+.calcBackspaceAfter() {
+	@bg-pos: -98px -134px;
+	@w: 16px;
+	@h: 12px;
+	@left: calc(50% - 8px);
+	@top: calc(50% - 6px);
+}
+.calcHideCursor() {
+    @text-shadow: 0 0 0 #111;
+}
+.calcEqualBtnHideCursor() {
+    @text-shadow: 0 0 0 #777;
+}
+.CalculatorTextFieldWithScrollBar() {
+    @h: 25px;
+}
+.calcToggleBtnsAfter() {
+    @top: -7px;
+    @right: 7px;
+    @color: #111;
+    @font-size: 12px;
+}
+.calcHyperBolicInverseAfter() {
+    @right: 5px;
+}
+.calcLogInverseAfter() {
+    @top: -7px;
+    @right: 10px;
+}
+.calcNaturalLogInverseAfter() {
+    @right: 12px;
+}
+.calcSqRootAfter() {
+    @right: 12px;
+}
+.calcCubeRootAfter() {
+    @right: 12px;
+}
+.pieButtonAfter() {
+    @w: 10px;
+    @h: 10px;
+    @bg-pos: -124px -137px;
+    @top: calc(50% - 3px);
+    @left: calc(50% - 4px);
+}

@@ -1,0 +1,147 @@
+/*Checkbox css */
+
+
+/* Common for All */
+lyte-checkbox input {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+lyte-checkbox {
+    display: inline-block;
+    position: relative;
+}
+
+lyte-checkbox label {
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Type 1 checkboxes */
+.lyteCheckBoxPrimary:before{
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin: -2px 5px 0 0;
+    vertical-align: middle;
+    background: url(../images/lyte_ui_sprite.svg) no-repeat scroll;
+    cursor: pointer;
+    content: "";
+}
+.lyteCheckBoxDefault:before{
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin: -2px 5px 0 0;
+    vertical-align: middle;
+    background: url(../images/lyte_ui_sprite.svg) no-repeat scroll;
+    cursor: pointer;
+    content: "";
+}
+.lyteCheckBoxPrimary:before {
+    background-position: -59px -1px;
+}
+.lyteCheckBoxDefault:before {
+    background-position: -76px -1px;
+}
+.lyteCheckbox input:checked + .lyteCheckBoxDefault:before{
+    background-position: -93px -1px !important;
+}
+.lyteCheckbox input:checked + .lyteCheckBoxPrimary:before{
+    background-position: -93px -1px !important;
+}
+/*.lyteCheckbox input[disabled] + .lyteCheckBoxDefault{
+    opacity: 0.5;
+}
+.lyteCheckbox input[disabled] + .lyteCheckBoxPrimary{
+    opacity: 0.5;
+}*/
+
+/* Type 2 Checkbox no need to make any changes*/
+.lyteCheckSwitch {
+    cursor: pointer;
+    vertical-align: top;
+    width: 35px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 20px;
+    position: relative;
+    background: #ddd;
+}
+.lyteCheckSwitch .on-btn {
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    display: inline-block;
+    border-radius: 20px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    right: auto;
+    -webkit-transition:left 200ms ease;
+    -moz-transition:left 200ms ease;
+    -o-transition:left 200ms ease;
+    transition:left 200ms ease;
+}
+input[type="checkbox"].on-off-sw:checked+.lyteCheckSwitch {
+    background-color: rgb(114, 201, 138);
+}
+
+input[type="checkbox"].on-off-sw:checked+.lyteCheckSwitch .on-btn{
+    left: 17px;
+}
+
+/* Type 3 checkboxes sliders*/
+
+.lyteCheckSlider{
+    position: relative;
+    display: inline-block;
+    height: 1.4rem;
+}
+.lyteCheckSliderText{
+    padding-left:4.25rem;
+    vertical-align: middle;
+}
+.lyteCheckSliderLabel{
+    box-sizing: border-box;
+    position: relative;
+}
+.lyteCheckSlider:before {
+    width : 1.40rem;
+    height: 1.40rem;
+    display: inline-block;
+    z-index: 1;
+    opacity: 1;
+    position: absolute;
+    background-color:#fff;
+    /*border:1px solid #8a7a7a;*/
+    box-shadow: 0 1px 2px 0 rgba(34,36,38,.15), 0 0 0 1px rgba(34,36,38,.15) inset;
+    border-radius:50%;
+    content:'';
+    left:0px;
+    -webkit-transition:left 200ms ease;
+    -moz-transition:left 200ms ease;
+    -o-transition:left 200ms ease;
+    transition: left 200ms ease;
+}
+.lyteCheckSlider:after{
+    cursor: pointer;
+    position: absolute;
+    z-index: 0;
+    width:3.5rem;
+    height:0.20rem;
+    top:0.60rem;
+    left:0px;
+    display: inline-block; 
+    content:'';
+    background-color:#b5b1b1; 
+}
+input[type="checkbox"]:checked+.lyteCheckSlider:before {
+    left:2.25rem;
+}
+input[type="checkbox"]:checked+.lyteCheckSlider:after {
+    background-color:#000; 
+}
+

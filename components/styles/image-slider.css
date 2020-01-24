@@ -1,0 +1,180 @@
+html{
+  font-size: 16px;
+}
+
+#title {
+  text-align: center;
+}
+
+.slider {
+  position: relative;
+  margin-top: 2.2rem;
+  overflow-x: hidden;
+  height: 40rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.sliderList { 
+  position: absolute;
+  display: flex;
+  height: 40rem;
+  transition-duration: 1s;
+}
+
+.sliderSlide {
+  justify-content: space-around;
+  height: 40rem;
+  width: 35rem;
+} 
+
+img {
+  height: 40rem;
+  width: 35rem;
+}
+
+/**
+* Left Div
+*/
+.leftDiv {
+  position: absolute;
+  top: 6rem;
+  height: 40rem;
+  width: 2.5rem;
+  display: block;
+}
+
+/**
+* Right Div
+*/
+.rightDiv {
+  position: absolute;
+  top: 6rem;
+  height: 40rem;
+  width: 2.5rem;
+  right: 0;
+  margin-right: 7px;
+  display: block;
+}
+
+.none {
+  display: none;
+}
+
+.leftDiv:hover, .rightDiv:hover {
+  opacity: 0.7;
+  cursor: pointer;
+  background-color: rgba(128, 128, 128, 0.705);
+}
+
+/**
+* Arrow Left and Right
+*/
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  font-size: 2rem;
+  top: 22.5rem;
+  margin-top: -65px;
+  color: white;
+}
+
+#arrowleft {
+  left: 0;
+  margin-left: 17px;
+}
+
+#arrowright {
+  right: 0;
+  margin-right: 17px;
+}
+
+/**
+* Autoplay 
+*/
+@keyframes autoplay {  
+    0% {
+      left: 0;
+    }
+    10% {
+    left: -35rem;
+    }
+    20% {
+    left: -70rem;
+    }
+    30% {
+    left: -105rem;
+    }
+    40% {
+      left: -140rem;
+    }
+    50% {
+      left: -175rem;
+    }
+    60% {
+      left: -210rem;
+    }
+    70% {
+      left: -245rem;
+    }
+}
+
+/**
+* Slider control
+*/
+
+.sliderControl {
+  margin-right: auto;
+  margin-left: auto;
+  width: 4.5rem;
+  font-family: sans-serif;
+}
+
+.sliderControl label {
+  position: relative;
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  width: 4.5rem;
+  height: 2rem;
+  line-height: 1.5;
+  background: #ddd;
+  border-radius: 2rem;
+  cursor: pointer;
+  /* transition: left 0.15s ease-out; */
+}
+
+.sliderControl label:before {
+  content: "Autoplay";
+  position: absolute;
+  top: 2.5rem;
+  color: #333;
+  font-size: .95rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.sliderControl label:after {
+  content: "";
+  position: absolute;
+  top: .25rem;
+  left: .25rem;
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 2rem;
+  background: #fff;
+}
+
+.sliderCheck:checked + .slider > .sliderList {
+  animation-name: autoplay;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+.sliderCheck:checked + .slider + .sliderControl > label { 
+  background: #455a64; 
+}
+
+.sliderCheck:checked + .slider + .sliderControl > label:after {
+   left: 2.75rem; 
+}

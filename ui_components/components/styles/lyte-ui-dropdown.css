@@ -1,0 +1,438 @@
+/*lyte-list-box css*/
+lyte-drop-footer{
+    display: block;
+}
+
+.lyteDropPlaceholderMultiple {
+    vertical-align: middle;
+    padding-left: 10px;
+    color: #828282;
+}
+
+.lyteDropPlaceholderNormal {
+    vertical-align: middle;
+    margin-right: 20px;
+    color: #828282;
+}
+
+lyte-drop-header{
+    display: block;
+}
+.lyteDummyEventContainer {
+    outline: none;
+}
+
+lyte-drop-label{
+    display: block;
+    height: auto;
+    padding:0.45rem 1.1rem;
+    font-weight:400;
+    font-size:.855rem;
+    text-align:center;
+}
+lyte-dropdown[lt-prop-type="multiple"]:not([lt-prop-yield="true"]){
+    width:100%;
+}
+lyte-drop-body {
+    display: block;
+    max-height: 200px;
+    overflow-y: auto;
+    position: relative;
+}
+lyte-drop-label div{
+    display: inline-block;
+}
+lyte-drop-box{
+    /*min-width: 250px;*/
+    background-color: #fff;
+    box-sizing: border-box;
+    margin: 0;
+    vertical-align: middle;
+    border: 1px solid #d6d6d6;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+    width: auto;  /* Here !important has been removed */
+    top: 27px;
+    left: 0;
+    z-index : 10002;
+    position: absolute;
+
+}
+lyte-dropdown{
+    display: inline-block;
+    width: auto;
+}
+.lyteMarginRight{
+    margin-right:20px;
+}
+lyte-drop-item{
+    position: relative;
+    cursor: pointer;
+    display: block;
+    border: none;
+    height: auto;
+    text-align: left;
+    border-top: none;
+    line-height: 1.286rem;
+    color: rgba(0,0,0,.87);
+    padding: .55rem 1.1rem;
+    font-size: .9rem;
+    text-transform: none;
+    font-weight: 400;
+    box-shadow: none;
+    -webkit-touch-callout: none;
+}
+lyte-drop-item:hover{
+    background-color: #f7f7f7;
+}
+
+/* for normal dropdown */
+lyte-drop-button{
+    display: inline-block;
+}
+lyte-dropdown:not([lt-prop-type="multiple"]):not([lt-prop-type="multisearch"]) lyte-drop-button{
+    position: relative;
+    width: 100%;
+    text-align: left;
+    white-space: nowrap;
+    /*width: 100% !important;*/
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    color: #555;
+    font-size: inherit;
+    box-sizing: border-box;
+}
+
+lyte-dropdown:not([lt-prop-type="multiple"]) lyte-drop-button:focus{
+    border-color: #2185d0;
+    outline: none;
+}
+/* ends here */
+
+/* for multi select cases */
+lyte-dropdown[lt-prop-type="multiple"] lyte-drop-button{
+    border-bottom: 1px solid #ddd;
+    border: 1px solid #ddd;
+    min-width: 100%;
+    padding: 7px 10px 7px 5px;
+    box-sizing: border-box;
+    min-height: 40px;
+}
+lyte-drop-button input{
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    color: #333;
+    padding: 8px 10px;
+    box-sizing: border-box;
+}
+lyte-drop-button input:focus{
+    outline: none;
+}
+
+
+
+/* ends here */
+
+
+lyte-icon.dropdown
+{
+    background: url(../images/lyte_ui_sprite.svg) no-repeat -45px -3px;
+    width: 11px;
+    height: 6px;
+    display: inline-block;
+    opacity: 0.5;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.bodyWrapper{
+    overflow: hidden;
+    position: absolute;
+    z-index: 9999;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.lyteDropdownText{
+    margin-right: 20px;
+    display: inline-block;
+}
+/*Dropdown element disabled option*/
+.lyteDropdown-disabled{
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.5;
+}
+.lyteDropdownTitle{
+    outline: none;
+}
+.lyteIcon-dropdown{
+    background: url(../images/lyte_ui_sprite.svg) no-repeat -45px -3px;
+    width: 11px;
+    height: 6px;
+    display: inline-block;
+    opacity: 0.5;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+lyte-drop-box .lyteDropdownBody{
+    
+}
+lyte-drop-box .lyteHeader {
+    padding: 0 !important;
+    margin: 0;
+    border-bottom: 1px solid #ddd;
+}
+lyte-drop-box .lyteHeader input.lyteSearch{
+    border: none;
+    padding: 8px 10px 7px 28px;
+    font-size: .9rem;
+    width: 100%;
+    box-sizing: border-box;
+    color: #666;
+}
+.lyteHeaderSearch {
+    position: relative;
+}
+lyte-drop-box .lyteHeaderSearch:before{
+    content: '';
+    position: absolute;
+    background: url('../images/lyte_ui_sprite.svg') no-repeat -362px -2px;
+    width: 16px;
+    height: 16px;
+    top:6px;
+    left: 6px;
+    opacity: 0.5;
+}
+lyte-drop-box .lyteHeader input:focus{
+    outline: none;
+}
+.lyteNoItems{
+    padding: .45rem 1.1rem;
+    color: rgba(0,0,0,.87);
+    font-size: .855rem;
+}
+lyte-drop-box.tick-selection .lyteDropdownBody .lyteDropdownItem{
+    padding: .45rem 1.9rem!important;
+}
+lyte-drop-box.tick-selection .lyteDropdownSelection:before{
+    content: '';
+    position: absolute;
+    background: url('../images/lyte_ui_sprite.svg') no-repeat -170px -29px;
+    width: 11px;
+    height: 8px;
+    top: 8px;
+    left: 9px;
+}
+.lyteDropdownSelection{
+    background-color: #f7f7f7;
+    position: relative;
+}
+lyte-drop-box .lyteDropdownFooter{
+    border-top: 1px solid #ddd;
+}
+lyte-drop-box .lyteDropdownFooter .lyteDropdownAction{
+    padding: 7px 10px;
+    font-size: 14px;
+}
+lyte-drop-box.tick-selection .lyteDropdownFooter .lyteDropdownAction{
+    padding: 7px 10px 7px 30px;
+}
+/*Dropdown with arrow */
+lyte-drop-box .lyteArrowIcon {
+    width: 0; 
+    height: 0;
+    border-bottom: 8px solid #fff;
+    position: absolute;
+}
+/*Arrow Top*/
+lyte-drop-box .lyteArrowTop {
+    top:0px;
+}
+lyte-drop-box .lyteArrowTop:after, .lyteArrowTop:before {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+lyte-drop-box .lyteArrowTop:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #ffffff;
+    border-width: 8px;
+    margin-left: -8px;
+}
+lyte-drop-box .lyteArrowTop:before {
+    border-color: rgba(221, 221, 221, 0);
+    border-bottom-color: #ddd;
+    border-width: 9px;
+    margin-left: -9px;
+}
+/*Arrow bottom*/
+lyte-drop-box .lyteArrowBottom {
+    bottom: -8px;
+}
+lyte-drop-box .lyteArrowBottom:after, lyte-drop-box .lyteArrowBottom:before {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+lyte-drop-box .lyteArrowBottom:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-top-color: #ffffff;
+    border-width: 8px;
+    margin-left: -8px;
+}
+lyte-drop-box .lyteArrowBottom:before {
+    border-color: rgba(221, 221, 221, 0);
+    border-top-color: #ddd;
+    border-width: 9px;
+    margin-left: -9px;
+}
+/*Arrow Right*/
+lyte-drop-box .lyteArrowRight {
+    right: 0;
+}
+lyte-drop-box .lyteArrowRight:after, lyte-drop-box .lyteArrowRight:before {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+lyte-drop-box .lyteArrowRight:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-left-color: #ffffff;
+    border-width: 8px;
+    margin-top: -8px;
+}
+lyte-drop-box .lyteArrowRight:before {
+    border-color: rgba(221, 221, 221, 0);
+    border-left-color: #ddd;
+    border-width: 9px;
+    margin-top: -9px;
+}
+/*Arrow Left*/
+lyte-drop-box .lyteArrowLeft:not(.lyteScaleOption) {
+    left: 0;
+}
+lyte-drop-box .lyteArrowLeft:not(.lyteScaleOption):after, lyte-drop-box .lyteArrowLeft:not(.lyteScaleOption):before {
+    right: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+lyte-drop-box .lyteArrowLeft:not(.lyteScaleOption):after {
+    border-color: rgba(255, 255, 255, 0);
+    border-right-color: #ffffff;
+    border-width: 8px;
+    margin-top: -8px;
+}
+lyte-drop-box .lyteArrowLeft:not(.lyteScaleOption):before {
+    border-color: rgba(221, 221, 221, 0);
+    border-right-color: #ddd;
+    border-width: 9px;
+    margin-top: -9px;
+}
+
+/*multiple select dropdown */
+ .lyteMultiselect {
+    border-bottom: 1px solid #ddd;
+    display: inline-block;
+}
+
+ .lyteMultipleSelect {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline-block;
+}
+ .lyteMultipleSelect li {
+    display: inline-block;
+    padding: 2px 18px 2px 7px!important;
+    background-color: #dedede;
+    color: #333;
+    font-size: 14px;
+    position: relative;
+    border-radius: 3px;
+    margin: 2px 10px 2px 0;
+}
+
+lyte-drop-button .lyteDropMark {
+    background-color: #9a9a9a;
+}
+
+lyte-drop-button [data-value] {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.lyteCloseIcon {
+    background: url(../images/lyte_ui_sprite.svg) no-repeat -125px -4px;
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    position: absolute;
+    right: 4px;
+    top: 6px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.lyte-dropdown-filtered {
+    display : none!important;
+}
+.lyteSubheader .lyteHeading{
+    padding: .5rem 1.1rem;
+    font-weight: 700;
+    font-size: .955rem !important;
+    margin-bottom: 0 !important;
+}
+.lyteDropdownActive{
+    display: none!important;
+}
+.lyteDropdownFiltered{
+    display: none!important;
+}
+.lyteDropdownHidden{
+    display:none!important;
+}
+.lyteDropdownZIndex {
+    z-index: 10000;
+}
+
+lyte-drop-box.lyteAnimate {
+   transition-property: top;
+   transition-duration: 0.4s;
+}
+
+lyte-drop-box.lyteAnimate lyte-drop-body{
+   transition-property: height;
+   transition-duration: 0.4s;
+}

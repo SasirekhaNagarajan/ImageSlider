@@ -1,0 +1,46 @@
+/* Default theme imported */
+@import "../themes/default/ui-elements/sortable/sortable.variables.less";
+
+
+
+
+/* Loading theme in configuration */
+@import "../config.less";
+@import (optional) "../themes/@{sortable}/ui-elements/sortable/sortable.variables.less";
+
+
+/* rtl files loading */
+
+@import (multiple,optional) "../themes/default/global/@{direction}.less";
+
+@import (multiple,optional) "../themes/@{sortable}/global/@{direction}.less";
+
+/* Loading final tweaks to your variables */
+@import (optional) "../overrides/ui-elements/sortable.variables.less";
+
+
+
+.lyteSortablePlaceholder {
+	.SortablePlaceholder();
+	background: @bg;
+	border: @border;
+	box-sizing: border-box;
+}
+.lyteSortableDisabledPlaceholder {
+	.SortableDisabledPlaceholder();
+	background: @bg;
+	border: @border;
+}
+.nullifyTransition{
+	transition-duration: 0s;
+}
+
+
+/* import theme overrides - styles */
+@import (optional) "../themes/@{sortable}/ui-elements/sortable/sortable.styles.less";
+
+
+
+
+/* import custom css - final tweaks by the user */
+@import (optional) "../overrides/ui-elements/sortable.overrides.less";

@@ -1,0 +1,273 @@
+/* Default theme imported */
+@import "../themes/default/ui-elements/daterangepicker/daterangepicker.variables.less";
+
+
+
+
+/* Loading theme in configuration */
+@import "../config.less";
+@import (optional) "../themes/@{daterangepicker}/ui-elements/daterangepicker/daterangepicker.variables.less";
+
+/* rtl files loading */
+
+@import (multiple,optional) "../themes/default/global/@{direction}.less";
+
+@import (multiple,optional) "../themes/@{daterangepicker}/global/@{direction}.less";
+
+
+/* Loading final tweaks to your variables */
+@import (optional) "../overrides/ui-elements/daterangepicker.variables.less";
+
+
+
+/* LYTE-DATERANGEPICKER BEGINS  */
+
+lyte-daterangepicker {
+	display: inline-block;
+}
+lyte-daterangepicker * {
+    box-sizing: content-box;
+}
+.lyteDateRangePickerRow {
+	.DateRangePickerRow();
+	font-family: @primaryFont;
+	display: flex;
+	box-shadow: @box-shadow;
+	border: @border;
+}
+.lyteDateRangePickerRow .lyteCalendarPopup {
+	box-shadow: none;
+	border: none;
+}
+.lyteDateRangePickerCol1,
+.lyteDateRangePickerCol2 {
+	position: relative;
+}
+.lyteDateRangePickerRow .lyteCalBtns {
+	display: none;
+}
+.lyteDateRPMonthHeader {
+	.DateRPMonthHeader();
+	text-align: center;
+	font-size: @font-size;
+	padding: @padding;
+}
+.lyteDateRPLeftNav {
+	.DateRPLeftNav();
+	position: absolute;
+	top: @top;
+    @{property-left}: @left;
+}
+.lyteDateRPRightNav {
+	.DateRPRightNav();
+	top: @top;
+    @{property-right}: @right;
+	position: absolute;
+}
+.monthDD {
+	.monthDD();
+	max-width: @max-w;
+    @{property-margin-right}: @margin-right;
+	width: auto;
+}
+.monthDD lyte-drop-button {
+    .monthDDDropBtn();
+    font-size: @font-size;
+}
+.yearDD {
+	width: auto;
+}
+.yearDD lyte-drop-button {
+    .yearDDDropBtn();
+    font-size: @font-size;
+}
+.dRPCalendar2 .lyteCalTableContainer {
+	.dRPCalendar2();
+    @{property-border-left}: @border-left;
+}
+.lyteDateRPTempFirstDateSelected,
+.lyteDateRPTempLastDateSelected,
+.lyteDateRPFirstDateSelected,
+.lyteDateRPLastDateSelected,
+.lyteDateRPTempSelected.lyteDateRPTempFirstDateSelected:hover,
+.lyteDateRPTempSelected.lyteDateRPTempLastDateSelected:hover,
+.lyteDateRPTempFirstDateSelected:hover,
+.lyteDateRPTempLastDateSelected:hover,
+.lyteDateRPFirstDateSelected:hover,
+.lyteDateRPLastDateSelected:hover {
+	.DateRPLastDateSelectedHover();
+	color: @color;
+	position: relative;
+	z-index: 0;
+	background: @bg;
+	border-radius: @border-radius;
+	border-color: transparent;
+}
+.lyteDateRPTempSelected.lyteDateRPTempLastDateSelected,
+.lyteDateRPTempLastDateSelected,
+.lyteDateRPLastDateSelected,
+.lyteDateRPTempLastDateSelected:hover,
+.lyteDateRPLastDateSelected:hover {
+	.dateRPLastDateSelHoverBg();
+	background: @bg;
+	border-radius: @border-radius;
+    color: @color;
+}
+.lyteDateRPTempFirstDateSelected::before,
+.lyteDateRPFirstDateSelected::before,
+.lyteDateRPTempLastDateSelected::before,
+.lyteDateRPLastDateSelected::before {
+	.DateRPLastDateSelectedBefore();
+	content: '';
+	width: 100%;
+	height: 100%;
+	background: @bg;
+	display: block;
+	position: absolute;
+	top: @top;
+    @{property-left}: @left;
+	z-index: -1;
+	border-radius: @border-radius;
+}
+.lyteDateRPMonthStartDate,
+.lyteDateRPMonthEndDate,
+.lyteDateRPTempSelected {
+	.DateRPTempSelected();
+	border-radius: 0;
+	background: @bg;
+	position: relative;
+    color: @color;
+}
+.lyteDateRPTempFirstDateSelected {
+    .DateRPTempFirstDateSelected();
+	border-radius: @border-radius;
+}
+.lyteDateRPTempFirstDateSelected::after,
+.lyteDateRPFirstDateSelected::after,
+.lyteDateRPMonthStartDate::after,
+.lyteDateRPTempSelected::after {
+	.DateRPTempSelectedAfter();
+	content: '';
+	position: absolute;
+	@{property-left}: @left;
+	width: @w;
+	background: @bg;
+	top: @top;
+    height: @h;
+}
+.lyteDateRPFirstDateSelected:last-of-type,
+.lyteDateRPTempFirstDateSelected:last-of-type,
+.lyteDateRPLastDateSelected:first-child,
+.lyteDateRPTempLastDateSelected:first-child,
+.lyteDateRPTempLastDateSelected.lyteCalTableCell:first-child:hover {
+	background: transparent;
+}
+.lyteDateRPTempFirstDateSelected,
+.lyteDateRPTempLastDateSelected,
+.lyteDateRPFirstDateSelected,
+.lyteDateRPLastDateSelected {
+    .DRPSelectedEndPoints();
+    color: @color;
+}
+.lyteDateRPTempSelected:hover {
+	.DateRPTempSelectedHover();
+	background: @bg;
+	color: @color;
+	border-radius: @border-radius;
+}
+.lyteCalTableCell.lyteDateRPTempLastDateSelected:hover,
+.lyteDateRPMonthEndDate,
+.lyteDateRPTempSelected:last-of-type,
+.lyteCalTableCell.lyteDateRPTempSelected:last-of-type:hover {
+	.DRPRightCurve();
+    border-radius: @border-radius;
+}
+.lyteDateRPMonthStartDate,
+.lyteDateRPTempSelected:first-of-type,
+.lyteDateRPTempSelected:first-of-type:hover {
+	.DRPLeftCurve();
+    border-radius: @border-radius;
+}
+.lyteDateRPMonthEndDate:first-of-type {
+    .DRPEndDateLeftCurve();
+    border-radius: @border-radius;
+}
+.lyteDateRPTempSelected:last-of-type::after,
+.lyteDateRPFirstDateSelected:last-of-type::after,
+.lyteDateRPTempFirstDateSelected:last-of-type::after,
+.lyteDateRPTempLastDateSelected::after,
+.lyteDateRPLastDateSelected::after {
+	width: 0;
+}
+.lyteDateRPTempFirstDateSelected.lyteDateRPTempLastDateSelected,
+.lyteDateRPFirstDateSelected.lyteDateRPLastDateSelected {
+	.lastandFirstSel();
+	background: @bg;
+}
+.lyteDateRPTempFirstDateSelected.lyteDateRPMonthEndDate,
+.lyteDateRPMonthEndDate.lyteDateRPFirstDateSelected {
+    .monthEndFirstDate();
+    background: @bg;
+    border-radius: @border-radius;
+}
+.lyteDateRPInterimEndDate::after,
+.lyteDateRPTempFirstDateSelected.lyteDateRPMonthEndDate::after,
+.lyteDateRPMonthEndDate.lyteDateRPFirstDateSelected::after {
+    content: none;
+}
+.lyteDateRPMonthStartDate.lyteDateRPTempLastDateSelected,
+.lyteDateRPMonthStartDate.lyteDateRPLastDateSelected {
+    .monthStartLastDate();
+    background: @bg;
+}
+
+.lyteCalDisabled {
+    .DRPDisabledDate();
+    background: @bg;
+    pointer-events: none;
+    opacity: @opacity;
+}
+
+.lyteDateRPInterimEndDate:hover,
+.lyteDateRPInterimEndDate.lyteDateRPTempSelected:first-of-type,
+.lyteDateRPInterimEndDate {
+    .DRPInterimEndDate();
+    @{property-border-top-right-radius}: @border-top-right-radius;
+    @{property-border-bottom-right-radius}: @border-bottom-right-radius;
+}
+.lyteDateRPInterimStartDate.lyteDateRPTempSelected.lyteDateRPTempLastDateSelected,
+.lyteDateRPInterimStartDate.lyteDateRPTempLastDateSelected:hover,
+.lyteDateRPInterimStartDate:hover,
+.lyteDateRPInterimStartDate {
+    .DRPInterimStartDate();
+    @{property-border-top-left-radius}: @border-top-left-radius;
+    @{property-border-bottom-left-radius}: @border-bottom-left-radius;
+}
+
+/*------- Added by Sam-------*/
+.lyteDateRPNavDisabled{
+	opacity: 0.3;
+	pointer-events: none;
+}
+.lyteSeperateDRP .lyteDateRPFirstDateSelected, 
+.lyteSeperateDRP .lyteDateRPLastDateSelected{
+	border-radius: 50%;	    
+}
+.lyteSeperateDRP .lyteDateRPFirstDateSelected:after{
+	display: none;    
+}
+.lyteDateRangePickerRow .lyteCalTableCell{
+	touch-action: none;
+}
+/*------- Added by Sam-------*/
+
+/* import theme overrides - styles */
+@import (optional) "../themes/@{daterangepicker}/ui-elements/daterangepicker/daterangepicker.styles.less";
+
+
+
+
+/* import custom css - final tweaks by the user */
+@import (optional) "../overrides/ui-elements/daterangepicker.overrides.less";
+
+/* LYTE-DATERANGEPICKER ENDS    */

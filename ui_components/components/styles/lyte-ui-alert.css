@@ -1,0 +1,152 @@
+lyte-alert{
+	display: none;
+}
+.alertWrapper {
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10001;
+}
+.alertPopup .lyte-svg {
+	background-image: url(../images/lyte_ui_sprite.svg);
+}
+lyte-alert.show{
+	overflow: hidden;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.alertPopup{
+    background-color: #fff;
+    border: 1px solid #f7f7f7;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.4);
+    position: absolute;
+    z-index: 10001;
+    top: -100%;
+    left:50%;
+    transform: translate(-50%,0%);
+    opacity: 1;
+    min-width:500px;
+    max-width: 900px;
+    transition-property: top;
+	transition-timing-function: ease;
+    transition-duration: .8s;
+}
+lyte-alert.show .alertPopup{
+	opacity: 1;
+}
+.alertHeader, .alertContent{
+    padding: 15px 40px 15px 30px
+}
+.alertHeader {
+    background-color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+.alertContentMiddle {
+	display: table-cell;
+	vertical-align: middle;
+}
+.alertFooter {
+	text-align: right;
+    padding: 15px 30px;
+}
+.alertPrimaryMsg{
+	margin-bottom: 5px;
+	display: block;
+	font-weight: bold;
+}
+.alertSecondaryMsg, .dBlock{
+	display: block;
+}
+.lyteStatusIcon{
+	background-image: url(../images/lyte_ui_sprite.svg);
+    background-repeat: no-repeat;
+	width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    display: inline-block;
+}
+.successAlertIcon {
+    background-position: -1px -18px;
+}
+.errorAlertIcon {
+    background-position: -34px -19px;
+}
+.warningAlertIcon {
+    background-position: -100px -19px;
+}
+.infoAlertIcon {
+    background-position: -66px -19px;
+}
+.confirmAlertIcon {
+    background-position: -133px -23px;
+}
+
+
+.alertFreezeLayer{ 
+	width:100%;
+	position:fixed;
+	top:0px;
+	left:0px;
+	right:0;
+	bottom:0;
+	z-index:1000;
+	height:auto; 
+}
+.whiteFreeze{
+	background-color: rgba(255,255,255,.5);
+}
+.blackFreeze{
+	background-color: rgba(0,0,0,.5);
+}
+.alertClose{
+	background-position: -14px -1px;
+	width: 12px;
+	height: 11px;
+	opacity: .5;
+	cursor: pointer;
+	position: absolute;
+    top: 20px;
+    right: 25px;
+}
+.alertClose:hover{
+	opacity: 1;
+}
+.alertFooter.left{
+	text-align: left;
+}
+.alertFooter.center{
+	text-align: center;
+}
+.alertFooter.right{
+	text-align: right;
+}
+.alertFooter lyte-button {
+	margin-left: 7px;
+}
+.alertFooter lyte-button:first-child{
+	margin-left: 0px;	
+}
+.alertDocBtns button {
+    margin-right: 5px;
+}
+.clearFloat{
+	clear: both;
+}
+lyte-alert-header{
+    background-color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+lyte-alert-content,lyte-alert-header{
+    padding: 15px 40px 15px 30px;
+    display: block;
+}

@@ -1,0 +1,173 @@
+
+/* Default theme imported */
+@import "../themes/default/ui-elements/tooltip/tooltip.variables.less";
+
+/* Loading theme in configuration */
+@import "../config.less";
+
+@import (optional) "../themes/@{tooltip}/ui-elements/tooltip/tooltip.variables.less";
+
+/* rtl files loading */
+
+@import (multiple,optional) "../themes/default/global/@{direction}.less";
+
+@import (multiple,optional) "../themes/@{tooltip}/global/@{direction}.less";
+
+/* Loading custom themes */
+@import (optional) "../overrides/ui-elements/tooltip.variables.less";
+
+.lyteTooltip {
+	.Tooltip();
+	font-family: @primaryFont;
+	font-size: @font-size;
+	padding: @padding;
+	position: absolute;
+	background: @bg;
+	color: @color;
+	text-align: center;
+	border-radius: @border-radius;
+	z-index: @z-index;
+	pointer-events: none;
+	white-space: pre-wrap;
+    @{property-left}: -9999px;
+    top: -9999px;
+}
+.lyteTooltip.lyteTooltipHidden {
+	display: none !important;
+}
+
+.lyteTooltip.lyteTooltipCallout .lyteTooltipInnerSpan,
+.lyteTooltip.lyteTooltipCallout::before {
+    .tooltipBefore();
+	content: "";
+	position: absolute;
+    width: @w;
+    height: @h;
+    background: inherit;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+.lyteTooltip.lyteTooltipCallout .lyteTooltipInnerSpan {
+    .tooltipInnerSpan();
+    transform: @transform;
+}
+.lyteTooltip.lyteRight .lyteTooltipInnerSpan,
+.lyteTooltip.lyteRight::before {
+    .tooltipBeforeRight();
+    @{property-left}: @left;
+    top: @top;
+}
+.lyteTooltip.lyteLeft .lyteTooltipInnerSpan,
+.lyteTooltip.lyteLeft::before {
+    .tooltipBeforeLeft();
+    @{property-right}: @right;
+    top: @top;
+}
+.lyteTooltip.lyteBottom .lyteTooltipInnerSpan,
+.lyteTooltip.lyteBottom::before {
+    .tooltipBeforeBottom();
+    @{property-left}: @left;
+    top: @top;
+}
+.lyteTooltip.lyteTop .lyteTooltipInnerSpan,
+.lyteTooltip.lyteTop::before {
+    .tooltipBeforeTop();
+    @{property-left}: @left;
+    bottom: @bottom;
+}
+.lyteTooltip.lyteTopright .lyteTooltipInnerSpan,
+.lyteTooltip.lyteTopright::before {
+    .tooltipBeforeTopRight();
+    @{property-left}: @left;
+    bottom: @bottom;
+}
+.lyteTooltip.lyteTopleft .lyteTooltipInnerSpan,
+.lyteTooltip.lyteTopleft::before {
+    .tooltipBeforeTopleft();
+    bottom: @bottom;
+    @{property-left}: @left;
+}
+.lyteTooltip.lyteBottomright .lyteTooltipInnerSpan,
+.lyteTooltip.lyteBottomright::before {
+    .tooltipBeforeBottomright();
+    top: @top;
+    @{property-left}: @left;
+}
+.lyteTooltip.lyteBottomleft .lyteTooltipInnerSpan,
+.lyteTooltip.lyteBottomleft::before {
+    .tooltipBeforeBottomleft();
+    top: @top;
+    @{property-left}: @left;
+}
+.lyteTooltip.lyteInnerToolAdded::before {
+    content: none;
+}
+
+.lyteTooltip.whiteBg {
+	.ttWhite();
+	background: @bg;
+	border: @border;
+	color: @color;
+}
+.lyteTooltip.whiteBg::before {
+    .whiteTooltipBefore();
+    background: @bg;
+}
+.lyteTooltip.whiteBg.lyteRight::before {
+    .whiteTooltipBeforeRight();
+    box-shadow: @box-shadow;
+    @{property-left}: @left;
+    top: @top;
+}
+.lyteTooltip.whiteBg.lyteLeft::before {
+    .whiteTooltipBeforeLeft();
+    box-shadow: @box-shadow;
+    @{property-right}: @right;
+    top: @top;
+}
+.lyteTooltip.whiteBg.lyteBottom::before {
+    .whiteTooltipBeforeBottom();
+    box-shadow: @box-shadow;
+    @{property-left}: @left;
+    top: @top;
+}
+.lyteTooltip.whiteBg.lyteTop::before {
+    .whiteTooltipBeforeTop();
+    box-shadow: @box-shadow;
+    @{property-left}: @left;
+    bottom: @bottom;
+}
+.lyteTooltip.whiteBg.lyteTopright::before {
+    .whiteTooltipBeforeTopright();
+    box-shadow: @box-shadow;
+    @{property-left}: @left;
+    bottom: @bottom;
+}
+.lyteTooltip.whiteBg.lyteTopleft::before {
+    .whiteTooltipBeforeTopleft();
+    box-shadow: @box-shadow;
+    bottom: @bottom;
+    @{property-left}: @left;
+}
+.lyteTooltip.whiteBg.lyteBottomright::before {
+    .whiteTooltipBeforeBottomright();
+    box-shadow: @box-shadow;
+    top: @top;
+    @{property-left}: @left;
+}
+.lyteTooltip.whiteBg.lyteBottomleft::before {
+    .whiteTooltipBeforeBottomleft();
+    box-shadow: @box-shadow;
+    top: @top;
+    @{property-left}: @left;
+}
+
+
+    /* import theme overrides - styles */
+@import (optional) "../themes/@{tooltip}/ui-elements/tooltip/tooltip.styles.less";
+
+
+
+
+/* import custom css - final tweaks by the user */
+@import (optional) "../overrides/ui-elements/tooltip.overrides.less";

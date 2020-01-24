@@ -1,0 +1,74 @@
+lyte-nav {
+	margin:10px;
+	background: #313949;    
+}
+lyte-nav:not([lt-prop-alignment="vertical"]){
+	flex-wrap:wrap;
+	width:100%;
+	line-height: 2.429rem;
+}
+lyte-nav lyte-nav-item,
+lyte-nav lyte-nav-item:hover {
+    font-size: inherit;
+	font-family:"ProximaNovaLtSemibold", sans-serif;
+    background: transparent;
+	color:#eee;
+}
+.lyteNavIconContainer:hover,
+.lyteNavIconContainer.lyteMenuSelected {
+    background: #5a616d;
+}
+lyte-nav:not([lt-prop-alignment="vertical"]) lyte-nav-item{
+    padding:6px 12px 7px;
+    font-size:1em;
+}
+lyte-nav-item.lyteNavActive,
+lyte-nav-item.lyteNavActive:hover {
+	background: #5a616d;
+    color: #fff;
+}
+lyte-nav[lt-prop-alignment="vertical"]{
+	width:200px;
+}
+lyte-nav[lt-prop-alignment="vertical"] lyte-nav-item {
+	padding: 10px;
+}
+lyte-nav[lt-prop-alignment="vertical"] .lyteNavDiv{
+	height:calc(100% - 30px);
+	position:relative;
+}
+.arrow-down {
+  border-top: 5px solid #eee;
+}
+.arrow-up {
+  border-bottom: 5px solid #eee;
+}
+.lyteNavKebabMenu {
+    background: url('../images/lyte_ui_sprite.svg') no-repeat -261px -31px;
+    width: 17px;
+    height: 5px;
+}
+.lyteNavIconContainer {
+    align-self: stretch;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+.lyteNavMenuClass .lyteArrow,
+.lyteNavMenuClass  {
+    background: #313949;
+}
+.lyteNavMenuClass lyte-menu-item {
+    color: #fff;
+    font-family: "ProximaNovaLtSemibold", sans-serif;
+    font-size: 1em;
+    padding: 0.85rem 1.15rem;
+}
+.lyteNavMenuClass lyte-menu-label {
+    color: #fff;
+}
+.lyteNavMenuClass lyte-menu-item:hover,
+.lyteNavMenuClass .lyteMenuSelection {
+    background: rgba(255,255,255,0.2);
+}

@@ -1,0 +1,100 @@
+.Tooltip() {
+	@font-size: 13px;
+	@padding: 3px 8px;
+	@bg: @tooltipBg;
+	@color: @tooltipTextColor;
+	@border-radius: 2px;
+	@z-index: @tooltipzIndex;
+}
+.ttWhite() {
+	@bg: @alternateTooltipBg;
+	@border: 1px solid @alternateTooltipBorder;
+	@color: @alternateTooltipTextColor;
+}
+
+.tooltipBefore() {
+    @w: 10px;
+    @h: 10px;
+}
+.tooltipInnerSpan() {
+    @transform: translateX(-5px) rotate(45deg);
+}
+.tooltipBeforeRight() {
+    @left: -5px;
+    @top: calc(50% - 5px);
+}
+.tooltipBeforeLeft() {
+    @right: -5px;
+    @top: calc(50% - 5px);
+}
+.tooltipBeforeBottom() {
+    @left: calc(50% - 5px);
+    @top: -5px;
+}
+.tooltipBeforeTop() {
+    @left: calc(50% - 5px);
+    @bottom: -5px;
+}
+.tooltipBeforeTopRight() {
+    @left: 20%;
+    @bottom: -5px;
+}
+.tooltipBeforeTopleft() {
+    @bottom: -5px;
+    @left: 80%;
+}
+.tooltipBeforeBottomright() {
+    @top: -5px;
+    @left: 20%;
+}
+.tooltipBeforeBottomleft() {
+    @top: -5px;
+    @left: 80%;
+}
+
+
+
+
+.whiteTooltipBefore() {
+    @bg: @alternateTooltipBg;
+}
+.whiteTooltipBeforeRight() {
+    @box-shadow: -1px 1px 0 0 @alternateTooltipBorder;
+    @left: -4px;
+    @top: calc(50% - 4px);
+}
+.whiteTooltipBeforeLeft() {
+    @box-shadow: 1px -1px 0 0 @alternateTooltipBorder;
+    @right: -4px;
+    @top: calc(50% - 4px);
+}
+.whiteTooltipBeforeBottom() {
+    @box-shadow: -1px -1px 0 0 @alternateTooltipBorder;
+    @left: calc(50% - 4px);
+    @top: -4px;
+}
+.whiteTooltipBeforeTop() {
+    @box-shadow: 1px 1px 0 0 @alternateTooltipBorder;
+    @left: calc(50% - 4px);
+    @bottom: -4px;
+}
+.whiteTooltipBeforeTopright() {
+    @box-shadow: 1px 1px 0 0 @alternateTooltipBorder;
+    @left: 20%;
+    @bottom: -4px;
+}
+.whiteTooltipBeforeTopleft() {
+    @box-shadow: 1px 1px 0 0 @alternateTooltipBorder;
+    @bottom: -4px;
+    @left: 80%;
+}
+.whiteTooltipBeforeBottomright() {
+    @box-shadow: -1px -1px 0 0 @alternateTooltipBorder;
+    @top: -4px;
+    @left: 20%;
+}
+.whiteTooltipBeforeBottomleft() {
+    @box-shadow: -1px -1px 0 0 @alternateTooltipBorder;
+    @top: -4px;
+    @left: 80%;
+}

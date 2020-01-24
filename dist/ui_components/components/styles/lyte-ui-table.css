@@ -1,0 +1,204 @@
+ lyte-th.lyteFixedColumn:not(.lytePreventIcon):after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #222 transparent transparent transparent;
+  z-index: 7;
+}
+lyte-table {
+  display: block;
+  height: inherit;
+}
+lyte-table-structure {
+  display: table;
+  position: relative;
+  background: #fff;
+  border-radius: 3px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.87);
+  border-collapse: separate;
+  border-spacing: 0;
+  border: none;
+  /*min-width: 100%;*/
+}
+lyte-tr {
+  display: table-row;
+  background-color: white;
+  /*cursor: pointer;*/
+}
+lyte-tr.lyteTableDummyRow {
+  position: relative;
+}
+lyte-col {
+  display: table-column;
+}
+lyte-colgroup {
+  display: table-column-group;
+}
+lyte-thead {
+  display: table-header-group;
+}
+lyte-th {
+  cursor: auto;
+  background: #fff;
+  text-align: inherit;
+  color: #000;
+  font-size: 0.929rem;
+  outline: none;
+  padding: 8px 10px 8px 10px;
+  border-bottom: 3px double #e5e5e5;
+  position: relative;
+  display: table-cell;
+  vertical-align: inherit;
+  background-color: inherit;
+  min-width: 50px;
+  box-sizing: border-box;
+  /*overflow-wrap: break-word;*/
+}
+lyte-th.lyteTableFixed {
+  z-index: 7;
+}
+lyte-th.tableRowFixed {
+  position: relative !important;
+  z-index: 6;
+}
+ lyte-th.tableRowFixed.lyteTableFixed {
+  z-index: 8 !important;
+}
+lyte-table:not([dual-resize = true]) lyte-th:last-of-type lyte-tablehead-resize {
+  cursor: default;
+  position: absolute;
+  right: 0px;
+  height: 0px;
+  width: 0px;
+  top: 0px;
+  z-index: 0;
+  pointer-events: none;
+}
+lyte-tbody {
+  display: table-row-group;
+}
+ lyte-td {
+  display: table-cell;
+  vertical-align: inherit;
+  background-color: inherit;
+  min-width: 50px;
+  box-sizing: border-box;
+  /*overflow-wrap: break-word;*/
+  padding: 8px 10px 8px 10px;
+  font-size: 1rem;
+  overflow: hidden;
+  empty-cells: show;
+  border-bottom: 1px solid #e5e5e5;
+  white-space: normal;
+  text-overflow: initial;
+  /*word-wrap: break-word;*/
+  color: #666;
+  position: relative;
+}
+lyte-td.lyteTableFixed {
+  z-index: 7;
+}
+lyte-table:not(.infinitescroll) lyte-tr:hover {
+  background-color: #f7f7f7;
+}
+lyte-tfoot {
+  display: table-footer-group;
+}
+lyte-table > div {
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+}
+lyte-table > div > lyte-yield {
+  display: block;
+  width: 100%;
+}
+lyte-table.border lyte-th {
+  border: 1px solid #e5e5e5;
+  border-right: none;
+}
+lyte-table.border lyte-th:last-of-type {
+  border-right: 1px solid #e5e5e5;
+}
+lyte-table.border lyte-td {
+  border: 1px solid #e5e5e5;
+  border-right: none;
+  border-top: none;
+}
+.border lyte-td:last-of-type {
+  border-right: 1px solid #e5e5e5;
+}
+.border lyte-tr:last-of-type lyte-td {
+  border-bottom: 1px solid #e5e5e5;
+}
+lyte-tablehead-resize {
+  cursor: ew-resize;
+  height: 100%;
+  width: 15px;
+  top: 0px;
+  z-index: 9;
+  right: 0px;
+  position: absolute;
+}
+lyte-table-resize {
+  width: 15px;
+  height: 15px;
+  bottom: 0px;
+  cursor: se-resize;
+  z-index: 10;
+  right: 0px;
+  position: absolute;
+}
+lyte-table-horizontal-resize {
+  width: 15px;
+  height: 100%;
+  bottom: 0px;
+  cursor: col-resize;
+  z-index: 9;
+  right: 0px;
+  position: absolute;
+}
+ lyte-table-vertical-resize {
+  width: 100%;
+  height: 15px;
+  bottom: 0px;
+  cursor: row-resize;
+  z-index: 9;
+  right: 0px;
+  position: absolute;
+}
+div.lyteTableSortHelper {
+  background: #e5cce6;
+  opacity: 0.4;
+  position: absolute;
+  z-index: 10;
+  box-sizing: border-box;
+  padding: 10px 60px;
+}
+
+.lyteTableResize {
+  width: fit-content;
+}
+
+ lyte-table.infinitescroll lyte-td > div {
+   overflow: hidden;
+   height: 20px;
+}
+
+.infinitescroll .lytePreventInfiniteScroll lyte-td > div {
+   overflow: hidden;
+   height: 26px;
+}
+
+.lyteHidden {
+    display: none !important;
+}
+
+.resizing .lyteScrollContainer.lyteScrollContainerY{
+  visibility: hidden !important;
+}

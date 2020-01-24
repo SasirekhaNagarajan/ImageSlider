@@ -1,0 +1,163 @@
+.Colorbox() {
+	@font-size: 14px;
+	@z-index: @colorboxzIndex;
+}
+.ColorboxFreezeLayer() {
+	@bg: @colorboxFreezeBg;
+	@opacity: 0.8;
+}
+.ColorboxWrapper() {
+	@w: 900px;
+	@bg: @colorboxWrapperBg;
+	@h: calc(100% - 170px);
+	@border-radius: 0 0 2px 2px;
+    @z-index: 5;
+}
+.ColorboxContent() {
+	@h: calc(100% - 65px);
+	@padding: 10px 10px 0;
+	@bg: @colorboxWrapperBg;
+	@border-radius: 3px 3px 0 0;
+}
+.ColorboxHeader() {
+	@bg: @colorboxWrapperBg;
+	@padding: 15px 20px;
+	@border-top: 1px solid #ebebeb;
+	@border-radius: 0 0 3px 3px;
+}
+.ColorboxTitle() {
+	@font-size: 15px;
+	@color: @colorboxTextColor;
+}
+.ColorboxCloseIcon() {
+	@top: 20px;
+	@right: 35px;
+	@bg-img: @lytesprite;
+	@bg-pos: -50px -100px;
+	@h: 30px;
+	@w: 30px;
+	@border-radius: 50%;
+	@opacity: 0.8;
+}
+.ColorboxThumbOuterWrapper() {
+	@h: 150px;
+    @z-index: 5;
+}
+.ColorboxThumb() {
+	@margin-right: 10px;
+	@w: 70px;
+	@h: 70px;
+	@border: 1px solid transparent;
+}
+.ColorboxThumbHover() {
+	@border: 1px solid #ccc;
+}
+.ColorboxThumbThumbOn() {
+	@border: 1px solid #fff;
+}
+.ColorboxThumbThumbOnAfter() {
+	@bottom: -30px;
+	@color: #fff;
+}
+.ColorboxIconDiv() {
+	@w: 40px;
+	@h: 40px;
+	@border: 1px solid #555;
+	@bg: #222;
+	@border-radius: 50%;
+	@top: calc(50% - 20px);
+    @z-index: 10;
+}
+.ColorboxIconDivHover() {
+	@bg: #000;
+}
+.CBoxPrevious() {
+	@left: 20px;
+}
+.CBoxNext() {
+	@right: 20px;
+}
+.ColorboxPreviousIcon() {
+	@bg-img: @lytesprite;
+	@w: 9px;
+	@h: 11px;
+	@bg-pos: -94px -109px;
+}
+.ColorboxNextIcon() {
+	@bg-pos: -115px -108px;
+}
+.CBoxDownloadIcon() {
+	@bg-img: @lytesprite;
+	@w: 16px;
+	@h: 16px;
+	@bg-pos: -271px -106px;
+	@opacity: 0.4;
+}
+.CBoxDownloadIconHover() {
+	@opacity: 0.8;
+}
+.ColorboxUtilDiv() {
+	@bg: #000;
+    @left: 50%;
+	@bottom: 10px;
+	@border-radius: 3px;
+    @z-index: 50;
+    @transform: translateX(-50%);
+}
+.ColorboxUtilsDivIconWrapper() {
+	@padding: 10px;
+    @h: 16px;
+}
+.ColorboxDisabled() {
+    @opacity: 0.6;
+}
+.ColorboxUtilsDivIconWrapperHover() {
+    @bg: rgba(255, 255, 255, 0.25);
+}
+.ColorboxUtilDivIcons() {
+	@bg: @lytesprite;
+}
+.colorboxZoomOut() {
+	@bg-pos: -132px -108px;
+	@w: 13px;
+	@h: 15px;
+}
+.ColorboxZoomOutHover() {
+	@bg-pos: -153px -108px
+}
+.ColorboxReset() {
+	@bg-pos: -218px -107px;
+	@w: 16px;
+	@h: 16px;
+}
+.ColorboxResetHover() {
+	@bg-pos: -242px -107px;
+}
+.ColorboxZoomIn() {
+	@bg-pos: -175px -108px;
+	@w: 14px;
+	@h: 15px;
+}
+.ColorboxZoomInHover() {
+	@bg-pos: -195px -108px;
+}
+.colorboxHideVisibility() {
+	@opacity: 0.6;
+}
+.colorboxhidevisibilityhover() {
+	@bg: #222;
+}
+.colorboxItem() {
+    @h: 100%;
+    @w: calc(100% - 20px);
+    @bg: @colorboxWrapperBg;
+}
+.colorboxPrevItemTransform() {
+    @transform: translate3d(-100%,0,0);
+}
+.colorboxNextItemTransform() {
+    @transform: translate3d(100%,0,0);
+}
+.colorboxCurrentItemTransform() {
+    @transform: translate3d(0%,0,0);
+}

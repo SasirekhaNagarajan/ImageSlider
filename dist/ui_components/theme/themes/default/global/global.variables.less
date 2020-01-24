@@ -1,0 +1,407 @@
+@property-left: left;
+@property-right: right;
+@property-margin-right: margin-right;
+@property-margin-left: margin-left;
+@property-padding-left: padding-left;
+@property-padding-right: padding-right;
+@property-border-right: border-right;
+@property-border-left: border-left;
+@property-border-left-color: border-left-color;
+@property-border-right-color: border-right-color;
+@property-border-bottom-left-radius: border-bottom-left-radius;
+@property-border-bottom-right-radius: border-bottom-right-radius;
+@property-border-top-right-radius: border-top-right-radius;
+@property-border-top-left-radius: border-top-left-radius;
+@property-border-right-width: border-right-width;
+@property-border-left-width: border-left-width;
+
+@value-float-left: left;
+@value-textalign-left: left;
+@value-textalign-right: right;
+@value-transition-left: left;
+@value-sw-resize: sw-resize;
+@value-se-resize: se-resize;
+@value-nw-resize: nw-resize;
+@value-ne-resize: ne-resize;
+@value-rotate-0deg: rotate(0deg);
+@value-rotate-180deg: rotate(180deg);
+
+@rtlEnabled: false;
+
+@proxima: 'ProximaNovaRegular', 'Open Sans', sans-serif;
+@proximaSemiBold: 'ProximaNovaLtSemibold', 'Open Sans', sans-serif;
+
+
+@primaryFont: @proxima;
+@secondaryFont: @proximaSemiBold;
+
+@lytesprite: url(../../images/sprite_lyte.svg);
+
+@themeBodyBackground: #fff;
+@commonTextColor: #333;
+@commonTextHoverColor: #111;
+@commonTextColor2: #111;
+@headingTextColor: #111;
+
+
+@themeActiveElementBg: #5ba1e5;
+@themeActiveElementColor: #2c7bd0;
+
+@Level1zIndex: 1000;
+@Level2zIndex: 1020;
+@Level3zIndex: 1040;    //  Used for Colorpicker, Alert, Popover, Colorbox and Modal
+@Level4zIndex: 1060;    //  Used for Dateselect, Dropbox, MentionsInput, Calendar and Menu
+@Level5zIndex: 1080;    //  Used for Messagebox and Tooltip
+
+//  Input related Variables Begins
+
+@lyteInputBg: @themeBodyBackground;
+@lyteInputTextColor: @commonTextColor2;
+@lyteInputBorderColor: #d6d6d6;
+@lyteInputBorderHover: #c1c1c1;
+@lyteInputBorderFocus: #7fceef;
+@lyteInputBorderRadius: 2px;
+@lyteInputDisabled: #f3f3f3;
+@lyteInputLabelColor: #555;
+@lyteInputFontSize: 15px;
+
+//  Input related Variables Ends
+
+//  Checkbox related Variables Begins
+
+@chboxLabelColor: @commonTextColor;
+@chboxLabelHoverColor: @commonTextHoverColor;
+@chboxFontSize: 15px;
+@chboxSwitchBg: #d3d3d3;
+@chboxSwitchBgOnMode: @themeActiveElementBg;
+@chboxCircleBg: #fff;
+
+//  Checkbox related Variables Ends
+
+//  Accordion related variables Begins
+
+@accordionBorderColor: #e9e9e9;
+@accordionBorderHover: #ccc;
+@accordionBorderActive: #aaa;
+@accordionBg: @themeBodyBackground;
+@accordionColor: @commonTextColor;
+@accordionHeaderColor: #555;
+@accordionHeaderHoverColor: @commonTextHoverColor;
+@accordionHeaderActiveColor: @themeActiveElementColor;
+@accordionHeaderFontSize: 16px;
+@accordionBodyFontSize: 14px;
+
+//  Accordion related variables Ends
+
+//  Alert related variables Begins
+
+@alertPopupBg: @themeBodyBackground;
+@alertPopBorder: #f7f7f7;
+@alertPopupBoxShadow: rgba(0, 0, 0, 0.35);
+@alertPopupHeaderColor: @headingTextColor;
+@alertPopupContentColor: @commonTextColor;
+@alertPopupzIndex: @Level4zIndex;
+
+//  Alert related variables Ends
+
+
+//  Autocomplete related variable Begins
+
+@autoCompHighlightColor: #000;
+@autoCompleteText: #6b6b6b;
+@autocompleteBoxShadow: rgba(0, 0, 0, 0.15);
+
+//  Autocomplete related variable Ends
+
+//  Breadcrumb related variable Begins
+
+@breadCrumbColor: #555;
+@breadCrumbHoverColor: @commonTextHoverColor;
+@breadCrumbActiveColor: @themeActiveElementColor;
+
+//  Breadcrumb related variable Ends
+
+//Button related variable Begins
+
+@buttonBorderWidth: 1px;
+@buttonBorderStyle: solid;
+
+//Button related variable Ends
+
+//  Calendar related variable Begins
+
+@calendarPopupBG: @themeBodyBackground;
+@calendarDropdownColor: #666;
+@calendarDropdownHoverColor: #111;
+@calendarTextColor: @commonTextColor2;
+@calSelElemBg: @themeActiveElementBg;
+@calHoverElemBg :#e6f3fd;
+@calNavBg: #faf9f9;
+@calzIndex: @Level4zIndex;
+
+//  Calendar related variable Ends
+
+//  Colorbox related variable Begins
+
+@colorboxFreezeBg: #000;
+@colorboxWrapperBg: #fff;
+@colorboxTextColor: #111;
+@colorboxzIndex: @Level3zIndex;
+
+//  Colorbox related variable Begins
+
+//  Colorpicker related variable Begins
+
+@LCP_BorderColor: #e6e6e6;
+@LCP_boxShadowColor: rgba(0,0,0,0.1);
+@LCP_colorpanBorderColor: rgba(0,0,0,0.2);
+@LCP_colorpanHoverBorderColor: rgba(0,0,0,0.3);
+@LCP_morelinkHoverBg: #f5f5f5;
+@LCP_commonText: @commonTextColor2;
+@LCP_advancedLink: @LCP_commonText;
+@LCP_colorSliderHandle: #fff;
+@LCP_inputBorder: #d6d6d6;
+@LCP_inputHoverBorder: #c1c1c1;
+@LCP_formatdropdownColor: #555;
+@LCP_formatdropdownActiveColor: @commonTextColor;
+
+//  Colorpicker related variable Ends
+
+//  Date range picker related variable Begins
+
+@DRP-bg: @themeBodyBackground;
+@DRP-inrangeBG: #e6f3fd;
+@DRP-selElemBG: @themeActiveElementBg;
+@DRP-inrangeColor: @commonTextColor2;
+
+//  Date range picker related variable Ends
+
+//  Dropdown related variable Begins
+@dropdownBg: @themeBodyBackground;
+@dropdownTextColor: @commonTextColor2;
+@dropdownBtnBorderColor: #d6d6d6;
+@dropdownBtnBorderHoverColor: #c1c1c1;
+@dropBoxBorderColor: @dropdownBtnBorderColor;
+@dropBoxBoxShadowColor: rgba(0, 0, 0, 0.15);
+@dropBoxItemHoverBg: #ededed;
+@dropBoxArrowBg: @dropdownBtnBorderColor;
+@dropboxBorderRadius: 2px;
+@dropboxTranslateWidth: 8px;
+@dropboxzIndex: @Level4zIndex;
+
+//  Dropdown related variable Ends
+
+//  DateSelect related variable Begins
+
+@dateSelectBg: @themeBodyBackground;
+@dateSelectBorderColor: #d6d6d6;
+@dateSelectzIndex: @Level4zIndex;
+
+//  DateSelect related variable Ends
+
+//  Gridstack related variable Begins
+
+@gridStackSquaresBg: #ebebeb;
+@gridStackItemBorder: #e1e0e0;
+@gridStackFocusBorder: #5ba1e5;
+
+//  Gridstack related variable Ends
+
+//  Mentions input related variable Begins
+
+@MIBg: @themeBodyBackground;
+@MITextColor: @commonTextColor2;
+@MIPlaceholderColor: #777;
+@MIBorderColor: #d6d6d6;
+@MIActiveElemBg: #eaeaea;
+@MIHighlightElemBg: #ffff99;
+@MISelectedValBg: #e9f4ff;
+@MIzIndex: @Level4zIndex;
+
+//  Mentions input related variable Ends
+
+//  Menu related variable Begins
+
+@menuBg: @themeBodyBackground;
+@menuHeaderColor: @headingTextColor;
+@menuLabelColor: @commonTextColor2;
+@menuBorderColor: #d6d6d6;
+@menuItemHover: #ebebeb;
+@menuDescColor: @commonTextColor2;
+@menuGroupBorder: #e5e5e5;
+@menuzIndex: @Level4zIndex;
+
+//  Menu related variable Ends
+
+//  MessageBox related variable Begins
+
+@messageBoxBg: @themeBodyBackground;
+@messageBoxContentColor: @commonTextColor;
+@messageBoxSuccessBg: #49a251;
+@messageBoxErrorBg: #e64040;
+@messageBoxWarningBg: #ea8d42;
+@messageBoxInfoBg: #188bc7;
+@messageBoxzIndex: @Level5zIndex;
+
+//  MessageBox related variable Ends
+
+//  Modal related variable Begins
+
+@modalBg: @themeBodyBackground;
+@modalBoxShadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
+@modalHeaderColor: @headingTextColor;
+@modalContentColor: @commonTextColor;
+@modalFreezeBg: #000;
+@modalzIndex: @Level3zIndex;
+
+//  Modal related variable Ends
+
+//  Navbar related variable Begins
+
+@navBarBg: #edf4f9;
+@navBarHoverBg: #dfeaf5;
+@navBarTextColor: #222;
+@navBarActive: #5ba1e5;
+@navBarActiveText: #fff;
+@navBarBoxShadowColor: rgba(0, 0, 0, 0.1);
+@navBarTriangleBg: #555;
+
+//  Navbar related variable Ends
+
+//  Navigation related variable Begins
+
+@navigationTextColor: @commonTextColor;
+@navigationTextHoverColor: @commonTextHoverColor;
+@navigationNumHoverBorderColor: #aaa;
+@navigationArrowBorder: #c4c4c4;
+@navigationActiveColor: @themeActiveElementBg;
+
+//  Navigation related variable Ends
+
+//  Popover related variable Begins
+
+@popoverBg: @themeBodyBackground;
+@popoverOuterBorder: #e0e0e0;
+@popoverFreezeBg: #000;
+@popoverTextColor: #222;
+@popoverzIndex: @Level3zIndex;
+
+//  Popover related variable Ends
+
+//  Progress bar related variable Begins
+
+@progressBarHorizontalBg: #e5e5e5;
+@progressStatusColor: #fff;
+@progressBarHorizonCompletedBg: #3fbd5f;
+@progressBarCircleTextColor: @commonTextColor;
+
+//  Progress bar related variable Ends
+
+//  Radio button related variable Begins
+
+@radioTextColor: @commonTextColor;
+@radioTextHoverColor: @commonTextHoverColor;
+@radioBorderColor: #aaa;
+@radioBg: @themeBodyBackground;
+@radioDefaultBgOnMode: #555;
+@radioPrimaryBgOnMode: @themeActiveElementBg;
+@radioSecondaryBgOnMode: #72C98A;
+
+//  Radio button related variable Ends
+
+//  Range slider related variable Begins
+
+@rangeSliderBg: #dee2ed;
+@rangeSliderFillBg: @themeActiveElementBg;
+@rangeSliderHandleBg: #fff;
+@rangeSliderHandleBorderColor: #4495e4;
+@rangeSliderTickBg: #c0c0c0;
+@rangeSliderTextColor: @commonTextColor2;
+
+//  Range slider related variable Ends
+
+//  Sortable related variable Begins
+
+@sortableDisabledBg: #f5c7c7;
+@sortableDisabledBorder: #f4a7a7;
+
+//  Sortable related variable Ends
+
+//  Step related variable Begins
+
+@stepArrowColor: @commonTextColor;
+@stepArrowHoverColor: @commonTextHoverColor;
+
+@stepBulletLine: #d4e9e2;
+@stepBulletHoverBorder: #bbb;
+@stepBulletBg: @themeBodyBackground;
+@stepBulletActiveBg: #3ac998;
+@stepBulletTextColor: #949d9a;
+@stepBulletActiveTextColor: @stepBulletActiveBg;
+
+@stepBoxBg: @themeBodyBackground;
+@stepBoxHoverBg: #f5f5f5;
+@stepBoxTriangleColor: #c3c3c3;
+@stepBoxActiveBg: #1d414e;
+@stepBoxColor: @commonTextColor;
+@stepBoxActiveColor: #fff;
+@stepBoxCountColor: #666;
+
+//  Step related variable Ends
+
+//  Tab related variable Starts
+
+@tabBg: @themeBodyBackground;
+@tabBorder: #ddd;
+@tabActiveColor: @themeActiveElementColor;
+@tabTitleColor: #555;
+@tabTextColor: @commonTextColor2;
+@tabTitleBorder: #e5e5e5;
+@tabTitleHoverBorder: #666;
+@tabRightLeftItemBg: #f5f5f5;
+@tabRightLeftItemHoverBg: #fafafa;
+
+//  Tab related variable Ends
+
+//  Table related variable Starts
+
+@tableBg: @themeBodyBackground;
+@tableThBg: #f7f7f7;
+@tableBorderColor: #e2e2e2;
+@tableFixedBoxShadow: rgba(0, 0, 0, 0.2);
+@tableSortHelperBg: @themeActiveElementBg;
+@tableThTextColor: @commonTextColor;
+@tableTdTextColor: @commonTextColor2;
+
+//  Table related variable Ends
+
+//  Tooltip related variable Starts
+
+@tooltipBg: #222;
+@tooltipTextColor: #fff;
+@tooltipSize: 6px;
+@tooltipzIndex: @Level5zIndex;
+
+@alternateTooltipBg: @themeBodyBackground;
+@alternateTooltipBorder: #c1c1c1;
+@alternateTooltipTextColor: @commonTextColor2;
+
+//  Tooltip related variable Ends
+
+//  Tree related variable Starts
+
+@treeBg: @themeBodyBackground;
+@treeBorderColor: #aaa;
+@treeCollpaseHoverBorder: #333;
+@treeTextcolor: @commonTextColor;
+@treeTextHovercolor: @commonTextHoverColor;
+
+//  Tree related variable Ends
+
+//  Calculator related variable Starts
+
+@calculatorBorder: #d8d8d8;
+@calculatorMainTextColor: #111;
+@calculatorDisplayBg: #fafafa;
+
+//  Calculator related variable Ends

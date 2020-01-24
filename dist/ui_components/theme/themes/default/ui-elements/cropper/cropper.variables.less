@@ -1,0 +1,113 @@
+.cropArea() {
+    @bg: #eee;
+}
+.cropBox() {
+	@h: 100%;
+	@w: 100%;
+}
+.cropFixedDiv() {
+    @h: 100%;
+}
+.cropperTopBottomCornerCommon() {
+    @w: 10px;
+    @h: 10px;
+    @bg: #fff;
+    @border-radius: 50%;
+    @z-index: 16;
+}
+.cropTopLeftCorner() {
+	@top: -5px;
+	@left: -5px;
+	@cursor: nwse-resize;
+}
+.cropTopRightCorner() {
+	@top: -5px;
+	@right: -5px;
+	@cursor: nesw-resize;
+}
+.cropBottomRightCorner() {
+	@bottom: -5px;
+	@right: -5px;
+	@cursor: nwse-resize;
+}
+.cropBottomLeftCorner() {
+	@bottom: -5px;
+	@left: -5px;
+	@cursor: nesw-resize;
+}
+.cropperFourEdges() {
+	@z-index: 15;
+}
+.cropperTopBottomEdgeCommon() {
+	@left: 0;
+	@right: 0;
+	@h: 10px;
+	@cursor: ns-resize;
+}
+.cropperRightLeftEdgeCommon() {
+	@top: 0;
+	@bottom: 0;
+	@w: 10px;
+	@cursor: ew-resize;
+}
+.cropperTopEdgeMixin() {
+	@top: -5px;
+}
+.cropperBottomEdgeMixin() {
+	@bottom: -5px;
+}
+.cropperRightEdgeMixin() {
+	@right: -5px;
+}
+.cropperLeftEdgeMixin() {
+	@left: -5px;
+}
+.cropDivImageImg() {
+    @z-index: 10;
+}
+.cropCropper() {
+    @bg: rgba(255, 255, 255, 0.3);
+	@top: 0;
+	@left: 0;
+}
+.cropperOpacityDiv() {
+	@top: 0;
+	@bottom: 0;
+	@left: 0;
+	@right: 0;
+	@bg: #333;
+	@opacity: .9;
+    @transition: opacity .1s ease;
+}
+.cropperGrid() {
+    @opacity: .8;
+    @z-index: 20;
+}
+.cropperVerticalGrid() {
+    @border-right: 1px dashed #ccc;
+    @top: 0;
+    @bottom: 0;
+}
+.cropperHorizontalGrid() {
+    @border-top: 1px dashed #ccc;
+    @right: 0;
+    @left: 0;
+}
+.cropperVerticalGrid1() {
+    @right: 25%;
+}
+.cropperVerticalGrid2() {
+    @right: 50%;
+}
+.cropperVerticalGrid3() {
+    @right: 75%;
+}
+.cropperHorizontalGrid1() {
+    @top: 25%;
+}
+.cropperHorizontalGrid2() {
+    @top: 50%;
+}
+.cropperHorizontalGrid3() {
+    @top: 75%;
+}

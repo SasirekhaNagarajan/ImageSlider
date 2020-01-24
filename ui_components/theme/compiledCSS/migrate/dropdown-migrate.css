@@ -1,0 +1,183 @@
+/*lyte-list-box css*/
+lyte-dropdown {
+    max-width: inherit;
+}
+.lyteDropPlaceholderMultiple {
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+.lyteDropPlaceholderNormal {
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+lyte-drop-label{
+    padding:0.45rem 1.1rem;
+    font-size:.855rem;
+    text-align:center;
+}
+lyte-dropdown[lt-prop-type="multiple"]:not([lt-prop-yield="true"]){
+    width:100%;
+}
+lyte-drop-body {
+    padding: 0;
+}
+lyte-drop-label div{
+    display: inline-block;
+}
+lyte-drop-box{
+    top: 27px;
+    left: 0;
+    z-index : 10020;
+}
+lyte-drop-box:not(.lyteDropBodyCallout) .lyteArrow {
+    background: transparent;
+}
+.lyteMarginRight{
+    margin-right:20px;
+}
+lyte-drop-item{
+    line-height: 1.286rem;
+    padding: .55rem 1.1rem;
+    font-size: .9rem;
+}
+lyte-drop-item:hover {
+    background-color: #f7f7f7;
+}
+
+/* for normal dropdown */
+lyte-drop-button {
+    background: transparent;
+    border-radius: 0;
+}
+
+lyte-dropdown:not([lt-prop-type="multiple"]):not([lt-prop-type="multisearch"]) lyte-drop-button{
+    white-space: nowrap;
+    padding: 5px 10px;
+    color: #555;
+    font-size: inherit;
+    box-shadow: none;
+}
+
+lyte-dropdown:not([lt-prop-type="multiple"]) lyte-drop-button:focus{
+    border-color: #2185d0;
+    outline: none;
+}
+/* ends here */
+
+/* for multi select cases */
+lyte-dropdown[lt-prop-type="multiple"] lyte-drop-button{
+    padding: 7px 10px 7px 5px;
+    min-height: 40px;
+}
+lyte-drop-button input{
+    padding: 8px 10px;
+}
+/* ends here */
+
+
+lyte-dropdown lyte-icon.dropdown
+{
+    background: url(../images/lyte_ui_sprite.svg) no-repeat -45px -3px;
+    width: 11px;
+    height: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/*Dropdown element disabled option*/
+.lyteDropdown-disabled{
+    opacity: 0.5;
+}
+lyte-drop-item[selected="true"]::before {
+    content: none;
+}
+.lyteDropdownSelection{
+    background-color: #f7f7f7;
+    position: relative;
+}
+/*Dropdown with arrow */
+/*Arrow Top*/
+lyte-drop-box .lyteArrowTop::before {
+    border-width: 9px;
+    margin-left: -9px;
+}
+/*Arrow bottom*/
+
+lyte-drop-box .lyteArrowBottom::before {
+    border-width: 9px;
+    margin-left: -9px;
+}
+/*Arrow Right*/
+lyte-drop-box .lyteArrowRight::before {
+    border-width: 9px;
+    margin-top: -9px;
+}
+/*Arrow Left*/
+lyte-drop-box .lyteArrowLeft:not(.lyteScaleOption) {
+    left: 0;
+}
+lyte-drop-box .lyteArrowLeft:not(.lyteScaleOption):before {
+    border-width: 9px;
+    margin-top: -9px;
+}
+
+/*multiple select dropdown */
+lyte-dropdown[lt-prop-type="multisearch"] lyte-drop-button {
+    padding: 0;
+    border: 0;
+}
+lyte-dropdown[lt-prop-type="multisearch"] lyte-drop-button.lyteDropButtonUp:hover,
+lyte-dropdown[lt-prop-type="multisearch"] lyte-drop-button.lyteDropButtonDown:hover {
+    border: none;
+}
+lyte-dropdown[lt-prop-type="multisearch"] lyte-drop-button.lyteDropButtonUp,
+lyte-dropdown[lt-prop-type="multisearch"] lyte-drop-button.lyteDropButtonDown {
+    box-shadow: none;
+}
+ .lyteMultiselect {
+    border-bottom: 1px solid #ddd;
+    display: inline-block;
+}
+
+ .lyteMultipleSelect li {
+    padding: 2px 18px 2px 7px;
+    font-size: 14px;
+    margin: 2px 10px 2px 0;
+}
+
+lyte-drop-button .lyteDropMark {
+    background-color: #9a9a9a;
+}
+
+.lyteMultipleSelect .lyteCloseIcon {
+    background: url(../images/lyte_ui_sprite.svg) no-repeat -125px -4px;
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    position: absolute;
+    right: 4px;
+    top: 9px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.lyteMultipleSelect li.lyteDropMark:hover .lyteCloseIcon,
+.lyteMultipleSelect li:hover .lyteCloseIcon {
+    background: url(../images/lyte_ui_sprite.svg) no-repeat -125px -4px;
+    background-color: transparent;
+}
+.lyteMultipleSelect .lyteCloseIcon::before {
+    content: none;
+}
+lyte-dropdown[lt-prop-type="multisearch"] lyte-drop-button::after, lyte-dropdown[lt-prop-type="multiple"] lyte-drop-button::after {
+    content: none;
+}
+.lyteDropdownActive{
+    display: none!important;
+}
+.lyteDropdownHidden{
+    display:none!important;
+}
+.lyteDropdownZIndex {
+    z-index: 10018;
+}

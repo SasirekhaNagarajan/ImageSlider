@@ -1,0 +1,143 @@
+.lyteMIDropdown {
+  display: none;
+  background: #fff;
+  border: 1px solid #b2b2b2;
+  position: absolute;
+  z-index: 10000;
+  margin-top: -2px;
+
+  border-radius:5px;
+  border-top-right-radius:0;
+  border-top-left-radius:0;
+
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.148438);
+     -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.148438);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.148438);
+}
+
+.lyteMIDropdown ul {
+    margin: 0;
+    padding: 0;
+}
+
+.lyteMIDropdown li {
+  background-color: #fff;
+  margin: 0;
+  width: auto;
+  border-bottom: 1px solid #eee;
+  line-height: 1.286rem;
+  overflow: hidden;
+  cursor: pointer;
+  list-style: none;
+  white-space: nowrap;
+  padding: .55rem 0.8rem;
+  font-size: .9rem;
+  text-transform: none;
+  font-weight: 400;
+}
+
+.lyteMIDropdown li:last-child {
+  border-radius:5px;
+}
+
+.lyteMIDropdown li > img,
+.lyteMIDropdown li > div.icon {
+  /*width: 16px;
+  height: 16px;
+  float: left;
+  margin-right: 5px;
+  -moz-background-origin:3px;
+
+  border-radius:3px;*/
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin-right: 8px;
+  -moz-background-origin: 3px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.2);
+}
+
+.lyteMIDropdown li em {
+  font-weight: bold;
+  font-style: none;
+}
+
+.lyteMIDropdown li:hover,
+.lyteMIDropdown li.lyteMIActive {
+  background-color: #f2f2f2;
+}
+
+.lyteMIDropdown li b {
+  background: #ffff99;
+  font-weight: normal;
+}
+
+.lyteMIDisplayBlock{
+  display: block;
+}
+
+.lyteMIHide{
+  visibility: hidden;
+}
+
+.lyteMIAddOverflow{
+  overflow: auto;
+}
+
+.lyteMentions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 9px;
+  color: #fff;
+  overflow: hidden;
+
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.lyteMentionsNormalTextarea{
+  top: 1px;
+  left: 1px;
+}
+
+.lyteMentions > div {
+  color: #fff;
+  white-space: pre-wrap;
+  width: 100%;
+}
+
+.lyteMentions > div > strong {
+  font-weight:normal;
+  background: #d8dfea;
+}
+
+.lyteMentions > div > strong > span {
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+}
+
+.lyteMIWrapper{
+  position: relative;
+  background: #fff;
+}
+
+.lyteMIWrapper textarea{
+  width: 100%;
+  display: block;
+  height: 18px;
+  padding: 9px;
+  border: 1px solid #dcdcdc;
+  border-radius:3px;
+  overflow: hidden;
+  background: transparent;
+  position: relative;
+  outline: 0;
+  resize: none;
+
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}

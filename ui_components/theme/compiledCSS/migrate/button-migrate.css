@@ -1,0 +1,44 @@
+lyte-button button {
+    font-size: .929rem;	
+    padding: 7.5px 15px;
+    background: transparent;
+}
+lyte-button .lytePrimaryBtn {
+	background: #42a2eb;
+	border: 1px solid #42a2eb;
+}
+.lyte-button.lyteSecondary:hover,
+.lyte-button.lyteSecondary {
+    background: #000;
+    border: 1px solid #000;
+}
+lyte-button .lyteFailure {
+    border: 1px solid #ec4844;
+    background: #ec4844;
+    color: #fff;
+}
+.lyteFailure.lyteDefaultBtn {
+    color: #ec4844;
+    background: #fff;
+}
+.lyteLg:not(.lyteIcon){
+	padding: 10px 16px;
+    font-size: 1.125em;
+    line-height: 1.3333333;
+}
+.lyteSm:not(.lyteIcon){	
+	padding: 5px 10px;
+    font-size: 0.750em;
+    line-height: 1.5;
+}
+.lyteExsm:not(.lyteIcon){
+	padding: 1px 5px;
+    line-height: 1.5;
+}
+.lyteDefaultBtn:hover{
+    border: 1px solid #abaaaa;
+    border-bottom: 1px solid #777;
+}
+.lytePrimaryBtn:hover{
+    border-bottom: 1px solid #1b70b0;
+}

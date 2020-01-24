@@ -1,0 +1,100 @@
+lyte-drop-box{
+    .lyteDropBox();
+    min-width: @minWidth;
+}
+
+lyte-drop-item:hover{
+    .lyteDropItemHover();
+    color: @color;
+}
+
+.lyteDropdownSelection {
+    .lyteDropItemSelected();
+    color: @color;
+
+}
+
+lyte-dropdown:not([lt-prop-type="multiple"]):not([lt-prop-type="multisearch"]) lyte-drop-button{
+    .lyteDropButtonNormal();
+    border-bottom: @borderBottom;
+    transition: @transition;
+    overflow: hidden;
+}
+
+lyte-dropdown:not([lt-prop-type="multiple"]):not([lt-prop-type="multisearch"]) lyte-drop-button:before{
+    content: ' ';
+    display: inline-block;
+    width:0px;
+    height:0px;
+    left: -2px;
+    position: absolute;
+    border: solid 1px rgba(0,0,0,0);
+}
+
+lyte-dropdown:not([lt-prop-type="multiple"]):not([lt-prop-type="multisearch"]) lyte-drop-button:not(:active):before{
+    animation: rippleDropNormal 1s ease;
+    -webkit-animation: rippleDropNormal 1s ease;
+}
+
+@keyframes rippleDropNormal {
+  0% {
+    box-shadow: 0 0 0 0em rgba(0,174,255,0.3)
+  }
+  50% {
+    box-shadow: 0 0 0 15rem rgba(0,174,255,0.3)
+  }
+  100% {
+    box-shadow: 0 0 0 15rem rgba(0,0,0,0);
+  }
+}
+
+
+.lyteDummyEventContainer {
+    min-width: 200px;
+}
+
+lyte-dropdown:not([lt-prop-type="multiple"]):not([lt-prop-type="multisearch"]) lyte-drop-button:hover {
+    color: black;
+    border-bottom: solid 1px black;
+}
+
+lyte-dropdown:not([lt-prop-type="multiple"]):not([lt-prop-type="multisearch"]) lyte-drop-button:hover lyte-icon.dropdown {
+    opacity: 1;
+}
+
+lyte-icon.dropdown {
+    transition: all 0.5s;
+    margin-top: 0.5rem;
+    margin-right: 0.3125rem;
+    border-bottom: solid 1px black;
+    border-right: solid 1px black;
+}
+
+lyte-dropdown[lt-prop-type="multiple"] lyte-drop-button{
+    border-bottom: 1px solid #c7c7c7;
+}
+
+.lyteCloseIcon { 
+    margin-left: 0.25rem;
+    margin-top: 0.25rem;
+    background: none;
+    right: 0px;
+    top: 0px;
+    position: inherit;
+}
+
+.lyteCloseIcon:before, .lyteCloseIcon:after {
+    position: absolute;
+    content: ' ';
+    width: 2px;
+    height: 10px;
+    background: white;
+}
+
+.lyteCloseIcon:before {
+    transform: rotate(45deg);
+}
+
+.lyteCloseIcon:after {
+    transform: rotate(-45deg);
+}

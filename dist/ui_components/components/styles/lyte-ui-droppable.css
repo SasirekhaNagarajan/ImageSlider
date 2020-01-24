@@ -1,0 +1,32 @@
+.droppable_element{
+    border: 1px solid black;
+    float : right;
+    width: 180px;
+    height: 200px;
+    margin-top: 50px;
+    background-color: antiquewhite;
+}
+.dropHere{
+    border: 1px solid black;
+    width: 160px;
+    height: 160px;
+    background-color: white;
+    text-align: center;
+    display: inline-block;
+    float: right;
+    margin-right: 170px;
+    margin-top: 70px;
+}
+.dropHere .padding{
+    margin-top: 70px;
+}
+.activeDD{
+    background-color: #42a2ebbd;
+}
+
+.hoverDD{
+    background-color: #19bc7d;
+}
+.dropped{
+    background-color: yellow;
+}

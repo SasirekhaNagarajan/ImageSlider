@@ -1,0 +1,173 @@
+@import "../themes/default/global/global.variables.less";
+/* Default theme imported */
+@import "../themes/default/ui-elements/mentionsinput/mentionsinput.variables.less";
+
+/* Loading theme in configuration */
+@import "../config.less";
+@import (optional) "../themes/@{mentionsinput}/ui-elements/mentionsinput/mentionsinput.variables.less";
+
+/* rtl files loading */
+
+@import (multiple,optional) "../themes/default/global/@{direction}.less";
+
+@import (multiple,optional) "../themes/@{mentionsinput}/global/@{direction}.less";
+
+/* Loading final tweaks to your variables */
+@import (optional) "../overrides/ui-elements/mentionsinput.variables.less";
+
+/*  Mentions Input Related CSS Begins   */
+.lyteMIWrapper {
+	.MIWrapper();
+	width: @w;
+	position: relative;
+	background: @bg;
+	border-radius: @border-radius;
+}
+.lyteMIWrapper textarea {
+	.mentionsInputTextarea();
+	font-family: @proxima;
+	font-size: @font-size;
+	line-height: @line-height;
+	height: @h;
+    min-height: @min-height;
+	display: block;
+	padding: @padding;
+	color: @color;
+	overflow: hidden;
+	background: transparent;
+	position: relative;
+	outline: 0;
+	resize: none;
+	box-sizing: border-box;
+}
+.lyteMIWrapper textarea::placeholder {
+	.mentionsInputTextareaPlaceholder();
+	color: @color;
+}
+.lyteMIDropdown {
+	.MIDropdown();
+	font-family: @proxima;
+	display: none;
+	background: @bg;
+	border: @border;
+	position: absolute;
+	// left: 0;
+	// right: 0;
+	z-index: @z-index;
+	margin-top: @margin-top;
+	border-radius: @border-radius;
+	box-shadow: @box-shadow;
+    color: @color;
+    box-sizing: border-box;
+    overflow: auto;
+}
+.lyteMIDropdown ul {
+	.mentionsInputDropUl();
+	margin: @margin;
+	padding: @padding;
+	max-height: @max-height;
+	// overflow: auto;
+}
+.lyteMIDropdown li {
+	.mentionsInputDropLi();
+	background: @bg;
+	margin: 0;
+	font-family: @proxima;
+	overflow: hidden;
+	cursor: pointer;
+	white-space: nowrap;
+	font-size: @font-size;
+	padding: @padding;
+    text-align: @value-textalign-left;
+}
+.lyteMIDropdown li img {
+	.mentionInputDropImg();
+	width: @w;
+	height: @h;
+	border-radius: 50%;
+	float: @value-float-left;
+    @{property-margin-right}: @margin-right;
+}
+.lyteMIDropdown li em {
+	font-weight: bold;
+	font-style: none;
+}
+.lyteMIDropdown li:hover,
+.lyteMIDropdown li.lyteMIActive {
+	.mentionsInputActive();
+	background: @bg;
+}
+.lyteMIDropdown li b {
+	.mentionsInputHighlight();
+	background: @bg;
+	font-weight: normal;
+}
+.lyteMIDisplayBlock {
+	display: block;
+}
+.lyteMIHide {
+	visibility: hidden;
+}
+.lyteMIAddOverflow {
+	overflow: auto;
+}
+.lyteMentions {
+	.MentionsOuterDiv();
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: @padding;
+	color: @color;
+	overflow: hidden;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+    text-align: @value-textalign-left;
+    line-height: @line-height;
+}
+.lyteInput .lyteMentions {
+    .flatTypeMentionsOuterDiv();
+    padding-left: @padding-left;
+}
+.lyteMentionsNormalTextarea {
+	.MentionsNormalTextarea();
+	top: @top;
+	left: @left;
+}
+.lyteMentionsNormalTextarea + textarea {
+    .MentionsNormalTextElem();
+    border: @border;
+    border-radius: @border-radius;
+    width: @w;
+}
+.lyteMentionsNormalTextarea + textarea:hover {
+    border: 1px solid #c1c1c1;
+}
+.lyteMentionsNormalTextarea + textarea:focus {
+    border: 1px solid #7fceef;
+}
+.lyteMentions .lyteMentionsInnerDiv {
+	color: transparent;
+	white-space: pre-wrap;
+	display: inline-block;
+	position: relative;
+}
+.lyteMentions .lyteMentionsStrongDiv {
+	.mentionsInputMentionValue();
+	font-weight: normal;
+	background: @bg;
+	padding: @padding;
+	// display: inline-block;
+	line-height: @line-height;
+}
+
+
+/* import theme overrides - styles */
+@import (optional) "../themes/@{mentionsinput}/ui-elements/mentionsinput/mentionsinput.styles.less";
+
+
+/* import custom css - final tweaks by the user */
+@import (optional) "../overrides/ui-elements/mentionsinput.overrides.less";
+
+/*  Mentions Input Related CSS ENDS   */

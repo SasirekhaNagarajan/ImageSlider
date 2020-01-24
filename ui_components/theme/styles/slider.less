@@ -1,0 +1,309 @@
+/* Default theme imported */
+@import "../themes/default/ui-elements/slider/slider.variables.less";
+
+/* Loading theme in configuration */
+
+@import "../config.less";
+
+@import (optional) "../themes/@{slider}/ui-elements/slider/slider.variables.less";
+
+/* rtl files loading */
+
+@import (multiple,optional) "../themes/default/global/@{direction}.less";
+
+@import (multiple,optional) "../themes/@{slider}/global/@{direction}.less";
+
+/* Loading custom themes */
+
+@import (optional) "../overrides/ui-elements/slider.variables.less";
+
+/* Slider CSS BEGINS  */
+lyte-slider {
+	display: inline-block;
+}
+lyte-slider * {
+    box-sizing: content-box;
+}
+lyte-slider .lyteSlide {
+	height: 100%;
+}
+.lyteRangeSlider,
+.lyteSliderFill {
+	.SliderFill();
+	display: block;
+	border-radius: @border-radius;
+	cursor: pointer;
+}
+.lyteRangeSlider {
+	.RangeSlider();
+	height: @h;
+	background: @bg;
+	position: relative;
+	outline: none;
+}
+.lyteSliderFill {
+	.SliderFill1();
+	background: @bg;
+	position: absolute;
+	top: 0;    /*  Altering this may cause alignment issue */
+}
+.lyteSlide,
+.lyteSliderHandler {
+	outline: none;
+}
+.lyteSliderHandler {
+    .sliderHandler();
+    z-index: @z-index;
+}
+.lyteSliderHandler.lyteMultiSliderSelected {
+    .sliderHandlerSelected();
+    z-index: @z-index;
+}
+.lyteSliderDisabled {
+	pointer-events: none;
+	opacity: 0.5;
+}
+.lyteSquare.lyteSliderHandler,
+.lyteCircle.lyteSliderHandler {
+	.CircleSliderhandler();
+	width: @w;
+	height: @h;
+	background: @bg;
+	border-radius: @border-radius;
+	border: @border;
+	cursor: pointer;
+	position: absolute;
+	top: @top;
+	left: @left;
+}
+.lyteSquare.lyteSliderHandler {
+    border-radius: 0;
+}
+.lyteRangeSlider .lyteScaleLine .lyteScalLable {
+	.rangeSliderScalLable();
+	font-family: @primaryFont;
+	font-size: @font-size;
+	color: @color;
+	padding-top: @padding-top;
+	display: inline-block;
+}
+/*  Horizontal slider related CSS Starts  */
+.lyteRangeSlider.lyteHorizontal .lyteScaleOption {
+	.rangeSliderHorScaleOption();
+	position: absolute;
+	top: @top;
+	left: 0;   /*  Altering this may cause alignment issue */
+	width: 100%;
+	height: @h;
+}
+.lyteRangeSlider .lyteScaleLine {
+	.ScaleLine();
+	width: @w;
+	height: @h;
+	text-align: center;
+	display: inline-block;
+	position: absolute;
+    @{property-margin-left}: @margin-left;
+	left: @left;
+}
+.lyteScaleLine span:first-child {
+	.ScaleLineSpan();
+	height: 100%;
+	width: @w;
+	background: @bg;
+	display: inline-block;
+	position: absolute;
+	top: @top;
+	left: @left;
+}
+.lyteRangeSlider.lyteHorizontal .lyteSliderFill {
+	height: 100%;
+}
+.lyteRangeSlider.lyteHorizontal .lyteArrow.lyteSliderHandler {
+	.horizontalSliderHandler();
+	border: @border;
+	width: @w;
+	height: @h;
+	border-bottom-width: @border-bottom-width;
+	top: @top;
+	background: @bg;
+	cursor: pointer;
+	position: absolute;
+	left: @left;
+}
+.lyteRangeSlider.lyteHorizontal .lyteArrow.lyteSliderHandler::after,
+.lyteRangeSlider.lyteHorizontal .lyteArrow.lyteSliderHandler::before {
+	content: "";
+	border-style: solid;
+	border-color: transparent;
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+    left: 0;
+}
+.lyteRangeSlider.lyteHorizontal .lyteArrow.lyteSliderHandler::before {
+	.horizontalSliderHandlerBefore();
+	border-top-color: @border-top-color;
+	border-width: @border-width;
+	margin-left: @margin-left;
+	top: @top;
+}
+.lyteRangeSlider.lyteHorizontal .lyteArrow.lyteSliderHandler::after {
+	.horizontalSliderHandlerAfter();
+	border-top-color: @border-top-color;
+	border-width: @border-width;
+	margin-left: @margin-left;
+	top: @top;
+}
+/*  Horizontal slider related CSS Ends  */
+/*  Vertical slider related CSS  Begins  */
+.lyteRangeSlider.lyteVertical {
+	.rangeSliderVertical();
+	width: @w;
+	height: 100%;
+}
+.lyteVertical .lyteSliderFill {
+	.Vertical();
+	width: @w;
+}
+.lyteVertical .lyteCircle.lyteSliderHandler {
+	.VSHCircle();
+	top: @top;
+	left: @left;
+}
+.lyteVertical .lyteSquare.lyteSliderHandler {
+    .VSHSquare();
+    @{property-left}: @left;
+}
+.lyteVertical.lyteRangeSlider .lyteScaleLine .lyteScalLable {
+	.VRSLable();
+	position: absolute;
+	padding-top: @padding-top;
+	top: @top;
+    @{property-left}: @left;
+}
+.lyteVertical.lyteRangeSlider .lyteArrow .lyteScaleLine .lyteScalLable {
+	.VRSArrowLable();
+	top: @top;
+	@{property-left}: @left;
+}
+.lyteVertical .lyteArrow.lyteSliderHandler,
+.lyteVertical .lyteArrowLeft.lyteSliderHandler {
+	.VSHArrow();
+	top: @top;
+	width: @w;
+	height: @h;
+	border: @border;
+	background: @bg;
+	cursor: pointer;
+	position: absolute;
+}
+.lyteVertical .lyteArrow.lyteSliderHandler {
+	.VSHArrow1();
+	@{property-border-right-width}: @border-right-width;
+    @{property-left}: @left;
+}
+.lyteVertical .lyteArrowLeft.lyteSliderHandler {
+	.VSHArrow2();
+    @{property-border-left-width}: @border-left-width;
+	@{property-left}: @left;
+}
+.lyteVertical .lyteArrow.lyteSliderHandler::after,
+.lyteVertical .lyteArrow.lyteSliderHandler::before,
+.lyteVertical .lyteArrowLeft.lyteSliderHandler::after,
+.lyteVertical .lyteArrowLeft.lyteSliderHandler::before {
+	content: "";
+	border-style: solid;
+	border-color: transparent;
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+.lyteVertical .lyteArrow.lyteSliderHandler::before,
+.lyteVertical .lyteArrowLeft.lyteSliderHandler::before {
+	.VSHLeftArrowBefore();
+	border-color: transparent;
+	border-width: @border-width;
+	margin-top: @margin-top;
+}
+.lyteVertical .lyteArrow.lyteSliderHandler::before {
+	.VSHArrow1Before();
+    @{property-border-left-color}: @border-left-color;
+    @{property-left}: @left;
+}
+.lyteVertical .lyteArrowLeft.lyteSliderHandler::before {
+	.VSHLeftArrowBefore1();
+    @{property-border-right-color}: @border-right-color;
+	@{property-right}: @right;
+}
+.lyteVertical .lyteArrow.lyteSliderHandler::after,
+.lyteVertical .lyteArrowLeft.lyteSliderHandler::after {
+	.VSHLeftArrowAfter();
+	border-color: transparent;
+	border-width: @border-width;
+	margin-top: @margin-top;
+}
+.lyteVertical .lyteArrow.lyteSliderHandler::after {
+	.VSHArrowAfter1();
+	@{property-left}: @left;
+	@{property-border-left-color}: @border-left-color;
+}
+.lyteVertical .lyteArrowLeft.lyteSliderHandler::after {
+	.VSHLeftArrowAfter();
+	@{property-right}: @right;
+	@{property-border-right-color}: @border-right-color;
+}
+.lyteVertical.lyteRangeSlider .lyteScaleOption {
+	.VRSScaleOption();
+	position: absolute;
+	top: 0;    /*  Altering this may cause alignment issue */
+    @{property-left}: @left;
+	width: @w;
+	height: 100%;
+}
+.lyteVertical.lyteRangeSlider .lyteScaleLine {
+	.VRSScaleLine();
+	width: @w;
+	height: @h;
+	position: absolute;
+	margin-top: @margin-top;
+    @{property-margin-left}: @margin-left;
+	top: @top;
+    @{property-left}: @left;
+}
+.lyteVertical.lyteRangeSlider .lyteArrow .lyteScaleLine {
+	.VRSArrowScaleLine();
+	@{property-left}: @left;
+}
+.lyteVertical .lyteScaleLine span:first-child {
+	.VRSScaleLineSpan();
+	height: @h;
+	width: @w;
+	left: @left;
+	top: @top;
+}
+.lyteVertical.lyteRangeSlider .lyteArrowLeft .lyteScaleLine .lyteScalLable {
+	.VRSArrowLeftLable();
+	top: @top;
+	@{property-left}: unset;
+    @{property-right}: @right;
+}
+.lyteVertical.lyteRangeSlider .lyteArrowLeft.lyteScaleOption {
+	.VRSArrowLeftScale();
+    @{property-left}: @left;
+}
+/*  Vertical slider related CSS  Ends  */
+
+
+/* import theme overrides - styles */
+@import (optional) "../themes/@{slider}/ui-elements/slider/slider.styles.less";
+
+
+
+
+/* import custom css - final tweaks by the user */
+@import (optional) "../overrides/ui-elements/slider.overrides.less";
+
+/* Slider CSS ENDS  */

@@ -1,0 +1,420 @@
+/* Default theme imported */
+@import "../themes/default/ui-elements/calculator/calculator.variables.less";
+
+
+
+
+/* Loading theme in configuration */
+@import "../config.less";
+@import (optional) "../themes/@{calculator}/ui-elements/calculator/calculator.variables.less";
+
+/* rtl files loading */
+
+@import (multiple,optional) "../themes/default/global/@{direction}.less";
+
+@import (multiple,optional) "../themes/@{calculator}/global/@{direction}.less";
+
+
+/* Loading final tweaks to your variables */
+@import (optional) "../overrides/ui-elements/calculator.variables.less";
+
+/*  Calculator related style BEGINS   */
+
+lyte-calculator {
+	.calculatorOuter();
+	font-family: @proxima;
+	box-shadow: @box-shadow;
+	display: inline-block;
+	border-radius: @border-radius;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.lyteCalculator {
+	.calculatorDiv();
+	border: @border;
+	border-radius: @border-radius;
+	outline: 0;
+	width: @w;
+}
+.lyteCalculator.advanced {
+	.calculatorAdvanced();
+	width: @w;
+}
+.lyteCalculator.basic .advancedCalculator {
+	display: none;
+}
+.calculatorDisplay {
+	.calculatorDisplay();
+	position: relative;
+	background: @bg;
+	border-bottom: @border-bottom;
+	padding: @padding;
+	border-radius: @border-radius;
+    height: @h;
+}
+.calculatorrad {
+	.calculatorrad();
+	font-size: @font-size;
+	position: absolute;
+	bottom: @bottom;
+}
+.lyteCalculator.advanced .calculatorDisplay {
+	.advancedCalculatorDisplay();
+	padding: @padding;
+}
+.lyteCalculatorTextField {
+	.CalculatorTextField();
+	width: 100%;
+	border: 0;
+	outline: 0;
+	box-shadow: none;
+	text-align: @value-textalign-right;
+	background: @bg;
+	font-size: @font-size;
+	color: @color;
+	height: @h;
+    direction: ltr;
+}
+.lyteCalculatorTextField::-ms-clear {
+    display: none;
+}
+
+.calculatorDisplay.equalBtn .lyteCalculatorTextField {
+	.calcDisplayEqualBtnTextField();
+	font-size: @font-size;
+	color: @color;
+	height: @h;
+}
+.calculatorbuttons,
+.basicCalculator,
+.advancedCalculator {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	position: relative;
+}
+.advancedCalculator {
+	.advancedCalcBtnsCont();
+	width: @w;
+}
+.basicCalculator {
+	align-content: baseline;
+}
+.advancedCalculator span,
+.basicCalculator span {
+	.calculatorSpanButtons();
+	width: @w;
+	height: @h;
+    @{property-border-right}: @border-right;
+	border-bottom: @border-bottom;
+	box-sizing: border-box;
+	background: @bg;
+	text-align: center;
+	line-height: @line-height;
+	cursor: pointer;
+	font-size: @font-size;
+	color: @color;
+    direction: ltr;
+}
+.basicCalculator span.calcClearAc {
+	.calcClearAc();
+	font-size: @font-size;
+}
+.basicCalculator span.doubleWidth {
+	.bacicCalcDoubleWidthSpan();
+	width: @w;
+}
+.advancedCalculator span {
+	.advancedCalculatorSpanButtons();
+	width: @w;
+	font-size: @font-size;
+}
+.lyteCalculator.advanced .basicCalculator span {
+	.advanceModeCalcBasicButtons();
+	width: @w;
+}
+.lyteCalculator.advanced .basicCalculator span.doubleWidth {
+	.advanceModeCalcBasicDoubleWidthSpan();
+	width: @w;
+}
+.lyteCalculator.advanced .basicCalculator {
+	.advanceModeCalcBasicCalcCont();
+	width: @w;
+}
+.advancedCalculator span:hover,
+.basicCalculator span:hover {
+	.calculatorButtonsHover();
+	background: @bg;
+}
+.basicCalculator span.basicOp {
+	.calculatorBasicOp();
+	background: @bg;
+    @{property-border-right}: 0;
+	font-size: @font-size;
+}
+.basicCalculator span.basicOp.calcEqual {
+    .calculatorEqualBtn();
+    color: @color;
+}
+.basicCalculator span.lastrow,
+.advancedCalculator span.lastrow {
+	border-bottom: 0;
+}
+.calculatorDispspan {
+	.calculatorDispspan();
+	text-align: @value-textalign-right;
+	font-size: @font-size;
+	color: @color;
+	height: @h;
+}
+.calculatorDisplay.equalBtn .calculatorDispspan {
+	.calcEqualBtnDispspan();
+	font-size: @font-size;
+	color: @color;
+	height: @h;
+}
+.calculatorToggle {
+	.calculatorToggleMixin();
+	display: block;
+	position: absolute;
+    @{property-left}: @left;
+	border: @border;
+	padding: @padding;
+	background: @bg;
+    @{property-border-right}: 0;
+	top: @top;
+	cursor: pointer;
+}
+.calculatorsmaller {
+	.calculatorsmallerMixin();
+	color: @color;
+	background-image: @bg-img;
+	background-position: @bg-pos;
+	opacity: 0.7;
+	width: @w;
+	height: @h;
+	display: inline-block;
+	transform: @transform;
+}
+.lyteCalculator.advanced .calculatorsmaller {
+    .advancedCalculatorSmaller();
+	transform: @transform;
+}
+.advancedCalculator span.CalculatorBtn15 {
+	.calc15pxBtn();
+	font-size: @font-size;
+}
+.advancedCalculator span.CalculatorBtn16 {
+	.calc16pxBtn();
+	font-size: @font-size;
+}
+.advancedCalculator span.CalculatorBtn17 {
+	.calc17pxBtn();
+	font-size: @font-size;
+}
+.advancedCalculator span.calc-second {
+	.advancedCalcSecond();
+	background: @bg;
+}
+.memorymr.active,
+.memorymr.active:hover {
+	.memorymrActive();
+	background: @bg;
+	position: relative;
+}
+.memorymr.active::before {
+	.memorymrActiveBefore();
+	content: '';
+	position: absolute;
+    @{property-right}: @right;
+	top: @top;
+	background: @bg;
+	width: @w;
+	height: @h;
+	border-radius: 50%;
+}
+.calcLeft {
+	.calcLeft();
+    @{property-border-bottom-left-radius}: @border-bottom-left-radius;
+}
+.lyteCalculator.advanced .basicCalculator .calcLeft {
+	.advanceModeCalcBasicLeft();
+    @{property-border-bottom-left-radius}: @border-bottom-left-radius;
+}
+.calcRight {
+	.calcRight();
+    @{property-border-bottom-right-radius}: @border-bottom-right-radius;
+}
+.basicCalculator span.basicOp:not(.calcEqual),
+.advancedCalculator span.squareroot.inverse,
+.advancedCalculator span.cuberoot.inverse,
+.basicCalculator span.calcBackspace,
+.advancedCalculator span.pieButton {
+	position: relative;
+	color: transparent;
+}
+.pieButton::after,
+.basicCalculator span.basicOp:not(.calcEqual)::after,
+.cuberoot.inverse::before,
+.squareroot.inverse::before,
+.basicCalculator span.calcBackspace::after {
+	content: '';
+	position: absolute;
+	background-image: @lytesprite;
+}
+.calcMultiply::after {
+	.calcMultiplyAfter();
+	background-position: @bg-pos;
+	width: @w;
+	height: @h;
+	top: @top;
+	left: @left;
+}
+.calcDivide::after {
+	.calcDivideAfter();
+	background-position: @bg-pos;
+	width: @w;
+	height: @h;
+	top: @top;
+	left: @left;
+}
+.calcAdd::after {
+    .calcAddAfter();
+    background-position: @bg-pos;
+    width: @w;
+    height: @h;
+    top: @top;
+    left: @left;
+}
+.calcSub::after {
+	.calcSubAfter();
+	background-position: @bg-pos;
+	width: @w;
+	height: @h;
+	top: @top;
+	left: @left;
+}
+.squareroot.inverse::before,
+.cuberoot.inverse::before {
+	.squarerootInverseBefore();
+	content: '2';
+	background-position: @bg-pos;
+	width: @w;
+	height: @h;
+	top: @top;
+	left: @left;
+	color: @color;
+	font-size: @font-size;
+	line-height: @line-height;
+	text-align: left;
+	text-indent: @text-indent;
+}
+.cuberoot.inverse::before {
+	.cuberootInverseBefore();
+	content: 'y';
+	line-height: @line-height;
+}
+.squareroot.inverse::after,
+.cuberoot.inverse::after {
+	.squarerootInverseAfter();
+	content: 'x';
+	position: absolute;
+	color: @color;
+	top: @top;
+	line-height: @line-height;
+	left: calc(50%);
+	text-indent: @text-indent;
+}
+.basicCalculator span.calcBackspace::after {
+	.calcBackspaceAfter();
+	background-position: @bg-pos;
+	width: @w;
+	height: @h;
+	left: @left;
+	top: @top;
+}
+.lyteCalculatorTextField.hideCursor, 
+.lyteCalculatorTextField.hideCursorNonEditable {
+    .calcHideCursor();
+    color: transparent;
+    text-shadow: @text-shadow;
+}
+.equalBtn .lyteCalculatorTextField.hideCursorNonEditable {
+    .calcEqualBtnHideCursor();
+    color: transparent;
+    text-shadow: @text-shadow;
+}
+.lyteCalculatorTextField.lyteScrollBar {
+    .CalculatorTextFieldWithScrollBar();
+    height: @h;
+    overflow: hidden;
+}
+.toggleBtns {
+    position: relative;
+}
+.toggleBtns sup {
+    font-size: 0;
+}
+.cuberoot:not(.inverse)::after,
+.squareroot:not(.inverse)::after,
+.logbtn.inverse::after,
+.naturallog.inverse::after,
+.hyperbolic.inverse::after,
+.trignometry.inverse::after {
+    .calcToggleBtnsAfter();
+    content: '-1';
+    position: absolute;
+    top: @top;
+    right: @right;
+    color: @color;
+    font-size: @font-size;
+}
+.hyperbolic.inverse::after {
+    .calcHyperBolicInverseAfter();
+    right: @right;
+}
+.logbtn.inverse::after,
+.naturallog.inverse::after {
+    .calcLogInverseAfter();
+    content: 'x';
+    top: @top;
+    right: @right;
+}
+.naturallog.inverse::after {
+    .calcNaturalLogInverseAfter();
+    right: @right;
+}
+.squareroot:not(.inverse)::after {
+    .calcSqRootAfter();
+    content: '2';
+    right: @right;
+}
+.cuberoot:not(.inverse)::after {
+    .calcCubeRootAfter();
+    content: 'y';
+    right: @right;
+}
+.pieButton::after {
+    .pieButtonAfter();
+    display: block;
+    width: @w;
+    height: @h;
+    background-position: @bg-pos;
+    top: @top;
+    left: @left;
+}
+
+
+/* import theme overrides - styles */
+@import (optional) "../themes/@{calculator}/ui-elements/calculator/calculator.styles.less";
+
+
+
+
+/* import custom css */
+@import (optional) "../overrides/ui-elements/calculator.overrides.less";
+
+
+/*  Calculator related style ENDS   */

@@ -1,0 +1,299 @@
+lyte-step-structure {
+    line-height: 1;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+lyte-step-item {
+    padding: 0;
+    font-size: 14px;
+    position: relative;
+}
+
+.lyteStepSlash .lyteWarning {
+    color: #ffb130;
+}
+
+.lyteStepBullet {
+    counter-reset: bulletcounter;
+}
+
+.lyteStepBullet lyte-step-item {
+    flex-direction: column-reverse;
+    width: 70px;
+}
+
+.lyteStepBullet lyte-step-head {
+    text-indent: 0;
+    border: 2px solid #ddd;
+}
+
+.lyteStepBullet lyte-step-head::before {
+    counter-increment: bulletcounter;
+    content: counter(bulletcounter);
+    background: transparent;
+    color: #000;
+    text-align: center;
+    height: auto;
+}
+
+.lyteStepBullet lyte-step-head:hover::before {
+    transform: scale(1);
+}
+
+.lyteStepBullet .lyteCompleted lyte-step-head::before {
+    background-image: none;
+    color: #fff;
+    height: auto;
+}
+
+.lyteStepBullet .lyteActive:last-of-type lyte-step-head {
+    background: #fff;
+}
+
+.lyteStepBullet lyte-step-item.lyteActive:last-of-type lyte-step-head::before {
+    height: auto;
+    background-image: none;
+}
+
+.lyteStepBullet lyte-step-head::after {
+    width: 50px;
+    left: 20px;
+    background: #ddd;
+}
+
+.lyteStepFlat {
+    line-height: unset;
+}
+
+.lyteStepFlat lyte-step-item:first-child,
+.lyteStepFlat lyte-step-item:hover,
+.lyteStepFlat lyte-step-item {
+    background: #eaeaea;
+    border-color: transparent;
+    padding: 0 20px 0 30px;
+}
+
+.lyteStepFlat lyte-step-item.lyteActive:last-of-type,
+.lyteStepFlat lyte-step-item:last-of-type {
+    border-color: transparent;
+}
+
+.lyteStepFlat lyte-step-item:hover::before,
+.lyteStepFlat lyte-step-item::before {
+    border-left-color: #eaeaea;
+    border-top-width: 17px;
+    border-bottom-width: 17px;
+    border-left-width: 19px;
+    right: -18px;
+    top: -1px;
+}
+
+.lyteStepFlat lyte-step-item:last-of-type::before {
+    content: '';
+    right: -20px;
+}
+
+.lyteStepFlat lyte-step-item:last-of-type::after {
+    content: '';
+}
+
+.lyteStepFlat lyte-step-item::after {
+    border-left-color: #fff;
+    border-top-width: 19px;
+    border-bottom-width: 19px;
+    border-left-width: 21px;
+    left: -1px;
+    top: -3px;
+}
+
+.lyteStepFlat lyte-step-item.lyteActive {
+    border-color: #2d7bd0;
+}
+
+.lyteStepFlat lyte-step-item.lyteActive:hover,
+.lyteStepFlat lyte-step-item.lyteActive {
+    background: #2d7bd0;
+}
+
+.lyteStepFlat lyte-step-item.lyteActive:first-child,
+.lyteStepFlat lyte-step-item.lyteActive:hover::before,
+.lyteStepFlat lyte-step-item.lyteActive::before {
+    border-left-color: #2d7bd0;
+}
+
+.lyteStepFlat lyte-step-item.lyteActive::after {
+    border-left-color: #fff;
+}
+
+.lyteStepFlat lyte-step-item.lyteCompleted {
+    border-color: #72c880;
+}
+
+.lyteStepFlat lyte-step-item.lyteCompleted:hover,
+.lyteStepFlat lyte-step-item.lyteCompleted {
+    background: #72c880;
+}
+
+.lyteStepFlat lyte-step-item.lyteCompleted:first-child,
+.lyteStepFlat lyte-step-item.lyteCompleted:hover::before,
+.lyteStepFlat lyte-step-item.lyteCompleted::before {
+    border-left-color: #72c880;
+}
+
+.lyteStepFlat lyte-step-body::before {
+    content: none;
+}
+
+.lyteStepFlat lyte-step-body {
+    padding: 9px 0;
+    line-height: 1;
+    margin-right: 2px;
+}
+
+.lyteStepPlain lyte-step-body {
+    display: block;
+    float: left;
+    background: #eaeaea;
+    text-align: center;
+    padding: 10px 20px 10px 30px;
+    position: relative;
+    margin: 0 2px 0 0;
+    font-size: 14px;
+    text-decoration: none;
+    color: #333;
+}
+.lyteStepPlain lyte-step-body::before,
+.lyteStepPlain lyte-step-body::after {
+    content: "";
+    border-top: 17px solid transparent;
+    border-bottom: 17px solid transparent;
+    position: absolute;
+    top: 0;
+}
+
+.lyteStepPlain lyte-step-body::after {
+    border-left: 17px solid #eaeaea;
+    right: -17px;
+    z-index: 1;
+}
+
+.lyteStepPlain lyte-step-body::before {
+    border-left: 17px solid #fff;
+    left: 0;
+}
+
+
+/*On progress css*/
+
+.lyteStepPlain .lyteActive lyte-step-body {
+    background: #2d7bd0 !important;
+    color: #fff !important;
+}
+
+.lyteStepPlain .lyteActive lyte-step-body::after {
+    border-left-color: #2d7bd0 !important;
+}
+
+
+/*Warning css*/
+
+.lyteStepPlain .lyteWarning lyte-step-body {
+    background: #ffb130 !important;
+    color: #fff !important;
+}
+
+.lyteStepPlain .lyteWarning lyte-step-body::after {
+    border-left-color: #ffb130 !important;
+}
+
+
+/*Completed css*/
+
+.lyteStepPlain .lyteCompleted lyte-step-body {
+    background: #72c880 !important;
+    color: #fff !important;
+}
+
+.lyteStepPlain .lyteCompleted lyte-step-body::after {
+    border-left-color: #72c880 !important;
+}
+
+.lyteStepPlain lyte-step-item:first-child lyte-step-body::before {
+    border-left-color: transparent;
+}
+
+lyte-step-structure.lyteStepBox {
+    display: inline-block;
+    margin: 1em;
+    line-height: 1.14285714em;
+    border: 1px solid rgba(34, 36, 38, 0.15);
+    counter-reset: ordered;
+}
+
+.lyteStepBox lyte-step-item {
+    align-items: center;
+    margin: 0 0;
+    padding: 1.14285714em 2em;
+    background: #fff;
+    color: rgba(0, 0, 0, 0.87);
+    border: none;
+    border-right: 1px solid rgba(34, 36, 38, 0.15);
+}
+
+.lyteStepBox lyte-step-item:last-of-type {
+    border-right: none;
+}
+
+.lyteStepBox lyte-step-item.lyteCompleted::before {
+    content: '';
+    background: url(../images/lyte_ui_sprite.svg) no-repeat -1px -18px;
+    color: #21ba45;
+    height: 30px;
+    width: 30px;
+    margin-right: 1rem;
+    display: inline-block;
+    vertical-align: middle;
+    counter-increment: ordered;
+}
+
+.lyteStepBox lyte-step-item:not(.lyteCompleted)::before {
+    content: counters(ordered, ".");
+    margin-right: 1rem;
+    display: inline-block;
+    vertical-align: middle;
+    height: 30px;
+    width: 30px;
+    font-size: 2em;
+    counter-increment: ordered;
+}
+
+.lyteStepBox lyte-step-item.lyteActive {
+    background: #f3f4f5;
+}
+
+.lyteStepBox lyte-step-item.lyteActive::before {
+    content: counters(ordered, ".");
+    color: #21ba45;
+    margin-right: 1rem;
+    font-size: 2em;
+    counter-increment: ordered;
+    font-weight: 700;
+}
+
+.lyteStepBox lyte-step-item:not(:last-of-type)::after {
+    border-style: solid;
+    border-color: rgba(34, 36, 38, 0.15);
+    border-width: 0 1px 1px 0;
+    transform: translateY(-50%) translateX(50%) rotate(-45deg);
+    z-index: 2;
+    content: '';
+    background: inherit;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    color: #666;
+    width: 1.14285714em;
+    height: 1.14285714em;
+    opacity: 1;
+}

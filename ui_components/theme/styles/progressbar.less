@@ -1,0 +1,123 @@
+/* Default theme imported */
+@import "../themes/default/ui-elements/progressbar/progressbar.variables.less";
+
+
+
+
+/* Loading theme in configuration */
+@import "../config.less";
+@import (optional) "../themes/@{progressbar}/ui-elements/progressbar/progressbar.variables.less";
+
+
+/* rtl files loading */
+
+@import (multiple,optional) "../themes/default/global/@{direction}.less";
+
+@import (multiple,optional) "../themes/@{progressbar}/global/@{direction}.less";
+
+/* Loading final tweaks to your variables */
+@import (optional) "../overrides/ui-elements/progressbar.variables.less";
+
+
+
+/* LYTE-PROGRESSBAR BEGINS  */
+
+.lyteProgressBar {
+	position: relative;
+}
+.lyteProgressBar.lyteHorizontal {
+	.progressBarHorizontal();
+	height: @h;
+	width: @w;
+	background: @bg;
+	border-radius: @border-radius;
+}
+.lyteProgressBar .lyteProgressStatus {
+	.progressStatus();
+	display: block;
+	height: 100%;
+	border-radius: @border-radius;
+	position: relative;
+	overflow: hidden;
+	background: @bg;
+	color: @color;
+	transition: width 0.25s;
+}
+.lyteProgressBar .lyteProgressStatus .progressMovingObj {
+	.progressMovingObj();
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	box-sizing: border-box;
+	background-image: @bg-img;
+	background-size: @background-size;
+	animation: move 1s linear infinite;
+	border-radius: @border-radius;
+}
+@keyframes move {
+	.keyframesMove();
+    0% {
+       background-position: 0 0;
+    }
+	100% {
+	   background-position: @bg-pos;
+    }
+}
+.lyteProgressBar .lyteProgressPercentage {
+	.progressPercentage();
+	font-family: @primaryFont;
+	font-size: @font-size;
+	line-height: @line-height;
+	color: @color;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	top: @top;
+	z-index: 10;
+}
+.lyteProgressBar.lyteProgressCompleted .lyteProgressStatus {
+	.completedProgressStatus();
+	background: @bg;
+}
+/*  Radial progress bar related CSS -- BEGINS   */
+.lyteProgressBar.lyteCircle {
+	.circleProgressBar();
+	width: @w;
+	height: @h;
+}
+.lyteProgressBar .lyteCircleType {
+	position: relative;
+	display: inline-block;
+}
+.lyteCircleType svg {
+	.CircleType();
+	font-family: @primaryFont;
+	font-size: @font-size;
+	fill: @color;
+}
+.lyteProgressBar.lyteCircle .svgValueEle {
+	transform: rotate(-90deg);
+}
+.lyteProgressBar.lyteCircle circle:first-child {
+    .circleProgressBarCircle();
+    stroke: @stroke;
+}
+.lyteProgressBar.lyteCircle circle {
+	transition: stroke-dashoffset 0.25s linear;
+}
+/*  Radial progress bar related CSS -- ENDS   */
+
+
+/* import theme overrides - styles */
+@import (optional) "../themes/@{progressbar}/ui-elements/progressbar/progressbar.styles.less";
+
+
+
+
+/* import custom css - final tweaks by the user */
+@import (optional) "../overrides/ui-elements/progressbar.overrides.less";
+
+/* LYTE-PROGRESSBAR END*/

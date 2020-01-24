@@ -1,0 +1,18 @@
+/* Default theme imported */
+@import "../themes/default/global/global.variables.less";
+
+/* Loading theme in configuration */
+@import "../config.less";
+@import (optional) "../themes/@{themeName}/global/global.variables.less";
+
+/* Loading custom themes */
+@import (optional) "../overrides/global/global.variables.less";
+
+
+
+
+/* import theme overrides */
+@import (optional) "../themes/@{themeName}/global/global.styles.less";
+
+/* import custom css */
+@import (optional) "../overrides/global/global.overrides.less";

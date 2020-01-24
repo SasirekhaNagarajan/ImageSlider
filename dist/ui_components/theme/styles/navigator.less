@@ -1,0 +1,323 @@
+/* Default theme imported */
+
+@import "../themes/default/ui-elements/navigator/navigator.variables.less";
+
+/* Loading theme in configuration */
+
+@import "../config.less";
+
+@import (optional) "../themes/@{navigator}/ui-elements/navigator/navigator.variables.less";
+
+/* rtl files loading */
+
+@import (multiple,optional) "../themes/default/global/@{direction}.less";
+
+@import (multiple,optional) "../themes/@{navigator}/global/@{direction}.less";
+
+/* Loading custom themes */
+
+@import (optional) "../overrides/ui-elements/navigator.variables.less";
+
+/* Navigator CSS BEGINS  */
+
+lyte-navigator {
+	.navigator();
+	font-family: @primaryFont;
+	font-size: @font-size;
+    cursor: default;
+}
+.lyteNavigator {
+    display: flex;
+    align-items: center;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+}
+/*  Single Arrow related common code BEGINS   */
+.lyteNavigator .lyteIconSingleFront::before,
+.lyteNavigator .lyteIconSingleBack::before,
+.lyteSingleFront lyte-nav-arrow,
+.lyteSingleBack lyte-nav-arrow {
+	.paginationNavArrows();
+	width: @w;
+	height: @h;
+	display: inline-block;
+	background-image: @bg-img;
+	opacity: @opacity;
+    transform: @transform;
+    cursor: pointer;
+}
+.lyteNavigator .lyteIconSingleBack::before,
+.lyteSingleBack lyte-nav-arrow {
+	.paginationBackArrow();
+	background-position: @bg-pos;
+}
+.lyteNavigator .lyteIconSingleBack:not(.lyteDisabled):hover::before,
+.lyteSingleBack:not(.lyteDisabled):hover lyte-nav-arrow {
+    .paginationBackArrowHover();
+    background-position: @bg-pos;
+	opacity: @opacity;
+}
+.lyteNavigator .lyteIconSingleFront::before,
+.lyteSingleFront lyte-nav-arrow {
+	.SingleFront();
+	background-position: @bg-pos;
+}
+.lyteNavigator .lyteIconSingleFront:not(.lyteDisabled):hover::before,
+.lyteSingleFront:not(.lyteDisabled):hover lyte-nav-arrow {
+    .SingleFrontHover();
+    background-position: @bg-pos;
+	opacity: @opacity;
+}
+/*  Single Arrow related common code ENDS   */
+
+/*  Double Arrow related common code BEGINS   */
+
+.lyteDoubleFront lyte-nav-arrow,
+.lyteDoubleBack lyte-nav-arrow,
+.lyteNavigator .lyteIconDoubleBack::before,
+.lyteNavigator .lyteIconDoubleFront::before {
+    .defaultNavigatorDoubleArrows();
+    background-image: @bg-img;
+    width: @w;
+    height: @h;
+    opacity: @opacity;
+    display: inline-block;
+    cursor: pointer;
+    & when (@rtlEnabled = true) {
+        transform: @value-rotate-0deg;
+    }
+}
+.lyteDoubleBack lyte-nav-arrow,
+.lyteNavigator .lyteIconDoubleBack::before {
+    .defaultNavigatorDoubleArrowBack();
+    background-position: @bg-pos;
+}
+.lyteDoubleFront lyte-nav-arrow,
+.lyteNavigator .lyteIconDoubleFront::before {
+    .defaultNavigatorDoubleArrowFront();
+    background-position: @bg-pos;
+}
+.lyteDoubleBack:not(.lyteDisabled):hover lyte-nav-arrow,
+.lyteNavigator .lyteIconDoubleBack:not(.lyteDisabled):hover::before {
+    .defaultNavigatorDoubleArrowBackHover();
+    background-position: @bg-pos;
+}
+.lyteDoubleFront:not(.lyteDisabled):hover lyte-nav-arrow,
+.lyteNavigator .lyteIconDoubleFront:not(.lyteDisabled):hover::before {
+    .defaultNavigatorDoubleArrowFrontHover();
+    background-position: @bg-pos;
+}
+/*  Double Arrow related common code ENDS   */
+
+
+/*  Default type navigator code BEGINS  */
+.lyteNavigatorMidPoint {
+    .lyteNavigatorMidPoint();
+    margin: @margin;
+    color: @color;
+    cursor: default;
+}
+.lyteNavigatorText {
+    .lyteNavigatorText();
+    margin: @margin;
+    color: @color;
+}
+.lyteNavigator .lyteIconSingleBack,
+.lyteNavigator .lyteIconSingleFront,
+.lyteNavigator .lyteIconDoubleBack,
+.lyteNavigator .lyteIconDoubleFront {
+    .defaultNavigatorArrow();
+    cursor: pointer;
+    position: relative;
+    width: @w;
+    height: @h;
+}
+.lyteNavigator .lyteIconDoubleBack::before,
+.lyteNavigator .lyteIconDoubleFront::before,
+.lyteNavigator .lyteIconSingleFront::before,
+.lyteNavigator .lyteIconSingleBack::before {
+    content: '';
+    display: block;
+    margin: auto;
+}
+.lyteNavigator .lyteIconSingleFront.lyteDisabled,
+.lyteNavigator .lyteIconDoubleFront.lyteDisabled,
+.lyteNavigator .lyteIconSingleBack.lyteDisabled,
+.lyteNavigator .lyteIconDoubleBack.lyteDisabled {
+    .defaultNavigatorDisabledArrow();
+    opacity: @opacity;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+/*  Default type navigator code ENDS  */
+
+/*  Border type and Simple type common code BEGINS  */
+.lytepagination:not(.textNavLink) .lyteNavArrow lyte-nav-arrow,
+.lytepagination:not(.textNavLink) .lyteNavArrowBorder lyte-nav-arrow {
+    .notTextNavLinkArrow();
+    color: transparent;
+    font-size: @font-size;
+    line-height: @line-height;
+}
+.lytepagination:not(.textNavLink) .lyteNavArrowBorder.lyteSingleBack lyte-nav-arrow {
+    .notTextNavLinkBorderArrow();
+    line-height: @line-height;
+}
+.lytepage,
+.lyteNavArrowBorder,
+.lyteNavArrow {
+	display: inline-block;
+	vertical-align: middle;
+}
+.lytepagination .lyteborder,
+.lytepagination .lytesimple {
+	.pagination();
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	color: @color;
+}
+.lytepagination .lyteborder.dots3,
+.lytepagination .lytesimple.dots3 {
+	.paginationThreeDots();
+    border: @border;
+    padding: @padding;
+    margin: @margin;
+    color: @color;
+    vertical-align: top;
+    pointer-events: none;
+}
+.lytepagination .lyteDisabled.lyteNavArrow,
+.lytepagination .lyteDisabled.lyteNavArrowBorder {
+    .paginationDisableArrowCont();
+	opacity: @opacity;
+	cursor: not-allowed;
+    pointer-events: none;
+}
+.lyteSingleFront.lyteDisabled lyte-nav-arrow,
+.lyteSingleBack.lyteDisabled lyte-nav-arrow {
+    .paginationDisableArrow();
+    opacity: @opacity;
+	cursor: not-allowed;    
+    pointer-events: none;
+}
+/*  Border type and Simple type common code ENDS  */
+/*  Border type navigator  BEGINS  */
+.lytepagination .lyteborder {
+	.paginationBorderNum();
+	height: @h;
+	padding: @padding;
+	border: @border;
+	border-radius: @border-radius;
+	margin: @margin;
+	min-width: @min-w;
+	line-height: @line-height;
+	display: inline-block;
+}
+.lytepagination .lyteborder:hover {
+	.paginationBorderNumHover();
+	border-color: @border-color;
+	color: @color;
+}
+.lyteborder.lyteNavArrowBorder {
+	.NavArrowBorderWidth();
+	width: @w;
+    line-height: @line-height;
+}
+.lyteborder.lyteNavArrowBorder:hover {
+	.NavArrowBorderHover();
+	border-color: @border-color;
+}
+.lytepagination .lyteborder.lyteActiveAdd,
+.lytepagination .lyteborder.lyteActiveAdd:hover {
+	.paginationBorderActiveNum();
+	border-color: @border-color;
+	color: @color;
+	cursor: default;
+}
+.lyteDisabled.lyteNavArrowBorder,
+.lyteDisabled.lyteNavArrowBorder:hover {
+	.disabledArrowBorderHover();
+	border-color: @border-color;
+}
+/*  Border type navigator ENDS  */
+/*  Simple type navigator BEGINS    */
+.lyteNavArrow,
+.lytepagination .lytesimple {
+	.simpleType();
+	border: 0;
+	width: @w;
+    height: @h;
+    padding: @padding;
+    line-height: @line-height;
+	border-radius: @border-radius;
+	margin: @margin;
+	display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+.lyteNavArrow lyte-nav-arrow {
+    .simpleTypeArrow();
+    margin-top: @margin-top;
+}
+.lyteNavArrow.lyteDoubleFront lyte-nav-arrow,
+.lyteNavArrow.lyteDoubleBack lyte-nav-arrow {
+    .simpleTypeDoubleArrow();
+    margin-top: @margin-top;
+}
+.lytepagination .lytesimple:hover {
+	.simpleTypeHover();
+	background: @bg;
+}
+.lytepagination .lytesimple.lyteActiveAdd,
+.lytepagination .lytesimple.lyteActiveAdd:hover {
+	.simpleTypeActive();
+	background: @bg;
+	color: @color;
+}
+.lytepagination .lytesimple.dots3 {
+    .simpleTypeDots3();
+    vertical-align: middle;
+    line-height: @line-height;
+}
+/*  Simple type navigator ENDS    */
+/*  Navigator with Text value styles BEGINS  */
+.lytepagination.textNavLink .lyteNavArrow,
+.lytepagination.textNavLink .lyteborder.lyteNavArrowBorder {
+    .textLinkArrowCont();
+    width: auto;
+    height: auto;
+    border: @border;
+    line-height: @line-height;
+    color: @color;
+}
+.lytepagination.textNavLink .lyteNavArrow:hover,
+.lytepagination.textNavLink .lyteborder.lyteNavArrowBorder:hover {
+    .textLinkArrowContHover();
+    color: @color;
+}
+.lytepagination.textNavLink lyte-nav-arrow {
+    width: auto;
+    height: auto;
+    background-image: none;
+    transform: scale(1);
+    opacity: 1;
+}
+.lytepagination.textNavLink .lyteNavArrow lyte-nav-arrow {
+    .textLinkSimpleArrow();
+    margin-top: @margin-top;
+}
+/*  Navigator with Text value styles ENDS  */
+
+
+/* import theme overrides - styles */
+@import (optional) "../themes/@{navigator}/ui-elements/navigator/navigator.styles.less";
+
+
+
+
+/* import custom css - final tweaks by the user */
+@import (optional) "../overrides/ui-elements/navigator.overrides.less";
+
+/* Navigator CSS ENDS  */

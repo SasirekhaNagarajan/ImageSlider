@@ -1,0 +1,16 @@
+input[type="checkbox"].on-off-sw:checked+.lyteCheckSwitch .on-btn{
+     animation: rippleCheckButton .5s linear;
+    -webkit-animation: rippleCheckButton .5s linear;
+}
+
+@keyframes rippleCheckButton {
+  0% {
+    box-shadow: 0 0 0 0em rgba(114,201,138,0.3)
+  }
+  50% {
+    box-shadow: 0 0 0 1em rgba(114,201,138,0.3)
+  }
+  100% {
+    box-shadow: 0 0 0 1em rgba(0,0,0,0);
+  }
+}

@@ -1,0 +1,213 @@
+/* Default theme imported */
+@import "../themes/default/ui-elements/cropper/cropper.variables.less";
+
+/* Loading theme in configuration */
+@import "../config.less";
+
+@import (optional) "../themes/@{cropper}/ui-elements/cropper/cropper.variables.less";
+
+/* rtl files loading */
+
+@import (multiple,optional) "../themes/default/global/@{direction}.less";
+
+@import (multiple,optional) "../themes/@{cropper}/global/@{direction}.less";
+
+/* Loading final tweaks to your variables */
+@import (optional) "../overrides/ui-elements/cropper.variables.less";
+
+.lyteCropArea,
+.displayImage,
+.lyteCropBox {
+	position: relative;
+}
+.lyteCropArea {
+    .cropArea();
+    background: @bg;
+}
+.lyteCropBox {
+    .cropBox();
+	height: @h;
+	width: @w;
+    overflow: hidden;
+}
+.displayArea,
+.displayImageDiv {
+	position: absolute;
+}
+.lyteCropFixedImage {
+	position: absolute;
+    transform: rotate(0deg);
+}
+.lyteCropFixedDiv {
+    .cropFixedDiv();
+    height: @h;
+}
+.lyteCropTopLeftCorner,
+.lyteCropTopRightCorner,
+.lyteCropBottomRightCorner,
+.lyteCropBottomLeftCorner {
+	.cropperTopBottomCornerCommon();
+	width: @w;
+	height: @h;
+    background: @bg;
+    border-radius: @border-radius;
+	z-index: @z-index;
+	position: absolute;
+}
+.lyteCropTopLeftCorner {
+    .cropTopLeftCorner();
+	top: @top;
+	left: @left;
+	cursor: @cursor;
+}
+.lyteCropTopRightCorner {
+    .cropTopRightCorner();
+	top: @top;
+	right: @right;
+	cursor: @cursor;
+}
+.lyteCropBottomRightCorner {
+    .cropBottomRightCorner();
+	bottom: @bottom;
+	right: @right;
+	cursor: @cursor;
+}
+.lyteCropBottomLeftCorner {
+    .cropBottomLeftCorner();
+	bottom: @bottom;
+	left: @left;
+	cursor: @cursor;
+}
+.lyteCropTopEdge,
+.lyteCropBottomEdge,
+.lyteCropRightEdge,
+.lyteCropLeftEdge {
+    .cropperFourEdges();
+	position: absolute;
+	z-index: @z-index;
+}
+.lyteCropTopEdge,
+.lyteCropBottomEdge {
+	.cropperTopBottomEdgeCommon();
+	left: @left;
+	right: @right;
+	height: @h;
+	justify-content: center;
+	cursor: @cursor;
+}
+.lyteCropRightEdge,
+.lyteCropLeftEdge {
+	.cropperRightLeftEdgeCommon();
+	top: @top;
+	bottom: @bottom;
+	width: @w;
+	align-items: center;
+	cursor: @cursor;
+}
+.lyteCropTopEdge {
+	.cropperTopEdgeMixin();
+	top: @top;
+}
+.lyteCropBottomEdge {
+	.cropperBottomEdgeMixin();
+	bottom: @bottom;
+}
+.lyteCropRightEdge {
+	.cropperRightEdgeMixin();
+	right: @right;
+}
+.lyteCropLeftEdge {
+	.cropperLeftEdgeMixin();
+	left: @left;
+}
+.lyteCropDivImage {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+.lyteCropDivImageImg {
+    .cropDivImageImg();
+	position: absolute;
+    z-index: @z-index;
+}
+.lyteCropCropper {
+    .cropCropper();
+    background: @bg;
+    cursor: move;
+	position: absolute;
+	top: @top;
+	left: @left;
+}
+.lyteCropOpacityDiv {
+	.cropperOpacityDiv();
+	position: absolute;
+	top: @top;
+	bottom: @bottom;
+	left: @left;
+	right: @right;
+	background: @bg;
+	opacity: @opacity;
+    transition: @transition;
+}
+.lytecropVerGrid1,
+.lytecropVerGrid2,
+.lytecropVerGrid3,
+.lytecropHorGrid1,
+.lytecropHorGrid2,
+.lytecropHorGrid3 {
+    .cropperGrid();
+    position: absolute;
+    pointer-events: none;
+    opacity: @opacity;
+    z-index: @z-index;
+}
+.lytecropVerGrid1,
+.lytecropVerGrid2,
+.lytecropVerGrid3 {
+    .cropperVerticalGrid();
+    border-right: @border-right;
+    top: @top;
+    bottom: @bottom;
+}
+.lytecropHorGrid1,
+.lytecropHorGrid2,
+.lytecropHorGrid3 {
+    .cropperHorizontalGrid();
+    border-top: @border-top;
+    right: @right;
+    left: @left;
+}
+.lytecropVerGrid1 {
+    .cropperVerticalGrid1();
+    right: @right;
+}
+.lytecropVerGrid2 {
+    .cropperVerticalGrid2();
+    right: @right;
+}
+.lytecropVerGrid3{
+    .cropperVerticalGrid3();
+    right: @right;
+}
+.lytecropHorGrid1{
+    .cropperHorizontalGrid1();
+    top: @top;
+}
+.lytecropHorGrid2{
+    .cropperHorizontalGrid2();
+    top: @top;
+}
+.lytecropHorGrid3{
+    .cropperHorizontalGrid3();
+    top: @top;
+}
+
+/* import theme overrides - styles */
+@import (optional) "../themes/@{cropper}/ui-elements/cropper/cropper.styles.less";
+
+
+/* import custom css - final tweaks by the user */
+@import (optional) "../overrides/ui-elements/cropper.overrides.less";

@@ -1,0 +1,67 @@
+.lyteDefault:not(:active) input[type="radio"]:checked+.lyteRadioLayer {
+     animation: rippleRadioDefault .5s linear;
+    -webkit-animation: rippleRadioDefault .5s linear;
+}
+
+@keyframes rippleRadioDefault {
+  0% {
+    box-shadow: 0 0 0 0em rgba(43,187,173,0.3)
+  }
+  50% {
+    box-shadow: 0 0 0 1em rgba(43,187,173,0.3)
+  }
+  100% {
+    box-shadow: 0 0 0 1em rgba(0,0,0,0);
+  }
+}
+
+.lytePrimary:not(:active) input[type="radio"]:checked+.lyteRadioLayer {
+     animation: rippleRadioPrimary .5s linear;
+    -webkit-animation: rippleRadioPrimary .5s linear;
+}
+
+@keyframes rippleRadioPrimary {
+  0% {
+    box-shadow: 0 0 0 0em rgba(255,82,82,0.3)
+  }
+  50% {
+    box-shadow: 0 0 0 1em rgba(255,82,82,0.3)
+  }
+  100% {
+    box-shadow: 0 0 0 1em rgba(0,0,0,0);
+  }
+}
+
+.lyteBlack:not(:active) input[type="radio"]:checked+.lyteRadioLayer {
+     animation: rippleRadioBlack .5s linear;
+    -webkit-animation: rippleRadioBlack .5s linear;
+}
+
+@keyframes rippleRadioBlack {
+  0% {
+    box-shadow: 0 0 0 0em rgba(0,0,0,0.2)
+  }
+  50% {
+    box-shadow: 0 0 0 1em rgba(0,0,0,0.2)
+  }
+  100% {
+    box-shadow: 0 0 0 1em rgba(0,0,0,0);
+  }
+}
+
+input[type="radio"].on-off-sw:checked+.lyteRadioSwitch .on-btn{
+     animation: rippleRadioButton .5s linear;
+    -webkit-animation: rippleRadioButton .5s linear;
+}
+
+@keyframes rippleRadioButton {
+  0% {
+    box-shadow: 0 0 0 0em rgba(114,201,138,0.3)
+  }
+  50% {
+    box-shadow: 0 0 0 1em rgba(114,201,138,0.3)
+  }
+  100% {
+    box-shadow: 0 0 0 1em rgba(0,0,0,0);
+  }
+}

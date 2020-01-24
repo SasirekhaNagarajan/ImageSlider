@@ -1,0 +1,185 @@
+/* Default theme imported */
+@import "../themes/default/ui-elements/alert/alert.variables.less";
+
+
+
+
+/* Loading theme in configuration */
+@import "../config.less";
+@import (optional) "../themes/@{alert}/ui-elements/alert/alert.variables.less";
+
+/* rtl files loading */
+
+@import (multiple,optional) "../themes/default/global/@{direction}.less";
+
+@import (multiple,optional) "../themes/@{alert}/global/@{direction}.less";
+
+/* Loading final tweaks to your variables */
+@import (optional) "../overrides/ui-elements/alert.variables.less";
+
+.lyte-svg {
+	background-image: @lytesprite;
+}
+lyte-alert {
+	display: none;
+}
+.alertWrapper {
+    .alertWrapperMixin();
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: @z-index;
+}
+.alertPopup {
+	.alertPopup();
+	padding: @padding;
+	background: @background;
+	border: @border;
+	border-radius: @border-radius;
+	box-shadow: @box-shadow;
+    display: inline-block;
+    text-align: @value-textalign-left;
+	min-width: @min-w;
+	max-width: @max-w;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    position: relative;
+    z-index: @z-index;
+}
+.alertPopup.lyteAlertSlideDown {
+    .alertPopupSlidedown();
+    top: @top;
+    transition-property: top;
+}
+.alertPopup.lyteAlertZoomIn {
+    .alertPopupZoomIn();
+    transition-property: opacity, transform;
+    opacity: @opacity;
+    transform: scale(0);
+}
+.alertPopup.lyteAlertZoomIn.alertOpened {
+    .alertPopupOpened();
+    opacity: @opacity;
+    transform: scale(1);
+}
+lyte-alert-header,
+.alertHeader,
+.alertPrimaryMsg {
+    .alertHeader();
+	font-family: @secondaryFont;
+	font-size: @font-size;
+	color: @color;
+	margin-bottom: @margin-bottom;
+	font-weight: normal;
+	display: block;
+}
+.alertPrimaryMsg {
+	.alertPrimaryMsgMixin();
+	margin-bottom: @margin-bottom;
+    font-size: @font-size;
+}
+lyte-alert-content,
+.alertSecondaryMsg {
+	.alertSecondaryMsg();
+	font-family: @primaryFont;
+	font-size: @font-size;
+	color: @color;
+}
+lyte-alert-footer,
+.alertFooter {
+	.alertFooter();
+	text-align: @value-textalign-right;
+	padding-top: @padding-top;
+    display: block;
+}
+.alertFooter lyte-button {
+	.alertFooterBtn();
+    @{property-margin-left}: @margin-left;
+}
+.alertFooter lyte-button:first-of-type {
+	@{property-margin-left}: 0;
+}
+lyte-alert-footer.left,
+.alertFooter.left {
+	text-align: @value-textalign-left;
+}
+lyte-alert-footer.center,
+.alertFooter.center,
+.alertPopup.lyteAlertCenterContent{
+	text-align: center;
+}
+.alertPopup .alertContent {
+    display: flex;
+    align-items: center;
+}
+.lyteAlertCenterContent .alertContent {
+    justify-content: center;
+}
+.alertFreezeLayer {
+    .alertFreezeLayer();
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: @z-index;
+}
+
+.lyteStatusIcon{
+    .alertStatusIcon();
+	background: @bg;
+	width: @w;
+    height: @h;
+    @{property-margin-right}: @margin-right;
+    display: block;
+}
+.successAlertIcon {
+    .successAlertIcon();
+    background-position: @bg-pos;
+}
+.errorAlertIcon {
+    .errorAlertIcon();
+    background-position: @bg-pos;
+}
+.warningAlertIcon {
+    .warningAlertIcon();
+    background-position: @bg-pos;
+}
+.infoAlertIcon {
+    .infoAlertIcon();
+    background-position: @bg-pos;
+}
+.confirmAlertIcon {
+    .confirmAlertIcon();
+    background-position: @bg-pos;
+}
+.alertClose {
+    .alertCloseIcon();
+    background-position: @bg-pos;
+    width: @w;
+    height: @h;
+    opacity: @opacity;
+    cursor: pointer;
+    position: absolute;
+    top: @top;
+    @{property-right}: @right;
+    display: inline-block;
+    transform: @transform;
+}
+.alertClose:hover {
+    .alertCloseIconHover();
+    opacity: @opacity;
+}
+
+
+/* import theme overrides - styles */
+@import (optional) "../themes/@{alert}/ui-elements/alert/alert.styles.less";
+
+
+
+
+/* import custom css - final tweaks by the user */
+@import (optional) "../overrides/ui-elements/alert.overrides.less";

@@ -1,0 +1,105 @@
+.lyteRangeSlider {
+	background: #fff;
+}
+.lyteSliderDisabled	{
+	pointer-events: none;
+	opacity: 0.4;
+}
+.lyteRangeSlider, .lyteSliderFill {
+    box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.3);
+}
+.lyteCircle.lyteSliderHandler {
+	border:1px solid #ddd;
+	top: -3px;
+}
+.lyteSquare.lyteSliderHandler{
+	width: 10px;
+	height: 16px;
+	border: 1px solid #ddd;
+	top: -5px;
+}
+.lyteVertical .lyteSquare.lyteSliderHandler {
+	width: 16px;
+    height: 10px;
+    left: -5px;
+}
+.lyteRangeSlider.lyteHorizontal .lyteArrow.lyteSliderHandler,
+.lyteRangeSlider.lyteVertical .lyteArrow.lyteSliderHandler, 
+.lyteRangeSlider.lyteVertical .lyteArrowLeft.lyteSliderHandler {
+	width: 12px;
+	height: 12px;
+	border: 1px solid #ddd;
+	top: -5px;
+}
+.lyteVertical .lyteCircle.lyteSliderHandler,
+.lyteRangeSlider.lyteVertical .lyteArrow.lyteSliderHandler,
+.lyteRangeSlider.lyteVertical .lyteArrowLeft.lyteSliderHandler{
+	left: -3px;
+}
+.lyteRangeSlider.lyteHorizontal .lyteArrow.lyteSliderHandler::after,
+.lyteRangeSlider.lyteHorizontal .lyteArrow.lyteSliderHandler::before {
+	top: 100%;
+	left: 50%;
+}
+.lyteRangeSlider.lyteHorizontal .lyteArrow.lyteSliderHandler::after {
+	border-width: 6px;
+	margin-left: -6px;
+}
+.lyteRangeSlider.lyteHorizontal .lyteArrow.lyteSliderHandler::before {
+	border-top-color: #ddd;
+	margin-left: -7px;
+}
+.lyteVertical .lyteArrow.lyteSliderHandler::after,
+.lyteVertical .lyteArrow.lyteSliderHandler::before {
+	left: 100%;
+	top: 50%;
+	pointer-events: none;
+}
+.lyteVertical .lyteArrow.lyteSliderHandler::after {
+	border-width: 6px;
+	margin-top: -6px;
+}
+.lyteVertical .lyteArrow.lyteSliderHandler::before {
+	border-left-color: #ddd;
+	margin-top: -7px;
+}
+.lyteVertical .lyteArrowLeft.lyteSliderHandler::after,
+.lyteVertical .lyteArrowLeft.lyteSliderHandler::before {
+	right: 100%;
+	top: 50%;
+	pointer-events: none;
+}
+.lyteVertical .lyteArrowLeft.lyteSliderHandler::after {
+	border-width: 6px;
+	margin-top: -6px;
+}
+.lyteVertical .lyteArrowLeft.lyteSliderHandler::before {
+	border-right-color: #ddd;
+	margin-top: -7px;
+}
+.lyteRangeSlider .lyteScaleOption .lyteScaleLine{
+	height: 6px;
+}
+.lyteScaleLine span:not(.lyteScalLable){
+	width:1px;
+}
+.lyteVertical .lyteScaleLine span:not(.lyteScalLable){
+	height: 1px;
+    top: 0;
+}
+.lyteRangeSlider .lyteScaleLine .lyteScalLable {
+	position: absolute;
+    top: 10px;
+    left: 6px;
+    padding-top: 0;
+}
+.lyteVertical.lyteRangeSlider .lyteArrowLeft.lyteScaleOption .lyteScaleLine .lyteScalLable {
+    left: -26px;
+    right: auto;
+}
+lyte-multislider .lyteSliderHandler {
+	z-index: 1;
+} 
+lyte-multislider .lyteSliderHandler.lyteMultiSliderSelected {
+	z-index: 2;
+}

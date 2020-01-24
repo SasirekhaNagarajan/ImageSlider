@@ -1,0 +1,43 @@
+lyte-autocomplete {
+	display: inline-block;
+}
+lyte-autocomplete lyte-input[lt-prop-type="search"] .searchIcon {
+    background:  url('../images/lyte_ui_sprite.svg') no-repeat -362px -2px;
+    left: 7px;
+}
+lyte-autocomplete.searchPresent lyte-input.lyteInputBox input {
+    padding: 9px 10px 9px 30px;
+}
+lyte-autocomplete .iconSeparator {
+    display: none !important;
+}
+lyte-autocomplete .closeIconWrapper {
+	right: 5px;
+	top: calc( 50% - 9px);
+    padding: 0;
+}
+lyte-autocomplete.searchPresent .closeIconWrapper {
+	right: 5px;    
+}
+lyte-autocomplete lyte-dropdown:not([lt-prop-type="multiple"]):not([lt-prop-type="multisearch"]) lyte-drop-button {
+    padding: 0;
+}
+span.closeIcon {
+	background: url('../images/lyte_ui_sprite.svg') no-repeat -14px -1px;
+	width: 12px;
+	height: 11px;
+    vertical-align: unset;
+}
+.lyteautocompleteDropdown {
+    width: auto;
+}
+.lyteautocompleteDropdown.lyteDropdownUp,
+.lyteautocompleteDropdown.lyteDropdownDown {
+    transform: none;
+}
+lyte-autocomplete-description{
+	opacity: 0.4;
+}
+.lyteautocompleteError {
+	padding: 10px 20px;
+}

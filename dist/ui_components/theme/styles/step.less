@@ -1,0 +1,326 @@
+/* Default theme imported */
+@import "../themes/default/ui-elements/step/step.variables.less";
+
+/* Loading theme in configuration */
+@import "../config.less";
+@import (optional) "../themes/@{step}/ui-elements/step/step.variables.less";
+
+/* rtl files loading */
+
+@import (multiple,optional) "../themes/default/global/@{direction}.less";
+
+@import (multiple,optional) "../themes/@{step}/global/@{direction}.less";
+
+/* Loading custom themes */
+@import (optional) "../overrides/ui-elements/step.variables.less";
+
+/* Step CSS BEGINS   */
+
+lyte-step {
+	.step();
+	display: inline-block;
+	font-family: @primaryFont;
+	font-size: @font-size;
+}
+lyte-step * {
+    box-sizing: content-box;
+}
+/*  Slash and Arrow related CSS BEGINS  */
+.lyteStepArrow lyte-step-item,
+.lyteStepSlash lyte-step-item {
+    .stepArrowItem();
+    display: inline-block;
+    color: @color;
+    @{property-margin-right}: @margin-right;
+}
+.lyteStepArrow lyte-step-item:hover,
+.lyteStepSlash lyte-step-item:hover {
+    .stepArrowItemHover();
+    color: @color;
+}
+.lyteStepArrow lyte-step-item:last-of-type,
+.lyteStepSlash lyte-step-item:last-of-type {
+    @{property-margin-right}: 0;
+}
+.lyteStepArrow lyte-step-body,
+.lyteStepSlash lyte-step-body {
+    cursor: pointer;
+}
+.lyteStepArrow .lyteActive,
+.lyteStepSlash .lyteActive {
+    .stepArrowActiveItem();
+    color: @color;
+}
+.lyteStepArrow .lyteActive:last-of-type,
+.lyteStepArrow .lyteCompleted,
+.lyteStepSlash .lyteActive:last-of-type,
+.lyteStepSlash .lyteCompleted {
+    .stepArrowCompletedItem();
+    color: @color;
+}
+.lyteStepSlash lyte-step-body::after {
+    .stepSlashAfter();
+    content: '/';
+    @{property-margin-left}: @margin-left;
+}
+.lyteStepArrow lyte-step-body::after {
+    .stepArrowAfter();
+    content: '>';
+    @{property-margin-left}: @margin-left;
+}
+.lyteStepArrow lyte-step-item:last-of-type lyte-step-body::after,
+.lyteStepSlash lyte-step-item:last-of-type lyte-step-body::after {
+    content: none;
+}
+/*  Slash and Arrow related CSS ENDS  */
+
+/*   Bullet Step related CSS BEGINS    */
+.lyteStepBullet {
+	display: flex;
+	justify-content: center;
+}
+.lyteStepBullet lyte-step-item {
+	.stepItem();
+	width: @w;
+	display: flex;
+	flex-wrap: wrap;
+	font-size: @font-size;
+    align-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    z-index: 0;
+}
+.lyteStepBullet lyte-step-head {
+	.stepBulletCircle();
+    width: @w;
+	height: @h;
+	border: @border;
+	border-radius: @border-radius;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-indent: -10px;
+    color: transparent;
+    cursor: pointer;
+}
+.lyteStepBullet lyte-step-head::before {
+	.stepInnerCircle();
+    content: '';
+	width: @w;
+	height: @h;
+	display: inline-block;
+	border-radius: @border-radius;
+	background: @bg;
+	transform: scale(1);
+	transition: transform 0.3s ease;
+	position: relative;
+	z-index: 10;
+}
+.lyteStepBullet lyte-step-head:hover::before {
+    transform: scale(1.2);
+}
+.lyteStepBullet .lyteActive lyte-step-head {
+	.activeStepCircle();
+	border-color: @border-color;
+	background: @bg;
+}
+.lyteStepBullet .lyteActive:last-of-type lyte-step-head,
+.lyteStepBullet .lyteCompleted lyte-step-head {
+	.completedStepCircle();
+	border-color: @border-color;
+	background: @bg;
+}
+.lyteStepBullet lyte-step-item.lyteActive:last-of-type lyte-step-head::before,
+.lyteStepBullet .lyteCompleted lyte-step-head::before {
+	.compStepInnerCircle();
+	background-image: @bg-img;
+	background-position: @bg-pos;
+	width: @w;
+	height: @h;
+	transform: scale(1);
+}
+.lyteStepBullet .lyteActive lyte-step-head::before {
+	transform: scale(1);
+}
+.lyteStepBullet lyte-step-head::after {
+	.stepBulletLine();
+    content: '';
+    position: absolute;
+	height: @h;
+	background: @bg;
+	width: @w;
+	vertical-align: middle;
+    @{property-left}: @left;
+    z-index: -1;
+}
+.lyteStepBullet .lyteCompleted lyte-step-head::after {
+    .stepBulletActiveLine();
+    background: @bg;
+}
+.lyteStepBullet lyte-step-item:last-of-type {
+	.stepItemLastChild();
+	width: @w;
+}
+.lyteStepBullet lyte-step-item:last-of-type lyte-step-head::after {
+    content: none;
+}
+.lyteStepBullet lyte-step-body {
+	.stepBulletLabel();
+	font-family: @primaryFont;
+	color: @color;
+	font-size: @font-size;
+	display: block;
+	position: relative;
+	text-align: center;
+	padding: @padding;
+	transform: @transform;
+    cursor: pointer;
+}
+.lyteStepBullet .lyteCompleted lyte-step-body,
+.lyteStepBullet .lyteActive lyte-step-body {
+	.activeStepBulletLabel();
+	color: @color;
+}
+/*   Bullet Step related CSS ENDS    */
+/*   Flat Step related CSS BEGINS   */
+.lyteStepFlat {
+	display: flex;
+	counter-reset: stepSetNumber;
+}
+.lyteStepFlat lyte-step-item {
+	.stepFlatItem();
+	background: @bg;
+	border: @border;
+	border-left: none;
+	border-right: none;
+	padding: @padding;
+	position: relative;
+	cursor: pointer;
+	color: @color;
+}
+.lyteStepFlat lyte-step-item:first-child {
+	.stepFlatItemFirstChild();
+    @{property-padding-left}: @padding-left;
+    @{property-border-left}: @border-left;
+}
+.lyteStepFlat lyte-step-item:last-of-type {
+	.stepFlatItemLastChild();
+    @{property-border-right}: @border-right;
+}
+.lyteStepFlat lyte-step-item::before,
+.lyteStepFlat lyte-step-item::after {
+	content: '';
+	width: 0;
+	height: 0;
+	position: absolute;
+}
+.lyteStepFlat lyte-step-item::before {
+	.stepFlatItemBefore();
+	border-top: @border-top;
+	border-bottom: @border-bottom;
+    @{property-border-left}: @border-left;
+    @{property-right}: @right;
+	top: 0;
+	z-index: 10;
+}
+.lyteStepFlat lyte-step-item::after {
+	.stepFlatItemAfter();
+	border-top: @border-top;
+	border-bottom: @border-bottom;
+	@{property-border-left}: @border-left;
+	@{property-right}: @right;
+	top: @top;
+	z-index: 9;
+}
+.lyteStepFlat lyte-step-item:last-of-type::before,
+.lyteStepFlat lyte-step-item:last-of-type::after {
+	content: none;
+}
+.lyteStepFlat lyte-step-item.lyteActive,
+.lyteStepFlat lyte-step-item.lyteCompleted {
+	.stepFlatItemActive();
+	background: @bg;
+	border-top-color: @border-top-color;
+	border-bottom-color: @border-bottom-color;
+	color: @color;
+}
+.lyteStepFlat lyte-step-item.lyteActive:first-child,
+.lyteStepFlat lyte-step-item.lyteCompleted:first-child {
+	.stepFlatItemActiveFirstChild();
+    @{property-border-left-color}: @border-left-color;
+}
+.lyteStepFlat lyte-step-item.lyteActive:last-of-type,
+.lyteStepFlat lyte-step-item.lyteCompleted:last-of-type {
+	.stepFlatItemLastChild();
+    @{property-border-right-color}: @border-right-color;
+}
+.lyteStepFlat lyte-step-item.lyteActive::after,
+.lyteStepFlat lyte-step-item.lyteActive::before,
+.lyteStepFlat lyte-step-item.lyteCompleted::before {
+	.stepFlatItemCompBefore();
+	@{property-border-left-color}: @border-left-color;
+}
+.lyteStepFlat lyte-step-item.lyteCompleted::after {
+    .stepFlatItemCompAfter();
+    @{property-border-left-color}: @border-left-color;
+}
+.lyteStepFlat lyte-step-body {
+	.stepFlatBody();
+	display: inline-block;
+	padding: @padding;
+	position: relative;
+    white-space: nowrap;
+}
+.lyteStepFlat lyte-step-body::before {
+	.stepFlatBodyBefore();
+	counter-increment: stepSetNumber;
+	content: counter(stepSetNumber);
+	color: @color;
+	position: absolute;
+	width: @w;
+	height: @h;
+	border: @border;
+    @{property-left}: @left;
+	top: @top;
+	text-align: center;
+	border-radius: @border-radius;
+}
+.lyteStepFlat lyte-step-item.lyteActive lyte-step-body::before,
+.lyteStepFlat lyte-step-item.lyteCompleted lyte-step-body::before {
+	.stepFlatActiveBodyBefore();
+	color: @color;
+	border: @border;
+}
+.lyteStepFlat lyte-step-item:hover {
+	.stepFlatItemHover();
+	background: @bg;
+}
+.lyteStepFlat lyte-step-item:hover::before {
+	.stepFlatItemHoverBefore();
+	@{property-border-left-color}: @border-left-color;
+}
+.lyteStepFlat lyte-step-item.lyteActive:hover,
+.lyteStepFlat lyte-step-item.lyteCompleted:hover {
+	.stepFlatItemActiveHover();
+	background: @bg;
+}
+.lyteStepFlat lyte-step-item.lyteActive:hover::before,
+.lyteStepFlat lyte-step-item.lyteCompleted:hover::before {
+	.stepFlatActiveHoverBefore();
+	@{property-border-left-color}: @border-left-color;
+}
+/*   Flat Step related CSS ENDS   */
+
+
+/* import theme overrides - styles */
+@import (optional) "../themes/@{step}/ui-elements/step/step.styles.less";
+
+
+
+
+/* import custom css - final tweaks by the user */
+@import (optional) "../overrides/ui-elements/step.overrides.less";
+
+/* Step CSS ENDS   */

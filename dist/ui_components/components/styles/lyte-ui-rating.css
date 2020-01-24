@@ -1,0 +1,130 @@
+lyte-rating{
+  display: inline-flex;
+  white-space: nowrap;
+  vertical-align: baseline;
+}
+lyte-rate-icon{
+  display: inline-flex;
+  width: 18px;
+  height: 16px;
+  padding: 2px;
+  margin: 0;
+  text-align: center;
+  font-weight: 400;
+  font-style: normal;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  cursor: pointer;
+  -webkit-transition: opacity .1s ease,background .1s ease,text-shadow .1s ease,color .1s ease;
+  transition: opacity .1s ease,background .1s ease,text-shadow .1s ease,color .1s ease;
+}
+.lyteRatingReadOnly{
+  pointer-events: none;
+}
+.lyteRatingEmptyStar{
+  background: url(../images/png/star_empty.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.lyteRatingHalfStar,
+.lyteRatingHoverHalfStar{
+  background: url(../images/png/star_half.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.lyteRatingFullStar,
+.lyteRatingHoverFullStar{
+  background: url(../images/png/star_full.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.lyteRatingEmptyHeart{
+  background: url(../images/png/heart_empty.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.lyteRatingHalfHeart,
+.lyteRatingHoverHalfHeart{
+  background: url(../images/png/heart_half.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.lyteRatingFullHeart,
+.lyteRatingHoverFullHeart{
+  background: url(../images/png/heart_full.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.lyteRatingHoverFullStar,
+.lyteRatingHoverHalfStar,
+.lyteRatingHoverFullHeart,
+.lyteRatingHoverHalfHeart{
+  opacity: 0.5;
+}
+.lyteRatingFullStar,
+.lyteRatingHalfStar,
+.lyteRatingFullHeart,
+.lyteRatingHalfHeart{
+  opacity: 1 !important;
+}
+
+
+/* This css are for the custom icons */
+.lRCustomRatingEmpty,
+.lRCustomRatingHover{
+  background: url(../images/png/circle-outline.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.lRCustomRatingEmpty{
+  opacity: 0.5;
+}
+.lRCustomRatingHover{
+  opacity: 1;
+}
+.lRCustomRating{
+  background: url(../images/png/star.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 1;
+}
+/* This css are for the custom toggle icon */
+.lrcToggleEmpty{
+  background: url(../images/png/review-empty.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.lrcToggleHover1{
+  background: url(../images/png/review-fill1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.lrcToggleHover2{
+  background: url(../images/png/review-fill2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.lrcToggleFill{
+  background: url(../images/png/review.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.lrcToggleEmptyTU{
+  background: url(../images/png/thumbsUp-empty.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.5;
+}
+.lrcToggleHoverTU{
+  background: url(../images/png/thumbsUp-empty.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 1;
+}
+.lrcToggleFillTU{
+  background: url(../images/png/thumbsUp-fill.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 1;
+}

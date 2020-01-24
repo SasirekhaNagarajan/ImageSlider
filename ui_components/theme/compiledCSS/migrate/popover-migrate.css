@@ -1,0 +1,48 @@
+.bodyWrapper{
+    position: absolute;
+    z-index: 9999;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.popoverWrapper{
+	overflow: auto;
+    position: fixed;
+    z-index: 10001;
+}
+.lytePopover{
+	z-index: 10001;
+}
+.popoverWrapper.scrollable{
+	overflow: hidden;
+}
+.popoverWrapper.scrollable .lytePopover{
+	max-height: 100%;
+}
+lyte-popover-header {
+    font-size: 20px;
+}
+lyte-popover-content{
+    box-sizing: border-box;
+}
+lyte-popover-freeze{ 
+	z-index:10000;
+}
+.lytePopoverClose{
+	background: url(../images/lyte_ui_sprite.svg) no-repeat -14px -1px;
+	width: 12px;
+	height: 11px;
+    z-index:10001;
+    transform: none;
+}
+lyte-popover-header.draggable{
+	cursor: move;
+}
+.lyteStopBodyScrolling {
+  height: 100%;
+  overflow: hidden;
+}
+.lytePopover * {
+    box-sizing: border-box;
+}

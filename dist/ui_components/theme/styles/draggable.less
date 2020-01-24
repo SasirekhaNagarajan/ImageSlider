@@ -1,0 +1,47 @@
+/* Default theme imported */
+@import "../themes/default/ui-elements/draggable/draggable.variables.less";
+
+
+
+
+/* Loading theme in configuration */
+@import "../config.less";
+@import (optional) "../themes/@{draggable}/ui-elements/draggable/draggable.variables.less";
+
+
+/* rtl files loading */
+
+@import (multiple,optional) "../themes/default/global/@{direction}.less";
+
+@import (multiple,optional) "../themes/@{draggable}/global/@{direction}.less";
+
+/* Loading final tweaks to your variables */
+@import (optional) "../overrides/ui-elements/draggable.variables.less";
+
+.draggable-element {
+    cursor: move;
+}
+.lyteDraggablePlaceholder {
+    .draggablePlaceholder();
+    background: @bg;
+    border: @border;
+    box-sizing: border-box;
+}
+.lyteDraggableDisabledPlaceholder {
+    .draggableDisabledPlaceholder();
+    background: @bg;
+    border: @border;
+    box-sizing: border-box;
+}
+.stopDefaultMove{
+    touch-action: none;
+}
+
+/* import theme overrides - styles */
+@import (optional) "../themes/@{draggable}/ui-elements/draggable/draggable.styles.less";
+
+
+
+
+/* import custom css - final tweaks by the user */
+@import (optional) "../overrides/ui-elements/draggable.overrides.less";

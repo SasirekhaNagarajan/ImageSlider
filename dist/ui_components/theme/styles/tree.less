@@ -1,0 +1,152 @@
+
+/* Default theme imported */
+@import "../themes/default/ui-elements/tree/tree.variables.less";
+
+/* Loading theme in configuration */
+@import "../config.less";
+
+@import (optional) "../themes/@{tree}/ui-elements/tree/tree.variables.less";
+
+/* rtl files loading */
+
+@import (multiple,optional) "../themes/default/global/@{direction}.less";
+
+@import (multiple,optional) "../themes/@{tree}/global/@{direction}.less";
+
+/* Loading custom themes */
+@import (optional) "../overrides/ui-elements/tree.variables.less";
+
+
+lyte-tree {
+	.tree();
+    background: @bg;
+	display: block;
+    @{property-padding-left}: @padding-left;
+    overflow: hidden;
+	transition: height 0.2s ease;
+}
+lyte-tree lyte-yield {
+	display: inline-block;
+}
+lyte-tree-body {
+	.treeBody();
+	display: block;
+	margin-top: @margin-top;
+}
+.lyteTreeBodyDiv:last-of-type > lyte-tree-body > .mainContainer::after {
+	.treeBodylastoftype();
+	content: '';
+	position: absolute;
+	width: @w;
+	height: @h;
+	background: @bg;
+	z-index: 10;
+    @{property-left}: @left;
+	top: @top;
+}
+lyte-tree-content {
+	display: block;
+	cursor: pointer;
+	position: relative;
+}
+lyte-tree lyte-tree lyte-tree-content::before {
+	.treeContentBefore();
+	content: '';
+	width: @w;
+	height: @h;
+	border-bottom: @border-bottom;
+	position: absolute;
+    @{property-left}: @left;
+	top: @top;
+}
+.mainContainer {
+	position: relative;
+}
+.mainContainer::before {
+	.treeMainContainerBefore();
+	content: '';
+	width: @w;
+	height: @h;
+    @{property-border-left}: @border-left;
+	top: @top;
+	position: absolute;
+    @{property-left}: @left;
+}
+lyte-tree-icon {
+	display: inline-block;
+	text-align: @value-textalign-left;
+}
+lyte-tree-icon .collapseBox {
+	.iconCollpaseBox();
+	width: @w;
+	height: @h;
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+    opacity: 0.7;
+}
+lyte-tree-icon:hover .collapseBox {
+    opacity: 0.8;
+}
+lyte-tree-icon.open .collapseBox {
+    opacity: 0.9;
+}
+lyte-tree lyte-tree lyte-tree-icon:hover .collapseBox {
+	.iconHoverCollpaseBox();
+	border-color: @border-color;
+}
+.treeValue {
+	.treeValue();
+	display: inline-block;
+	font-family: @primaryFont;
+	font-size: @font-size;
+	color: @color;
+    @{property-margin-left}: @margin-left;
+	vertical-align: middle;
+}
+lyte-tree lyte-tree lyte-tree-icon:hover .treeValue {
+	.iconHoverTreeValue();
+	color: @color;
+}
+lyte-tree-icon.open .arrow {
+	.treeOpenIconArrow();
+	background-image: @bg-img;
+	background-position: @bg-pos;
+	width: @w;
+	height: @h;
+	display: inline-block;
+	position: absolute;
+}
+lyte-tree-icon.close .arrow {
+	.treeCloseIconArrow();
+	background-image: @bg-img;
+	background-position: @bg-pos;
+	width: @w;
+	height: @h;
+	display: inline-block;
+	position: absolute;
+}
+lyte-tree-icon.open .treeValue {
+	font-family: @secondaryFont;
+}
+.noChildClass lyte-tree-icon.open .treeValue {
+    .treeNoChildText();
+	font-family: @primaryFont;
+    @{property-margin-left}: @margin-left;
+    margin-top: @margin-top;
+    color: @color;
+    cursor: default;
+}
+.noChildClass lyte-tree-icon .collapseBox {
+    display: none;
+}
+
+
+    /* import theme overrides - styles */
+@import (optional) "../themes/@{tree}/ui-elements/tree/tree.styles.less";
+
+
+
+
+/* import custom css - final tweaks by the user */
+@import (optional) "../overrides/ui-elements/tree.overrides.less";

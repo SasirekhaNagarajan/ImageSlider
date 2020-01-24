@@ -1,0 +1,70 @@
+.lyteDateRangePickerRow{
+    border: 0;
+	box-shadow: 0 1px 16px rgba(0,0,0,0.3);
+    padding: 15px 10px;
+}
+
+.lyteDateRangePickerCol1{
+	border-right: 1px solid grey;
+}
+.dRPCalendar2 .lyteCalTableContainer {
+    border-left: 0;
+}
+.lyteDateRangePickerRow .lyteCalendarPopup{
+	padding: 0;
+}
+.lyteDateRPLeftNav {
+	top: 6px;
+	left: 17px;
+}
+.lyteDateRPLeftNav .lyteCalyearNavLft {
+    margin: 0;
+}
+.lyteDateRPRightNav{
+    top: 6px;
+    left: auto;
+    right: 10px;
+}
+.lyteDateRPRightNav .lyteCaldRgt,
+.lyteDateRPRightNav .lyteCalyearNavRgt {
+    margin: 0;
+}
+.lyteDateRPMonthHeader{
+	text-align: center;
+	font-size: 13px;
+    padding: 0;
+}
+.lyteDateRPDateSelected{
+	color: #fff;
+    background: #b3b3b3;
+}
+.lyteDateRPMonthStartDate,
+.lyteDateRPMonthEndDate,
+.lyteDateRPTempSelected{
+	background: #e8e8e8;
+}
+.lyteCalTableCell.lyteDateRPLastDateSelected:hover,
+.lyteCalTableCell.lyteDateRPFirstDateSelected:hover,
+.lyteCalTableCell.lyteDateRPTempLastDateSelected:hover,
+.lyteCalTableCell.lyteDateRPTempFirstDateSelected:hover,
+.lyteCalTableCell.lyteDateRPLastDateSelected,
+.lyteCalTableCell.lyteDateRPFirstDateSelected,
+.lyteCalTableCell.lyteDateRPTempLastDateSelected,
+.lyteCalTableCell.lyteDateRPTempFirstDateSelected {
+    background: #5ba1e5;
+    color: #fff;
+    box-shadow: 0 0 0 1px #5ba1e5;
+}
+.lyteCalDisabled{
+	color: #d8d8d8;
+	pointer-events: none;
+}
+lyte-daterangepicker .lyteCalCdate::before,
+lyte-daterangepicker .lyteCalCdate::after {
+    content: none !important;
+}
+
+lyte-daterangepicker .lyteCalCdate,
+lyte-daterangepicker .lyteCalCdate:hover {
+    border-radius: 3px !important;
+}

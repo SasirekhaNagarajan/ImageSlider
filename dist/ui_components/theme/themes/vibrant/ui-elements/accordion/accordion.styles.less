@@ -1,0 +1,26 @@
+.lyteAccordionActive lyte-accordion-header {
+	background: rgb(0,0,0,0.9);
+}
+
+lyte-accordion-item {
+	margin: 1px;
+}
+
+lyte-icon.lyteAccordionArrow {
+    .lyteAccordionArrow();
+    background: none;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    float: right;
+    margin: 0px;
+    transition: none;
+    border-bottom: solid 2px #fff;
+    border-right: solid 2px #fff;
+    transform: rotate(45deg);
+    transition: 0.3s;
+}
+
+.lyteAccordionActive lyte-icon.lyteAccordionArrow{
+    transform: rotate(225deg);
+}

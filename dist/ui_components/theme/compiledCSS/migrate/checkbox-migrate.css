@@ -1,0 +1,56 @@
+/*Checkbox css */
+lyte-checkbox {
+    font-size: inherit;
+}
+lyte-checkbox label {
+    width: 100%;
+}
+.lyteCheckBoxDefault::before,
+.lyteCheckBoxPrimary::before {
+    margin: -2px 5px 0 0;
+    background-image: url(../images/lyte_ui_sprite.svg);
+}
+.lyteCheckBoxPrimary::before {
+    background-position: -59px -1px;
+}
+lyte-checkbox input[type="checkbox"]:disabled + .lyteCheckBoxDefault:hover::before,
+lyte-checkbox input[type="checkbox"]:active + .lyteCheckBoxDefault::before,
+.lyteCheckBoxDefault:hover::before,
+.lyteCheckBoxDefault::before {
+    background-position: -76px -1px;
+}
+lyte-checkbox input[type="checkbox"]:checked + .lyteCheckBoxPrimary::before {
+    width: 14px;
+    margin-right: 5px;
+    background-position: -93px -1px;
+}
+lyte-checkbox input[type="checkbox"]:checked:disabled + .lyteCheckBoxDefault:hover::before,
+lyte-checkbox input[type="checkbox"]:checked + .lyteCheckBoxDefault::before{
+    background-position: -93px -1px;
+}
+.lyteCheckBoxPrimary span,
+.lyteCheckBoxDefault span {
+    vertical-align: top;
+}
+.lyteCheckSwitch {
+    vertical-align: top;
+    width: 35px;
+    height: 20px;
+    border-radius: 20px;
+}
+.lyteCheckSwitch .on-btn {
+    width: 16px;
+    height: 16px;
+    top: 2px;
+}
+input[type="checkbox"].on-off-sw:checked+.lyteCheckSwitch {
+    background: #72c98a;
+}
+
+input[type="checkbox"].on-off-sw:checked+.lyteCheckSwitch .on-btn{
+    left: 17px;
+}
+.lyteCheckSwitch + span {
+    margin-left: 0;
+    vertical-align: top;
+}

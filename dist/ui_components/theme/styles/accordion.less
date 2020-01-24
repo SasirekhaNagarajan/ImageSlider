@@ -1,0 +1,106 @@
+/* Default theme imported */
+@import "../themes/default/ui-elements/accordion/accordion.variables.less";
+
+
+
+
+/* Loading theme in configuration */
+@import "../config.less";
+@import (optional) "../themes/@{accordion}/ui-elements/accordion/accordion.variables.less";
+
+/* rtl files loading */
+
+@import (multiple,optional) "../themes/default/global/@{direction}.less";
+
+@import (multiple,optional) "../themes/@{accordion}/global/@{direction}.less";
+
+/* Loading final tweaks to your variables */
+@import (optional) "../overrides/ui-elements/accordion.variables.less";
+
+lyte-accordion {
+	display: block;
+    position: relative;
+}
+lyte-accordion-item {
+	.accordionItem();
+	margin: @margin;
+	border-bottom: @border-bottom;
+	display: block;
+	background: @bg;
+}
+lyte-accordion-item:hover {
+	.accordionItemhover();
+	border-bottom-color: @border-bottom-color;
+}
+lyte-accordion-header {
+	.accordionHeader();
+	padding: @padding;
+	font-family: @primaryFont;
+	color: @color;
+	font-size: @font-size;
+	text-align: @value-textalign-left;
+	position: relative;
+	display: block;
+	cursor: pointer;
+}
+lyte-accordion-header:hover {
+	.accordionHeaderhover();
+	color: @color;
+}
+.lyteAccordionActive {
+	.AccordionActive();
+	border-bottom-color: @border-bottom-color;
+}
+.lyteAccordionActive lyte-accordion-header {
+	.accordionActiveHeader();
+	color: @color;
+}
+lyte-accordion-body {
+	.accordionBody();
+	width: @w;
+	padding: @padding;
+	color: @color;
+	font-family: @primaryFont;
+    font-size: @font-size;
+	text-align: @value-textalign-left;
+	display: block;
+	overflow: hidden;
+	transition: height ease-out 0.3s, padding-bottom ease-out 0.3s;
+}
+.lyteAccordionActive lyte-accordion-body {
+    .accordionActiveBody();
+    padding-bottom: @padding-bottom;
+}
+lyte-icon.lyteAccordionArrow {
+	.accordionArrow();
+	background-image: @bg-img;
+	background-position: @bg-pos;
+	width: @w;
+	height: @h;
+	position: absolute;
+    @{property-left}: @left;
+	margin-top: @margin-top;
+	display: inline-block;
+    & when (@rtlEnabled = true) {
+        transform: @value-rotate-0deg;
+    }
+}
+.lyteAccordionActive lyte-icon.lyteAccordionArrow {
+	.accordionActiveArrow();
+	background-position: @bg-pos;
+	width: @w;
+	height: @h;
+    & when (@rtlEnabled = true) {
+        transform: @value-rotate-180deg;
+    }
+}
+
+
+/* import theme overrides - styles */
+@import (optional) "../themes/@{accordion}/ui-elements/accordion/accordion.styles.less";
+
+
+
+
+/* import custom css - final tweaks by the user */
+@import (optional) "../overrides/ui-elements/accordion.overrides.less";

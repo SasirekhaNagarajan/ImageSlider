@@ -1,0 +1,22 @@
+lyte-nav:not([lt-prop-alignment="vertical"]){
+	.lyteNavHorizontal();
+	padding: @padding;
+	border-radius: @borderRadius;
+}
+
+lyte-nav:not([lt-prop-alignment="vertical"]) lyte-nav-item{
+	.lyteNavHorizontalItem();
+	margin-right: @marginRight;	
+	border-radius: @borderRadius;
+	transition: @transition;
+}
+
+lyte-nav[lt-prop-alignment="vertical"] lyte-nav-item{
+	.lyteNavVerticalItem();
+	transition: @transition;
+}
+
+lyte-nav[lt-prop-alignment="vertical"] lyte-nav-item:hover{
+	.lyteNavVerticalItemHover();
+	padding-left: @paddingLeft;
+}

@@ -1,0 +1,135 @@
+/* Default theme imported */
+@import "../themes/default/ui-elements/dateselect/dateselect.variables.less";
+
+
+
+
+/* Loading theme in configuration */
+@import "../config.less";
+@import (optional) "../themes/@{dateselect}/ui-elements/dateselect/dateselect.variables.less";
+
+/* rtl files loading */
+
+@import (multiple,optional) "../themes/default/global/@{direction}.less";
+
+@import (multiple,optional) "../themes/@{dateselect}/global/@{direction}.less";
+
+
+/* Loading final tweaks to your variables */
+@import (optional) "../overrides/ui-elements/dateselect.variables.less";
+
+
+lyte-dateselect lyte-dropdown {
+	width: auto;
+}
+.lyteCalendarSelected,
+.lyteDateSelect lyte-item:hover {
+	.DateSelect();
+	background: @bg;
+}
+.lyteDateSelectHidden {
+	display: none !important;
+}
+#lyteDateSelect lyte-drop-body {
+	max-height: none;
+	overflow: visible;
+}
+#lyteDateSelect lyte-drop-item {
+    white-space: nowrap;
+}
+#lyteDateSelect lyte-drop-item[selected="true"] .dateArrow {
+	.dateSelectArrow();
+	position: absolute;
+	width: @w;
+	height: @h;
+	transform: rotate(45deg);
+	background: @bg;
+    @{property-right}: @right;
+	top: @top;
+	z-index: -1;
+	box-shadow: @box-shadow;
+}
+#lyteDateSelect lyte-drop-item[selected="true"] .dateArrow.arrowLeft {
+    .dateSelectleftArrow();
+    @{property-left}: @left;
+    box-shadow: @box-shadow;
+    @{property-right}: unset;
+}
+#lyteDateSelect lyte-drop-item[selected="true"] {
+	overflow: visible;
+}
+.dateSelectcal {
+    .dateSelectcalMixin();
+    position: absolute;
+    z-index: @z-index;
+    background: @bg;
+}
+#lyteDateSelect, .lyteDropdownZIndex {
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+.dateSelectcal .specificDate,
+.dateSelectcal .customRange {
+	.specificDateCustomRangeCont();
+	display: flex;
+	flex-direction: column;
+	transition: opacity 0.3s ease;
+	opacity: 0;
+	border: @border;
+	box-shadow: @box-shadow;
+    border-radius: @border-radius;
+}
+.dateSelectcal .specificDate.lyteDropdownHidden,
+.dateSelectcal .customRange.lyteDropdownHidden {
+	display: none;
+}
+.dateSelectcal lyte-daterangepicker,
+.dateSelectcal .specificDate lyte-calendar {
+	.specificDateCalendar();
+	border-bottom: @border-bottom;
+    border-radius: @border-radius;
+}
+.dateSelectcal .lyteDateRangePickerRow,
+.dateSelectcal .lyteCalendarPopup {
+    .specificDateCalPop();
+	border: 0;
+	box-shadow: none;
+    border-radius: @border-radius;
+}
+.dateSelectcal lyte-button {
+	.dateSelectcalDoneBtn();
+	padding: @padding;
+    @{property-margin-left}: auto;
+}
+.dateSelectcal .lyteCalCurrentDate {
+    display: none;
+}
+#lyteDateSelect lyte-drop-item {
+    .dateSelectDropitem();
+    @{property-padding-right}: @padding-right;
+}
+#lyteDateSelect lyte-drop-item.specificDate::after,
+#lyteDateSelect lyte-drop-item.customRange::after {
+    .dateSelectRightArrow();
+    content: '';
+    position: absolute;
+    background-image: @lytesprite;
+    background-position: @bg-pos;
+    width: @w;
+    height: @h;
+    transform: @transform;
+    @{property-right}: @right;
+    top: @top;
+    opacity: @opacity;
+}
+
+
+/* import theme overrides - styles */
+@import (optional) "../themes/@{dateselect}/ui-elements/dateselect/dateselect.styles.less";
+
+
+
+
+/* import custom css - final tweaks by the user */
+
+@import (optional) "../overrides/ui-elements/dateselect.overrides.less";

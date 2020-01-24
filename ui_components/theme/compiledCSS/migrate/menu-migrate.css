@@ -1,0 +1,46 @@
+lyte-menu-box {
+  margin: 0;
+  z-index: 10020;
+}
+lyte-menu-body {
+    padding: 0;
+}
+ lyte-menu-header {
+  padding: 0.45rem 1.1rem;
+  font-size: 0.855rem;
+  text-align: center;
+}
+lyte-menu-header div {
+  display: inline-block;
+}
+lyte-menu-item {
+    display: block;
+    line-height: 0.9rem;
+    padding: 0.45rem 1.1rem;
+    font-size: 0.855rem;
+    min-width: 0;
+}
+lyte-menu-label {
+    margin-right: 0;
+    font-size: 0.855rem;
+}
+lyte-menu-item ~ lyte-menu-group {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: none;
+}
+ lyte-menu-description {
+     opacity: 0.4;
+     font-size: 0.855rem;
+}
+lyte-menu-group {
+    padding: 0;
+}
+ lyte-menu-group:last-of-type ~ lyte-menu-item {
+  border-top: 1px solid #e5e5e5;
+}
+div.lytemenufreezelayer {
+  z-index: 10001;
+}
+.lyteMenuSelection {
+    background: #ebebeb;
+}

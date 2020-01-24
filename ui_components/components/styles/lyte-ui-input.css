@@ -1,0 +1,222 @@
+/*Input css*/
+lyte-input, .lyteInputBox, .lyteInputSearch {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    cursor: text;
+}
+lyte-input:not(.lyteInputBox) {
+    border-bottom: 1px solid #f0f0f0;
+}
+lyte-input.vertical{
+    border-bottom: none;
+}
+lyte-input.vertical > div {
+    border-bottom: 1px solid #f0f0f0;
+}
+lyte-input.horizontal > label, lyte-input.horizontal > div, .lyteInputBox.horizontal > label, .lyteInputBox.horizontal > div{
+    display: inline-block;
+}
+
+lyte-input.vertical > label, lyte-input.vertical > div , .lyteInputBox.vertical > label, .lyteInputBox.vertical > div{
+    display: block;
+    width: 100% !important;
+}
+lyte-input.vertical, .lyteInputBox.vertical {
+    white-space: normal !important;
+}
+
+.lyteInputBox > div:after, lyte-input > div:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+lyte-input > label {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    padding: 8px 6px 6px 0!important;
+    color: #666;
+    display: inline-block;
+    width: 38%;
+    padding-right: 15px;
+    font-family: ProximaNovaRegular,arial,sans-serif!important;
+    font-size: 1rem;
+    word-wrap: break-word;
+    vertical-align: middle;
+}
+lyte-input > div {
+    color: #222;
+    width: 60%;
+    vertical-align: bottom;
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    transition: .3s all ease;
+    font-size: 1rem;
+    word-wrap: break-word;
+    font-family: ProximaNovaRegular,arial,sans-serif!important;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    /*min-height: 100%;*/
+    border-bottom: 1px solid transparent;
+    padding: 8px 0 5px 0;
+    vertical-align: middle;
+}
+.lyteInputBox > div {
+    border: 1px solid #e4e4e4;
+    border-top: 1px solid #f6f6f6;
+    padding: 8px 10px 8px 10px;
+    border-radius: 3px;
+}
+.lyteInputBox > div.lyteInputBoxSearch{
+    padding:  8px 10px 8px 30px;
+}
+lyte-input input, lyte-input textarea{
+    width: 100%;
+    color: #222;
+    font-size: 1rem!important;
+    font-family: ProximaNovaRegular,arial,sans-serif;
+    background-color: transparent;
+    padding: 0;
+    border: none!important;
+    box-shadow: none!important;
+    margin-bottom: 0!important;
+    max-width: 100%;
+    height: 1.286rem;
+    outline: medium none;
+}
+
+/*Input search */
+.lyteInputSearch, .lyteInputBoxSearch {
+    color: #222;
+    width: 100%;
+    vertical-align: bottom;
+    transition: .3s all ease;
+    font-size: 1rem;
+    word-wrap: break-word;
+    font-family: ProximaNovaRegular,arial,sans-serif!important;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    position: relative;
+}
+.lyteInputSearch{
+    border-bottom: 1px solid #f0f0f0;
+    padding: 10px 0 5px 30px;
+}
+.lyteInputBoxSearch{
+    border: 1px solid #f0f0f0;
+    border-top: 1px solid #f6f6f6;
+    padding: 8px 10px 8px 30px;
+    border-radius: 3px;
+}
+lyte-input span.searchIcon {
+    background: url('../images/lyte_ui_sprite.svg') no-repeat -362px -2px;
+    width: 16px;
+    height: 16px;
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    opacity: 0.6;
+}
+
+/*lyte-input[lt-prop-type="search"][lt-prop-appearance="flat"] span.searchIcon{
+    top:21px; 
+}*/
+
+lyte-input[lt-prop-type="search"]:not(.lyteInputBox) input{
+    padding-left: 35px;
+}   
+
+.lyteInputSearch input, .lyteInputBoxSearch input{
+    width: 100%;
+    color: #222;
+    font-size: 1rem!important;
+    font-family: ProximaNovaRegular,arial,sans-serif;
+    background-color: transparent;
+    padding: 0;
+    border: none!important;
+    box-shadow: none!important;
+    margin-bottom: 0!important;
+    max-width: 100%;
+    height: 1.286rem;
+    outline: medium none;
+    box-sizing: border-box;
+}
+
+/*Hover css */
+lyte-input:hover > div {
+    border-bottom: 1px solid #a5a5a5;
+}
+.lytePreviewImage{
+    height: 64px;
+}
+.lyteFileUploadContainer .lyteFileList ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.lyteFileUploadContainer .lyteFileList ul li{
+    display: inline-block;
+    padding: 2px 18px 2px 7px!important;
+    background-color: #dedede;
+    color: #333;
+    font-size: 14px;
+    position: relative;
+    border-radius: 3px;
+    margin: 2px 10px 2px 0;
+}
+.lyteFileUploadContainer .lyteFileList ul li .lyteCloseIcon {
+    background: url(../images/lyte_ui_sprite.svg) no-repeat -125px -4px;
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    position: absolute;
+    right: 4px;
+    top: 6px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+  .lyteTextareaResize{
+    position: absolute;
+    right: 0;
+    bottom: 9px;
+    background: url(../images/lyte_ui_sprite.svg) no-repeat -386px -5px;
+    width: 9px;
+    height: 9px;
+    opacity: 0.6;
+    cursor: se-resize;
+}
+
+lyte-input{
+    display: inline-block;
+}
+
+#lyteCalendar.lyteCalendarHidden, .lyteSearchHidden {
+    display: none !important;
+}
+
+lyte-input div textarea { 
+    min-width: 1em;
+    min-height: 1em;
+    max-width: none;
+    resize: none !important;
+ }
+
+/*lyte-input[lt-prop-type = "datetime"] > div {
+    display: flex;
+}  */
+
+lyte-input[lt-prop-type = "datetime"] input {
+   width: 49%;
+   display: inline-block;
+}

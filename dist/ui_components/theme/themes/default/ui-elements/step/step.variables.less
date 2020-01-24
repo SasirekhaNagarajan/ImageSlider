@@ -1,0 +1,150 @@
+.step() {
+	@font-size: 14px;
+}
+.stepArrowItem() {
+    @color: @stepArrowColor;
+    @margin-right: 10px;
+}
+.stepArrowItemHover() {
+    @color: @stepArrowHoverColor;
+}
+.stepArrowActiveItem() {
+    @color: #2C7BD0;
+}
+.stepArrowCompletedItem() {
+    @color: #72c880;
+}
+.stepSlashAfter() {
+    @margin-left: 10px;
+}
+.stepArrowAfter() {
+    @margin-left: 10px;
+}
+
+.stepItem() {
+	@w: 150px;
+	@font-size: 14px;
+}
+.stepBulletCircle() {
+	@w: 20px;
+	@h: 20px;
+	@border: 2px solid transparent;
+    @border-radius: 50%;
+}
+.stepInnerCircle() {
+	@w: 10px;
+	@h: 10px;
+    @border-radius: 50%;
+	@bg: @stepBulletActiveBg;
+}
+.activeStepCircle() {
+	@border-color: @stepBulletActiveBg;
+	@bg: @stepBulletBg;
+}
+.completedStepCircle() {
+	@border-color: @stepBulletActiveBg;
+	@bg: @stepBulletActiveBg;
+}
+.compStepInnerCircle() {
+	@bg-img: @lytesprite;
+	@bg-pos: -1px -28px;
+	@w: 15px;
+	@h: 12px;
+}
+.stepBulletLine() {
+	@h: 2px;
+	@bg: @stepBulletLine;
+	@w: 140px;
+    @left: 15px;
+}
+.stepBulletActiveLine() {
+	@h: 2px;
+	@bg: @stepBulletActiveBg;
+}
+.stepItemLastChild() {
+	@w: 100px;
+}
+.stepBulletLabel() {
+	@color: @stepBulletTextColor;
+	@font-size: 14px;
+	@padding: 10px 0;
+	@transform: translateX(calc(-50% + 13px));
+}
+.activeStepBulletLabel() {
+	@color: @stepBulletActiveTextColor;
+}
+
+
+
+.stepFlatItem() {
+	@bg: @stepBoxBg;
+	@border: 1px solid @stepBoxTriangleColor;
+	@padding: 0 30px;
+	@color: @stepBoxColor;
+}
+.stepFlatItemFirstChild() {
+	@padding-left: 15px;
+	@border-left: 1px solid @stepBoxTriangleColor;
+}
+.stepFlatItemLastChild() {
+	@border-right: 1px solid @stepBoxTriangleColor;
+}
+.stepFlatItemBefore() {
+	@border-top: 16px solid transparent;
+	@border-bottom: 16px solid transparent;
+	@border-left: 18px solid @stepBoxBg;
+	@right: -18px;
+}
+.stepFlatItemAfter() {
+	@border-top: 17px solid transparent;
+	@border-bottom: 17px solid transparent;
+	@border-left: 19px solid @stepBoxTriangleColor;
+	@right: -19px;
+	@top: -1px;
+}
+.stepFlatItemActive() {
+	@bg: @stepBoxActiveBg;
+	@border-top-color: @stepBoxActiveBg;
+	@border-bottom-color: @stepBoxActiveBg;
+	@color: @stepBoxActiveColor;
+}
+.stepFlatItemActiveFirstChild() {
+	@border-left-color: @stepBoxActiveBg;
+}
+.stepFlatItemLastChild() {
+	@border-right-color: @stepBoxActiveBg;
+}
+.stepFlatItemCompBefore() {
+	@border-left-color: @stepBoxActiveBg;
+}
+.stepFlatItemCompAfter() {
+    @border-left-color: @stepBoxActiveColor;
+}
+.stepFlatBody() {
+	@padding: 6px 15px 6px 30px;
+}
+.stepFlatBodyBefore() {
+	@color: @stepBoxCountColor;
+	@w: 22px;
+	@h: 22px;
+	@border: 1px solid @stepBoxTriangleColor;
+    @left: 0;
+	@top: calc(50% - 12px);
+    @border-radius: 50%;
+}
+.stepFlatActiveBodyBefore() {
+	@color: @stepBoxActiveColor;
+	@border: 1px solid @stepBoxActiveColor;
+}
+.stepFlatItemHover() {
+	@bg: @stepBoxHoverBg;
+}
+.stepFlatItemHoverBefore() {
+	@border-left-color: @stepBoxHoverBg;
+}
+.stepFlatItemActiveHover() {
+	@bg: @stepBoxActiveBg;
+}
+.stepFlatActiveHoverBefore() {
+	@border-left-color: @stepBoxActiveBg;
+}

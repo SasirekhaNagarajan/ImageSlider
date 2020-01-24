@@ -1,0 +1,287 @@
+/* Default theme imported */
+@import "../themes/default/ui-elements/input/input.variables.less";
+
+/* Loading theme in configuration */
+@import "../config.less";
+
+@import (optional) "../themes/@{input}/ui-elements/input/input.variables.less";
+
+/* rtl files loading */
+
+@import (multiple,optional) "../themes/default/global/@{direction}.less";
+
+@import (multiple,optional) "../themes/@{input}/global/@{direction}.less";
+
+/* Loading custom themes */
+@import (optional) "../overrides/ui-elements/input.variables.less";
+
+/*  Input related CSS BEGINS    */
+lyte-input {
+	position: relative;
+	display: inline-flex;
+	font-family: @primaryFont;
+}
+lyte-input .lyteLabel {
+	.inputLabel();
+	font-family: @primaryFont;
+	font-size: @font-size;
+    @{property-padding-right}: @padding-right;
+	color: @color;
+    flex-grow: 1;
+}
+lyte-input .lyteField {
+    flex-grow: 1;
+}
+lyte-input input,
+lyte-input textarea {
+	.inputBoxInput();
+	font-family: @primaryFont;    
+	font-size: @font-size;
+	color: @color;
+	outline: none;
+	box-sizing: border-box;
+}
+
+.lyteInputBox .lyteField {
+    .inputBoxField();
+	border: @border;
+	border-radius: @border-radius;
+}
+.lyteInputBox input,
+lyte-input textarea {
+	.inputBoxInput();
+    background: @bg;
+	border: @border;
+	border-radius: @border-radius;
+	padding: @padding;
+	width: 100%;
+    display: block;
+	box-shadow: none;
+}
+lyte-input input:disabled {
+	.inputBoxInputDisabled();
+	background: @bg;
+	cursor: not-allowed;
+    color: @color;
+}
+lyte-input[lt-prop-type="search"] .lyteField,
+lyte-input[lt-prop-type="textarea"] .lyteField {
+    position: relative;
+}
+lyte-input textarea {
+	.inputTextarea();
+	min-height: @min-height;
+    resize: none;
+}
+.lyteInputBox .lyteField:hover {
+    .inputBoxFieldHover();
+	border: @border;
+}
+.lyteInputBox.lyteInputFocus .lyteField {
+    .inputBoxFieldFocus();
+	border: @border;
+}
+.lyteInputBox input:hover,
+lyte-input textarea:hover {
+	.inputBoxInputHover();
+	border: @border;
+}
+.lyteInputBox input:focus,
+lyte-input textarea:focus {
+	.inputBoxInputFocus();
+	border: @border;
+}
+.lyteTextareaResize {
+    .lyteTextareaResize();
+    background: @bg;
+    background-position: @bg-pos;
+    width: @w;
+    height: @h;
+    @{property-right}: @right;
+    bottom: @bottom;
+    display: inline-block;
+    position: absolute;
+    cursor: @value-se-resize;
+    opacity: @opacity;
+    z-index: @z-index;
+    & when (@rtlEnabled = true) {
+        transform: @transform;
+    }
+}
+.lyteInputBox[lt-prop-disabled="true"] .lyteField:hover {
+	.inputBoxFieldDisabledHover();
+	border: @border;
+}
+lyte-input input::placeholder {
+	.inputPlaceholder();
+	font-family: @primaryFont;
+	color: @color;
+}
+lyte-input input:-ms-input-placeholder {
+	.inputPlaceholder();
+	font-family: @primaryFont;
+	color: @color;
+}
+lyte-input input::-ms-input-placeholder {
+	.inputPlaceholder();
+	font-family: @primaryFont;
+	color: @color;
+}
+lyte-input input::-ms-clear {
+    display: none;
+}
+lyte-input textarea::placeholder {
+	.inputPlaceholder();
+	font-family: @primaryFont;
+	color: @color;
+}
+lyte-input textarea:-ms-input-placeholder {
+	.inputPlaceholder();
+	font-family: @primaryFont;
+	color: @color;
+}
+lyte-input textarea::-ms-input-placeholder {
+	.inputPlaceholder();
+	font-family: @primaryFont;
+	color: @color;
+}
+
+.lyteInputBox.horizontal {
+    align-items: center;
+}
+.lyteInput.horizontal {
+    align-items: flex-end;
+}
+lyte-input.horizontal .lyteLabel {
+    .inputHorizontalLabel();
+    min-width: @min-w;
+    width: @w;
+    box-sizing: border-box;
+}
+lyte-input.horizontal .lyteField {
+    .inputHorizontalLyteField();
+    min-width: @min-w;
+    width: @w;
+}
+lyte-input input[type='number']::-webkit-outer-spin-button,
+lyte-input input[type='number']::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+lyte-input input[type='number'] {
+	-moz-appearance: textfield;
+}
+.lyteInput .lyteField {
+    .flatInputField();
+	border-bottom: @border-bottom;
+}
+.lyteInput input {
+	.flatInput();
+    background: @bg;
+	border: @border;
+	padding: @padding;
+	box-shadow: none;
+	width: 100%;
+}
+.lyteInput.horizontal .lyteLabel {
+	.flatInputLabel();
+	border-bottom: @border-bottom;
+	padding: @padding;
+}
+.lyteInput .lyteField:hover {
+	.flatInputFieldHover();
+	border-bottom: @border-bottom;
+}
+.lyteInput[lt-prop-disabled="true"] .lyteField:hover {
+    .flatInputFieldDisabledHover();
+	border-bottom: @border-bottom;
+}
+.lyteInput.lyteInputFocus .lyteField {
+	.flatInputFieldFocus();
+	border-bottom: @border-bottom;
+}
+lyte-input.vertical {
+	flex-direction: column;
+	text-align: @value-textalign-left;
+}
+lyte-input.vertical .lyteLabel {
+	.verticalInputLabel();
+    @{property-padding-right}: @padding-right;
+	margin-bottom: @margin-bottom;
+}
+.lyteInput.vertical .lyteLabel {
+    .flatInputVertLabel();
+	padding: @padding;
+	margin-bottom: @margin-bottom;
+	border-bottom: @border-bottom;
+}
+.lyteInput.vertical textarea,
+.lyteInput.vertical input {
+    .flatInputVertInput();
+    @{property-padding-left}: @padding-left;
+}
+
+.lyteInput.vertical[lt-prop-type="search"] input,
+lyte-input[lt-prop-type="search"] input {
+    .inputSearchInputElem();
+    @{property-padding-left}: @padding-left;
+}
+lyte-input[lt-prop-type="search"] .searchIcon {
+    .inputSearchIcon();
+    position: absolute;
+    background-image: @bg-img;
+    background-position: @bg-pos;
+    width: @w;
+    height: @h;
+    @{property-left}: @left;
+    top: @top;
+    opacity: @opacity;
+    margin: @margin;
+}
+lyte-input[lt-prop-close-icon="true"] input {
+    .inputWithClose();
+    @{property-padding-right}: @padding-right;
+}
+lyte-input .inputCloseIcon {
+    .inputCloseIconWrap();
+    position: absolute;
+    cursor: pointer;
+    padding: @padding;
+    z-index: @z-index;
+    opacity: @opacity;
+    top: @top;
+    @{property-right}: @right;
+}
+lyte-input .inputCloseIcon:hover {
+    .inputCloseIconWrapHover();
+    opacity: @opacity;
+}
+lyte-input .inputCloseIcon::before {
+    .inputCloseIconBefore();
+    content: '';
+    display: block;
+    background-image: @bg-img;
+    background-position: @bg-pos;
+    width: @w;
+    height: @h;
+    transform: @transform;
+}
+lyte-input[lt-prop-disabled="true"] .inputCloseIcon {
+    pointer-events: none;
+}
+.lyteInputCalendar {
+    .inputCalendar();
+    z-index: @z-index;
+}
+
+
+/* import theme overrides - styles */
+@import (optional) "../themes/@{input}/ui-elements/input/input.styles.less";
+
+
+
+
+/* import custom css - final tweaks by the user */
+@import (optional) "../overrides/ui-elements/input.overrides.less";
+
+/*  Input related CSS ENDS    */

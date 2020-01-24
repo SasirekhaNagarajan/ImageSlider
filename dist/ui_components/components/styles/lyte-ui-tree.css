@@ -1,0 +1,78 @@
+lyte-tree{
+  transition-property: height;
+  transition-duration: 400ms;
+  overflow: auto;
+}
+lyte-tree , lyte-tree-body{
+  display:block;
+  position: relative;
+}
+
+lyte-tree-content {
+  position : relative;
+}
+
+lyte-tree lyte-tree{
+  display: block;
+  margin-left: 50px;
+}
+lyte-tree-body>div{
+  margin-top:5px;
+  margin-bottom:5px;
+}
+lyte-tree-icon:not([lyte-custom-icon]){
+  position: absolute;
+  width: 15px;
+  top: 5px;
+  height: 15px;
+  left: 5px;
+  border: .5px solid grey;
+  transition: 0.4s;
+}
+
+lyte-tree-icon{
+  z-index: 5;
+}
+
+lyte-tree-icon[lyte-custom-icon] {
+  position: absolute;
+}
+lyte-tree-icon:not([lyte-custom-icon]):hover{
+  background: #ddd;
+  transition: 0.4s;
+}
+lyte-tree-icon>.up {
+  position: absolute;
+  border: solid black;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  left: 5px;
+  top: 6px;
+  padding: 2px;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+lyte-tree-icon>.down, lyte-yield[collapsed = "collapsed"]>lyte-tree-content>lyte-tree-icon>i {
+  position: absolute;
+  border: solid black;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  left: 5px;
+  top: 5px;
+  padding: 2px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.mainContainerDummy{
+  width: 100px;
+  height: 20px;
+}
+
+
+.lyteTreeOpened{
+  display: block;
+}
+.lyteTreeClosed{
+  display: none;
+}

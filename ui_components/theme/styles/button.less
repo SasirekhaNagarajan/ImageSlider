@@ -1,0 +1,153 @@
+/* Default theme imported */
+@import "../themes/default/ui-elements/button/button.variables.less";
+
+
+
+
+/* Loading theme in configuration */
+@import "../config.less";
+@import (optional) "../themes/@{button}/ui-elements/button/button.variables.less";
+
+/* rtl files loading */
+
+@import (multiple,optional) "../themes/default/global/@{direction}.less";
+
+@import (multiple,optional) "../themes/@{button}/global/@{direction}.less";
+
+
+/* Loading final tweaks to your variables */
+@import (optional) "../overrides/ui-elements/button.variables.less";
+
+
+
+/* BUTTON STYLES BEGINS   */
+
+lyte-button {
+	display: inline-block;
+}
+lyte-button button {
+	.lytebutton();
+	border-radius: @border-radius;
+	font-size: @font-size;
+	padding: @padding;
+	font-family: @primaryFont;
+	display: inline-block;
+	box-sizing: border-box;
+	cursor: pointer;
+	outline: none;
+    border-width: @border-width;
+    border-style: @border-style;
+}
+lyte-button button:disabled {
+    .lyteDisabledBtn();
+	opacity: @opacity;
+	cursor: default;
+}
+/*Specific type*/
+.lyteDefaultBtn {
+	.DefaultBtn();
+	background: @bg;
+	color: @color;
+	border: @border;
+}
+.lyteDefaultBtn:hover {
+	.DefaultBtnHover();
+	border: @border;
+}
+.lytePrimaryBtn {
+	.PrimaryBtn();
+	background: @bg;
+	color: @color;
+	border: @border;
+}
+.lytePrimaryBtn:hover {
+	.PrimaryBtnHover();
+	background: @bg;
+	color: @color;
+	border: @border;
+}
+.lyte-button.lyteSecondary {
+	.Secondary();
+	background: @bg;
+	color: @color;
+	border: @border;
+}
+.lyte-button.lyteSecondary:hover {
+	.SecondaryHover();
+	background: @bg;
+	color: @color;
+	border: @border;
+}
+.lyteSuccess {
+	.SuccessButton();
+	background: @bg;
+	color: @color;
+	border: @border;
+}
+.lyteSuccess:hover {
+	.SuccessButtonHover();
+	background: @bg;
+	border: @border;
+}
+.lyteDefaultBtn.lyteSuccess {
+	.defaultSuccess();
+	background: @bg;
+	color: @color;
+	border: @border;
+}
+.lyteDefaultBtn.lyteSuccess:hover {
+	.defaultSuccessHover();
+	background: @bg;
+	color: @color;
+	border: @border;
+}
+.lyteFailure {
+	.FailureButton();
+	background: @bg;
+	color: @color;
+	border: @border;
+}
+.lyteFailure:hover {
+	.FailureButtonHover();
+	background: @bg;
+	border: @border;
+}
+.lyteDefaultBtn.lyteFailure {
+	.defaultFailure();
+	background: @bg;
+	color: @color;
+	border: @border;
+}
+.lyteDefaultBtn.lyteFailure:hover {
+	.defaultFailureHover();
+	background: @bg;
+	color: @color;
+	border: @border;
+}
+.lyteLg {
+	.Lg();
+	padding: @padding;
+	font-size: @font-size;
+}
+.lyteSm {
+	.Sm();
+	padding: @padding;
+	font-size: @font-size;
+}
+.lyteExsm {
+	.Exsm();
+	padding: @padding;
+	font-size: @font-size;
+}
+
+
+/* import theme overrides - styles */
+@import (optional) "../themes/@{button}/ui-elements/button/button.styles.less";
+
+
+
+
+/* import custom css - final tweaks by the user */
+@import (optional) "../overrides/ui-elements/button.overrides.less";
+
+/* BUTTON STYLES ENDS   */

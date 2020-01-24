@@ -1,0 +1,124 @@
+.lyteButtonCommon() {
+	@fontWeight: 700;
+	@borderRadius: 0.250rem;
+}
+
+.lyteDefaultButton() {
+	@backgroundColor: @defaultColor;
+	@border: solid 0.1875rem @defaultColor;
+	@color: @white;
+}
+
+.lyteDefaultButtonHover() {
+	@backgroundColor: darken( @defaultColor,15%);
+	@borderBottom: solid 0.1875rem darken( @defaultColor,15%);
+	@border: solid 0.1875rem darken( @defaultColor,15%);
+	
+}
+
+.lyteDefaultButtonFocus() {
+	@backgroundColor: darken( @defaultColor,15%);
+	@border: solid 0.1875rem darken( @defaultColor,15%);
+}
+
+.lyteDefaultButtonActive() {
+	@backgroundColor: darken( @defaultColor,30%);
+	@border: solid 0.1875rem darken( @defaultColor,30%);
+}
+
+
+.lytePrimaryButton() {
+	@border: solid 0.1875rem @primaryColor;
+}
+
+.lytePrimaryButtonHover() {
+	@border: solid 0.1875rem darken(@primaryColor,5%);
+	@backgroundColor: darken(@primaryColor,5%)!important;
+	@borderBottom: solid 0.1875rem darken(@primaryColor,5%);
+}
+
+.lytePrimaryButtonActive() {
+	@border: solid 0.1875rem darken(@primaryColor,10%);
+	@backgroundColor: darken(@primaryColor,10%)!important;
+}
+
+.lyteSecondaryButton() {
+	@border: solid 0.1875rem @secondaryColor;
+}
+
+.lyteSecondaryButtonHover() {
+	@border: solid 0.1875rem darken(@secondaryColor,5%);
+	@backgroundColor: darken(@secondaryColor,5%);
+	@borderBottom: solid 0.1875rem darken(@secondaryColor,5%);
+}
+
+.lyteSecondaryButtonActive() {
+	@border: solid 0.1875rem darken(@secondaryColor,10%)!important;
+	@backgroundColor: darken(@secondaryColor,10%)!important;
+}
+
+.lyteFailureDefaultButtonHover(){
+	@border:0.1875rem solid @failureColor !important;
+	@borderBottom: 0.1875rem solid @failureColor !important;
+}
+
+.lyteSuccessDefaultButtonHover(){
+	@border: 0.1875rem solid #19bc7d !important;;
+	@borderBottom: 0.1875rem solid #19bc7d !important;
+}
+
+.lyteSuccessButton(){
+	@border: 0.1875rem solid @successColor
+}
+
+.lyteSuccessButtonHover(){
+	@border: 0.1875rem solid @successColor;
+	@borderBottom: solid 0.1875rem #19bc7d !important;
+}
+
+.lyteFailureButton(){
+	@border: 0.1875rem solid @failureColor;
+}
+
+.lyteFailureButtonHover(){
+	@border: 0.1875rem solid #f35652;
+	@borderBottom: solid 0.1875rem #f35652;
+}
+
+.lyteFailureButtonActive(){
+	@border: 0.1875rem solid darken(#f35652,20%);
+	@backgroundColor: darken(#f35652,20%);
+	@borderBottom: solid 0.1875rem darken(#f35652,20%);
+}
+
+.lyteSuccessButtonActive(){
+	@border: 0.1875rem solid darken(@successColor,15%);
+	@backgroundColor: darken(@successColor,15%);
+	@borderBottom: solid 0.1875rem darken(@successColor,15%);
+}
+
+.lyteColorBtn() {
+	@transition: 0.3s;
+	@border: 0.1875rem solid;
+}
+
+.lyteColorBtnHover() {
+	@transform: scale(1.05);
+}
+
+.lyteColorBtnFocus() {
+	@transform: scale(0.85);
+}
+
+.lyteBackgroundColorBtn() {
+	@transition: 0.3s;
+	@border: 0.1875rem solid;
+}
+
+.lyteBackgroundColorBtnHover() {
+	@transform: scale(1.05);
+}
+
+.lyteBackgroundColorBtnFocus() {
+	@transform: scale(0.85);
+}

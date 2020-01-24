@@ -1,0 +1,336 @@
+@import "../themes/default/global/global.variables.less";
+/* Default theme imported */
+@import "../themes/default/ui-elements/colorbox/colorbox.variables.less";
+
+/* Loading theme in configuration */
+@import "../config.less";
+@import (optional) "../themes/@{colorbox}/ui-elements/colorbox/colorbox.variables.less";
+
+/* rtl files loading */
+
+@import (multiple,optional) "../themes/default/global/@{direction}.less";
+
+@import (multiple,optional) "../themes/@{colorbox}/global/@{direction}.less";
+
+/* Loading custom themes */
+@import (optional) "../overrides/ui-elements/colorbox.variables.less";
+
+/*  Colorbox Styles starts  */
+
+.lyteColorbox {
+	.Colorbox();
+	font-family: @primaryFont;
+	font-size: @font-size;
+	position: fixed;
+	display: none;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: @z-index;
+}
+.lyteColorboxDisplay.lyteColorbox {
+	display: flex;
+	flex-direction: column;
+}
+.lyteColorboxFreezeLayer {
+	.ColorboxFreezeLayer();
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background: @bg;
+	opacity: @opacity;
+}
+.lyteColorboxWrapper {
+	.ColorboxWrapper();
+	width: @w;
+	margin: 0 auto;
+	background: @bg;
+	position: relative;
+	height: @h;
+	overflow: auto;
+	border-radius: @border-radius;
+    z-index: @z-index;
+}
+.lyteColorboxContent {
+	.ColorboxContent();
+	height: @h;
+	margin: 0 auto;
+	position: relative;
+	padding: @padding;
+	background: @bg;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: auto;
+	border-radius: @border-radius;
+}
+.lyteCBoxPhoto {
+	max-height: inherit;
+	max-width: 100%;
+    transition: transform 0.3s linear;
+}
+.lyteColorboxHeader {
+	.ColorboxHeader();
+	display: flex;
+	background: @bg;
+	position: relative;
+	padding: @padding;
+	border-top: @border-top;
+	border-radius: @border-radius;
+}
+.lyteColorboxTitle {
+	.ColorboxTitle();
+	font-size: @font-size;
+    @{property-margin-right}: auto;
+	font-family: @proximaSemiBold;
+	color: @color;
+}
+.lyteColorboxCloseIcon {
+	.ColorboxCloseIcon();
+	position: fixed;
+	top: @top;
+    @{property-right}: @right;
+	background-image: @bg-img;
+	background-position: @bg-pos;
+	height: @h;
+	width: @w;
+	border-radius: @border-radius;
+	cursor: pointer;
+	opacity: @opacity;
+}
+.lyteColorboxCloseIcon:hover {
+	opacity: 1;
+}
+.lyteColorboxThumbOuterWrapper {
+	.ColorboxThumbOuterWrapper();
+	height: @h;
+	order: 3;
+	position: relative;
+	align-self: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+    z-index: @z-index;
+}
+.lyteColorboxThumbInnerWrapper {
+	display: flex;
+	transition: transform 0.3s ease;
+}
+.lyteColorboxThumb {
+	.ColorboxThumb();
+	align-self: center;
+    @{property-margin-right}: @margin-right;
+	width: @w;
+	height: @h;
+	border: @border;
+	cursor: pointer;
+	box-sizing: border-box;
+	position: relative;
+}
+.lyteColorboxThumb:hover {
+	.ColorboxThumbHover();
+	border: @border;
+}
+.lyteColorboxThumb.thumb-on {
+	.ColorboxThumbThumbOn();
+	border: @border;
+}
+.lyteColorboxThumb.thumb-on::after {
+	.ColorboxThumbThumbOnAfter();
+	content: attr(data-thumb-val);
+	position: absolute;
+	bottom: @bottom;
+	color: @color;
+	width: 100%;
+	text-align: center;
+}
+.lyteColorboxThumb img {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.lyteCBoxPhotoZoomIn {
+	cursor: zoom-in;
+}
+.lyteCBoxPhotoZoomOut {
+	cursor: zoom-out;
+}
+.lyteColorboxIconDiv {
+	.ColorboxIconDiv();
+	width: @w;
+	height: @h;
+	border: @border;
+	background: @bg;
+	position: fixed;
+	border-radius: @border-radius;
+	top: @top;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+    z-index: @z-index;
+    & when (@rtlEnabled = true) {
+        transform: @value-rotate-0deg;
+    }
+}
+.lyteColorboxIconDiv:hover {
+	.ColorboxIconDivHover();
+	background: @bg;
+}
+.lyteCBoxPrevious {
+	.CBoxPrevious();
+    @{property-left}: @left;
+}
+.lyteCBoxNext {
+	.CBoxNext();
+    @{property-right}: @right;
+}
+.lyteColorboxNextIcon,
+.lyteColorboxPreviousIcon {
+	.ColorboxPreviousIcon();
+	background-image: @bg-img;
+	width: @w;
+	height: @h;
+	background-position: @bg-pos;
+}
+.lyteColorboxNextIcon {
+	.ColorboxNextIcon();
+	background-position: @bg-pos;
+}
+.lyteCBoxDownload {
+	position: relative;
+}
+.lyteCBoxDownload span::after {
+	.CBoxDownloadIcon();
+	content: '';
+	background-image: @bg-img;
+	width: @w;
+	height: @h;
+	background-position: @bg-pos;
+	opacity: @opacity;
+	cursor: pointer;
+	display: inline-block;
+}
+.lyteCBoxDownload span:hover::after {
+    .CBoxDownloadIconHover();
+	opacity: @opacity;
+}
+.lyteColorboxUtilDiv {
+	.ColorboxUtilDiv();
+	display: flex;
+	background: @bg;
+	position: absolute;
+    @{property-left}: @left;
+	bottom: @bottom;
+	border-radius: @border-radius;
+    z-index: @z-index;
+    transform: @transform;
+    overflow: hidden;
+}
+.lyteColorboxZoomIn,
+.lyteColorboxReset,
+.lyteColorboxZoomOut {
+    .ColorboxUtilsDivIconWrapper();
+    cursor: pointer;
+	padding: @padding;
+    height: @h;
+}
+.lyteColorboxDisabled {
+    .ColorboxDisabled();
+    pointer-events: none;
+    opacity: @opacity;
+}
+.lyteColorboxZoomIn:hover,
+.lyteColorboxReset:hover,
+.lyteColorboxZoomOut:hover {
+    .ColorboxUtilsDivIconWrapperHover();
+    background: @bg;
+}
+.lyteColorboxZoomIn::before,
+.lyteColorboxReset::before,
+.lyteColorboxZoomOut::before {
+    .ColorboxUtilDivIcons();
+    content: '';
+	background: @bg;
+    display: inline-block;
+	align-self: center;
+}
+.lyteColorboxZoomOut::before {
+	.colorboxZoomOut();
+	background-position: @bg-pos;
+	width: @w;
+	height: @h;
+}
+.lyteColorboxZoomOut:hover::before {
+	.ColorboxZoomOutHover();
+	background-position: @bg-pos;
+}
+.lyteColorboxReset::before {
+	.ColorboxReset();
+	background-position: @bg-pos;
+	width: @w;
+	height: @h;
+}
+.lyteColorboxReset:hover::before {
+	.ColorboxResetHover();
+	background-position: @bg-pos;
+}
+.lyteColorboxZoomIn::before {
+	.ColorboxZoomIn();
+	background-position: @bg-pos;
+	width: @w;
+	height: @h;
+}
+.lyteColorboxZoomIn:hover::before {
+	.ColorboxZoomInHover();
+	background-position: @bg-pos;
+}
+.lyteColorboxHideVisibility {
+    .colorboxHideVisibility();
+	opacity: @opacity;
+	cursor: not-allowed;
+}
+.lyteColorboxIconDiv.lyteColorboxHideVisibility:hover {
+	.colorboxhidevisibilityhover();
+	background: @bg;
+}
+.lyteCBoxItem {
+    .colorboxItem();
+    position: absolute;
+    height: @h;
+    width: @w;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: @bg;
+    transition: transform 0.8s ease;
+}
+.lytCBoxPreviousItem {
+    .colorboxPrevItemTransform();
+    transform: @transform;
+}
+.lytCBoxNextItem {
+    .colorboxNextItemTransform();
+    transform: @transform;
+}
+.lyteCBoxCurrentItem {
+    .colorboxCurrentItemTransform();
+    transform: @transform;
+}
+
+
+/* import theme overrides - styles */
+@import (optional) "../themes/@{colorbox}/ui-elements/colorbox/colorbox.styles.less";
+
+
+
+
+/* import custom css - final tweaks by the user */
+@import (optional) "../overrides/ui-elements/colorbox.overrides.less";
+
+/* colorbox CSS ENDS   */

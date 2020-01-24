@@ -1,0 +1,179 @@
+.lyteCalendarView > div:first-child {
+	padding:2rem 1rem 1rem 1rem;
+	background-color: #3f51b5;
+}
+
+.lyteCalendarView > div:last-child {
+	height: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.lyteCalCurrentDate a {
+	border: 0.25rem solid #3f51b5;
+	padding: 0.3rem 0.5rem;
+	border-radius: 0.25rem;
+	background-color: #3f51b5;
+	color: #fff;
+	margin-left:2rem;
+}
+
+.lyteCalCurrentDate a:hover {
+	background-color: darken(#3f51b5,5%);
+}
+
+.lyteCalTableCellHeader {
+    .lyteCalendarIndividualCellHeader(); 
+    color: @color;  
+}
+
+.lyteCalTableContainer {
+	padding: 0rem;
+}
+
+.lyteCalTableCell:hover:not(.lyteCalSel) {
+    .lyteCalendarDateHover();
+    color: @color;
+    padding: @padding; 
+}
+
+.lyteCalSel {
+    .lyteCalendarSelected();
+    padding: @padding;
+    background: @background;
+    border-radius: @borderRadius;
+    padding: @padding;
+    color: @color;
+}
+
+.lyteCalSel:hover {
+    .lyteCalendarSelectedHover();
+    padding: @padding;
+}
+
+.lyteCalToday {
+    .lyteCalendarTodayDate();
+    border: @border;
+}
+
+.lyteCalTableCell:hover:not(.lyteCalSel) {
+    .lyteCalendarDateHover();
+    border-radius: @borderRadius; 
+}
+
+.lyteCalTableCell {
+    .lyteCalendarIndividualCell(); 
+	transition: @transition;
+}
+
+/* Left month button */
+
+.lyteCaldLft {
+	margin-left: 10px;
+    background: none;
+    opacity: 1;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    width: 10px;
+    height: 10px;
+    vertical-align:middle;
+    transform: rotate(135deg);
+    transition: 0.1s;
+    cursor:pointer;
+}
+
+.lyteCaldLft:active{
+	transform: rotate(135deg) translate(5px,5px);
+}
+
+/* Right month button */
+
+.lyteCaldRgt{
+	margin-right: 4px;
+    background: none;
+    opacity: 1;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    width: 10px;
+    height: 10px;
+    vertical-align:middle;
+    transform: rotate(-45deg);
+    cursor:pointer;
+    transition: 0.1s
+}
+
+.lyteCaldRgt:active{
+	transform: rotate(-45deg) translate(5px,5px);
+}
+
+
+
+/* Left year button */
+
+.lyteCalyearNavLft {
+    background: none;
+    position: relative;
+    opacity: 1;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    width: 10px;
+    height: 10px;
+    vertical-align:middle;
+    transition: 0.1s;
+    transform: rotate(135deg);
+    cursor:pointer;
+}
+
+.lyteCalyearNavLft::after {
+	content: '';
+	position: absolute;
+    background: none;
+    left: -5px;
+    top: -5px;
+    opacity: 1;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    width: 10px;
+    height: 10px;
+    vertical-align:middle;
+    cursor:pointer;
+}
+
+.lyteCalyearNavLft:active {
+    transform: rotate(135deg) translate(5px,5px);
+}
+
+
+/* Right year button */
+
+.lyteCalyearNavRgt {
+    background: none;
+    opacity: 1;
+    position:relative;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    width: 10px;
+    height: 10px;
+    vertical-align:middle;
+    transform: rotate(-45deg);
+    cursor:pointer;
+    transition: 0.1s
+}
+
+.lyteCalyearNavRgt::after {
+	content: '';
+	position:absolute;
+    background: none;
+    opacity: 1;
+    left: 5px;
+    top: 5px;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    width: 10px;
+    height: 10px;
+    vertical-align:middle;
+    cursor:pointer;
+}
+
+.lyteCalyearNavRgt:active {
+	transform: rotate(-45deg) translate(5px,5px);
+}

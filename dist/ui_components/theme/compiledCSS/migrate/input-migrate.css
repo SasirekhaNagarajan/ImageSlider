@@ -1,0 +1,43 @@
+lyte-input .lyteLabel {
+    font-size: 1rem;
+    padding: 9px 6px 6px 0;
+}
+.lyteInput .lyteField {
+    padding: 8px 0 5px;
+}
+.lyteInputBox .lyteField,
+.lyteInputBox .lyteField {
+    padding: 8px 10px;
+}
+.lyteInputBox input,
+.lyteInput input,
+lyte-input textarea {
+    height: 1.286rem;
+    font-size: 1rem;
+    padding: 0;
+    background: transparent;
+}
+lyte-input textarea {
+    min-height: 1em;
+}
+lyte-input[lt-prop-type="search"] .searchIcon {
+    left: 7px;
+}
+.lyteInput.vertical[lt-prop-type="search"] input, lyte-input[lt-prop-type="search"] input {
+    padding-left: 30px;
+}
+.lyteInput.horizontal .lyteLabel {
+    padding: 9px 6px 6px 0;
+}
+lyte-input.vertical .lyteLabel {
+    margin-bottom: 0;
+}
+.lyteInput.vertical .lyteLabel {
+    padding: 8px 0 6px;
+}
+.lyteInput.vertical textarea {
+    padding: 9px 0 5px;
+}
+.lyteInputCalendar {
+	z-index: 10020;
+}

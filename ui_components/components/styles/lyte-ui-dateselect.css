@@ -1,0 +1,59 @@
+lyte-dateselect lyte-dropdown {
+    width: auto;
+}
+.lyteDateSelectHidden {
+    display: none !important;
+}
+#lyteDateSelect lyte-drop-body {
+    max-height: unset;
+    overflow: visible;
+}
+#lyteDateSelect .lyteDropdownSelection .dateArrow {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    background: #fff;
+    right: -4px;
+    top: calc(50% - 5px);
+    z-index: -1;
+    box-shadow: 1px -1px #d6d6d6;
+}
+#lyteDateSelect lyte-drop-item.lyteDropdownSelection {
+    overflow: visible;
+}
+.dateSelectcal {
+    position: absolute;
+    z-index: 10002;
+    transform: translateX(3px);
+    border: 1px solid #d8d8d8;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.15);
+}
+#lyteDateSelect, .lyteDropdownZIndex {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.dateSelectcal .specificDate,
+.dateSelectcal div.customRange {
+    display: flex;
+    flex-direction: column;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+.dateSelectcal .specificDate.lyteDropdownHidden,
+.dateSelectcal div.customRange.lyteDropdownHidden {
+    display: none;
+}
+.dateSelectcal lyte-daterangepicker,
+.dateSelectcal .specificDate lyte-calendar {
+    border-bottom: 1px solid #f0f0f0;
+}
+.dateSelectcal .lyteDateRangePickerRow,
+.dateSelectcal .lyteCalendarPopup {
+    border: 0;
+    box-shadow: none;
+}
+.dateSelectcal lyte-button {
+    padding: 10px;
+    margin-left: auto;
+}

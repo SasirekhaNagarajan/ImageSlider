@@ -1,0 +1,108 @@
+.lyteTreeArrow {
+	background: url('../../help/images/svgicons.svg') no-repeat -202px -295px;
+	width: 5px;
+	height: 10px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+	transition: transform .2s ease;
+}
+.lyteTreePlus {
+	background: url('../../help/images/svgicons.svg') no-repeat -8px -161px;
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.lyteTreeMinus {
+	background: url('../../help/images/svgicons.svg') no-repeat -30px -165px;
+	width: 10px;
+	height: 2px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.lyteTreeChbxPlus {
+	background: url('../../help/images/svgicons.svg') no-repeat -265px -538px;
+	width: 13px;
+	height: 13px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.lyteTreeChbxMinus {
+	background: url('../../help/images/svgicons.svg') no-repeat -284px -538px;
+	width: 13px;
+	height: 13px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.lyteTreeParent{
+	padding: 10px;
+	cursor: pointer;
+	border-radius: 2px;
+	position: relative;
+}
+.lyteTreeParent:hover {
+	background-color: #f7f7f7
+}
+.lyteTreeChildren{
+    padding-left: 20px;
+}
+.lyteDisNone {
+	display: none;
+}
+.lyteTreeArrowRotate {
+	transform: rotate(90deg);
+}
+/* for Line */
+
+.lyteTreeLine .lyteTreeParent:hover {
+	background-color: transparent;
+}
+.lyteTreeNoChild {
+    padding-left: 25px;
+}
+.lyteTreeLine .lyteTreeChildren, .lyteTreeLine .lyteTreeNode, .lyteTreeLine .lyteTreeParent,
+.lyteTreeLine .lyteTreeChbxPlus, .lyteTreeLine .lyteTreeChbxMinus {
+	position: relative;
+}
+.lyteTreeLine .lyteTreeChbxPlus:before, .lyteTreeLine .lyteTreeChbxMinus:before {
+    content: "";
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.lyteTreeLine .lyteTreeChildren:before {
+    content: '';
+    position: absolute;
+    border-left: 1px dashed #ccc;
+    left: 36px;
+    height: calc(100% - 22px);
+    top: 5px;
+    z-index: -1;
+}
+.lyteTreeLine .lyteTreeChildren .lyteTreeParent > span:last-child:before {
+    content: '';
+    position: absolute;
+    border-top: 1px dashed #ccc;
+    width: 5px;
+    left: 23px;
+    top: 20px;
+}
+.lyteTreeLine .lyteTreeNoChild .lyteTreeParent > span:last-child:before {
+    width: 10px;
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 20px;
+    border-top: 1px dashed #ccc;
+}
+.lyteTreeLine .lyteTreeChildren.lyteSingleChild:before {
+    height: 16px;
+}
+/* end for line */

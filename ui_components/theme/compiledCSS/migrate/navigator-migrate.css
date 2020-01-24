@@ -1,0 +1,96 @@
+lyte-navigator {
+    font-size: inherit;
+}
+
+.lytepagination {
+    display: flex;
+}
+
+.lytepage {
+    display: inline-flex;
+}
+
+.lyteNavigator {
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.lyteNavigator .lyteIconDoubleBack::before,
+.lyteNavigator .lyteIconDoubleFront::before {
+    margin: 2px 0;
+    transform: scale(1.2);
+}
+
+.lyteNavigator .lyteIconSingleFront::before,
+.lyteNavigator .lyteIconSingleBack::before {
+    margin: 2px 0;
+    transform: scale(1);
+}
+
+.lyteNavigatorMidPoint {
+    margin: 0;
+}
+
+.lyteborder.lyteDisabled.dots3,
+.lytepagination .lytesimple.dots3 {
+    opacity: 0.5;
+    padding: 8px 16px;
+}
+
+.lyteNavArrow {
+    padding: 8px 16px;
+    width: auto;
+    height: auto;
+    margin: 0 5px 0 0;
+    line-height: unset;
+    border-radius: 0;
+}
+
+.lytepagination .lytesimple {
+    padding: 8px 16px;
+    border-radius: 0;
+    margin: 0;
+    width: auto;
+    height: auto;
+    line-height: unset;
+    font-size: inherit;
+}
+
+.lytepagination .lytesimple:hover {
+    background: #ddd;
+}
+
+.lytepagination .lytesimple.lyteActiveAdd:hover,
+.lytepagination .lytesimple.lyteActiveAdd {
+    background: #72c880;
+}
+
+.lytepagination .lyteborder {
+    margin: 0;
+    min-width: auto;
+    height: auto;
+    padding: 8px 16px;
+    border-radius: 0;
+    line-height: unset;
+    box-shadow: 0 2px 2px grey;
+}
+
+.lyteborder.lyteDisabled.dots3,
+.lytepagination.textNavLink .lyteborder.lyteNavArrowBorder {
+    margin: 0;
+    border: 1px solid #ddd;
+    line-height: unset;
+}
+
+.lytepagination .lyteborder.lyteActiveAdd:hover,
+.lytepagination .lyteborder.lyteActiveAdd {
+    background: #72c880;
+    color: #fff;
+    border: 1px solid #ddd;
+}
+
+.lyteborder:hover,
+.lyteNavArrowBorder:hover,
+.lyteNavArrow:hover {
+    background: #ddd;
+}

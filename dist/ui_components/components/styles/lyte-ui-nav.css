@@ -1,0 +1,109 @@
+lyte-nav:not([lt-prop-alignment="vertical"]) {
+	display:flex;
+	flex-wrap:wrap;
+	width:100%;
+	background-color: #313949;
+	line-height: 2.429rem !important;
+
+}
+
+lyte-nav:not([lt-prop-alignment="vertical"]) lyte-yield {
+	display: flex;
+}
+
+lyte-nav:not([lt-prop-alignment="vertical"]) lyte-nav-item{
+	display: inline-block;
+	padding:6px 12px 7px;
+	font-size:1em;
+	font-family:"ProximaNovaLtSemibold",Arial,sans-serif;
+	color:#eee;
+	cursor: pointer;
+	white-space: nowrap;	
+}
+.lyteNavActive{
+	background-color: rgba(255,255,255,0.2);
+    color: #fff;
+}
+lyte-nav[lt-prop-alignment="vertical"]{
+	display: block;
+	list-style-type:none;
+	background-color: #313949;
+	width:200px;
+	height:200px;
+	overflow:hidden;
+}
+lyte-arrow{
+	width:100%;
+	height:20px;
+	display:inline-block;
+	text-align:center;
+}
+lyte-nav[lt-prop-alignment="vertical"] lyte-nav-item{
+	padding:10px 10px;
+	width:100%;
+	display: list-item;
+	box-sizing: border-box;
+	font-family:"ProximaNovaLtSemibold",Arial,sans-serif;
+	color:#eee;
+	cursor: pointer;
+}
+lyte-nav[lt-prop-alignment="vertical"] .lyteNavDiv{
+	height:calc(100% - 40px);
+	position:relative;
+}
+
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #eee;
+  position: relative;
+  top:10px;
+  left:-3px;
+}
+.arrow-up {
+  width: 0; 
+  height: 0; 
+  position: relative;
+  top:-10px;
+  left:-3px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent; 
+  border-bottom: 5px solid #eee;
+}
+
+/* Kebab */
+
+.lyteNavMenuClass  {
+	background-color: #313949;
+}
+
+.lyteNavMenuClass .lyteArrow {
+	background-color: #313949;
+}
+
+.lyteNavMenuClass lyte-menu-item {
+	color: #fff;
+	font-family: "ProximaNovaLtSemibold",Arial,sans-serif;
+	font-size: 1em;
+	padding: 0.85rem 1.15rem;
+}
+
+.lyteNavMenuClass lyte-menu-item:hover, .lyteNavMenuClass .lyteMenuSelection {
+	background-color: rgba(255,255,255,0.2);
+}
+
+.lyteNavKebabMenu {
+	background: url('../images/lyte_ui_sprite.svg') no-repeat -261px -31px;
+	width: 17px;
+	height: 5px;
+}
+
+.lyteNavIconContainer {
+	align-self: stretch;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}

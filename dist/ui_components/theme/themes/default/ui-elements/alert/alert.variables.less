@@ -1,0 +1,77 @@
+.alertWrapperMixin() {
+    @z-index: @alertPopupzIndex;
+}
+.alertPopup() {
+	@padding: 20px 25px 25px;
+	@background: @alertPopupBg;
+	@border: 1px solid @alertPopBorder;
+	@border-radius: 3px;
+	@box-shadow: 0px 2px 15px 0px @alertPopupBoxShadow;
+	@min-w: 350px;
+	@max-w: 550px;
+    @z-index: 10;
+}
+.alertPopupSlidedown() {
+    @top: -100%;
+}
+.alertPopupZoomIn() {
+    @opacity: 0;
+}
+.alertPopupOpened() {
+    @opacity: 1;    
+}
+.alertHeader() {
+	@font-size: 18px;
+	@color: @alertPopupHeaderColor;
+	@margin-bottom: 15px;
+}
+.alertPrimaryMsgMixin() {
+	@margin-bottom: 5px;
+    @font-size: 15px;
+}
+.alertSecondaryMsg() {
+	@font-size: 14px;
+	@color: @alertPopupContentColor;
+}
+.alertFooter() {
+	@padding-top: 25px;
+}
+.alertFooterBtn() {
+	@margin-left: 7px;
+}
+.alertFreezeLayer() {
+	@z-index: 5;
+}
+.alertStatusIcon() {
+	@bg: @lytesprite;
+	@w: 27px;
+    @h: 27px;
+    @margin-right: 10px;
+}
+.successAlertIcon() {
+    @bg-pos: -92px -155px;
+}
+.errorAlertIcon() {
+    @bg-pos: -132px -155px;
+}
+.warningAlertIcon() {
+    @bg-pos: -211px -155px;
+}
+.infoAlertIcon() {
+    @bg-pos: -171px -155px;
+}
+.confirmAlertIcon() {
+    @bg-pos: -251px -155px;
+}
+.alertCloseIcon() {
+	@bg-pos: -52px 0px;
+	@w: 13px;
+	@h: 13px;
+	@opacity: 0.5;
+	@top: 27px;
+	@right: 23px;
+	@transform: scale(1.3);
+}
+.alertCloseIconHover() {
+	@opacity: 1;
+}

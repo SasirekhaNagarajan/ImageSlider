@@ -1,0 +1,113 @@
+/* Default theme imported */
+@import "../themes/default/ui-elements/nav/nav.variables.less";
+
+
+
+
+/* Loading theme in configuration */
+@import "../config.less";
+@import (optional) "../themes/@{nav}/ui-elements/nav/nav.variables.less";
+
+/* rtl files loading */
+
+@import (multiple,optional) "../themes/default/global/@{direction}.less";
+
+@import (multiple,optional) "../themes/@{nav}/global/@{direction}.less";
+
+
+/* Loading final tweaks to your variables */
+@import (optional) "../overrides/ui-elements/nav.variables.less";
+
+
+/*  Navbar related CSS BEGINS */
+lyte-nav {
+	.nav();
+	display: flex;
+	background: @bg;
+}
+lyte-nav lyte-nav-item {
+	.navItem();
+	padding: @padding;
+	font-family: @primaryFont;
+	font-size: @font-size;
+	color: @color;
+	cursor: pointer;
+}
+lyte-nav lyte-nav-item:hover {
+	.navItemHover();
+	background: @bg;
+}
+lyte-nav-item.lyteNavActive,
+lyte-nav-item.lyteNavActive:hover {
+	.navActive();
+	background: @bg;
+    color: @color;
+}
+lyte-nav[lt-prop-alignment="vertical"] {
+	.navVertical();
+	height: @h;
+	overflow: hidden;
+	flex-direction: column;
+}
+.lyteNavDiv {
+	display: flex;
+	flex-direction: column;
+}
+lyte-nav lyte-arrow {
+	.navArrow();
+	position: relative;
+	height: @h;
+	box-shadow: @box-shadow;
+}
+.lyteNavDiv + lyte-arrow {
+	.lyteNavDivArrow();
+	box-shadow: @box-shadow;
+}
+.arrow-down,
+.arrow-up {
+	.navArrowUp();
+	position: absolute;
+	width: 0;
+	height: 0;
+	top: @top;
+	left: @left;
+	border-left: @border-left;
+	border-right: @border-right;
+	border-bottom: @border-bottom;
+}
+.arrow-down {
+	.navArrowDown();
+    top: @top;
+	border-bottom: 0;
+	border-top: @border-top;
+}
+.lyteNavKebabMenu {
+    .navKebabMenu();
+    background-image: @bg-img;
+    background-position: @bg-pos;
+    width: @w;
+    height: @h;
+}
+.lyteNavIconContainer {
+    .navKebabIconCont();
+    display: inline-flex;
+    align-items: center;
+    padding: @padding;
+    cursor: pointer;
+}
+.lyteNavIconContainer:hover,
+.lyteNavIconContainer.lyteMenuSelected {
+    .navKebabIconContHover();
+    background: @background;
+}
+
+/* import theme overrides - styles */
+@import (optional) "../themes/@{nav}/ui-elements/nav/nav.styles.less";
+
+
+
+
+/* import custom css */
+@import (optional) "../overrides/ui-elements/nav.overrides.less";
+
+/*  Navbar related CSS BEGINS */

@@ -1,0 +1,93 @@
+/* Default theme imported */
+@import "../themes/default/ui-elements/scrollbar/scrollbar.variables.less";
+
+/* Loading theme in configuration */
+@import "../config.less";
+@import (optional) "../themes/@{scrollbar}/ui-elements/scrollbar/scrollbar.variables.less";
+
+/* rtl files loading */
+
+@import (multiple,optional) "../themes/default/global/@{direction}.less";
+
+@import (multiple,optional) "../themes/@{scrollbar}/global/@{direction}.less";
+
+/* Loading custom themes */
+@import (optional) "../overrides/ui-elements/scrollbar.variables.less";
+
+/* CSS Common for all scrollbars */
+
+.lyteScrollBar {
+	overflow: hidden !important;
+	position: relative !important;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	box-sizing: border-box;
+}
+.lyteScrollContainer {
+	.scrollContainer();
+	position: absolute;
+	border-radius: @border-radius;
+	z-index: 1000;
+}
+.lyteScrollContainer:hover,
+.lyteScrollingY > .lyteScrollContainerY,
+.lyteScrollingX > .lyteScrollContainerX {
+	.scrollingX();
+	background: @bg;
+	opacity: .9;
+}
+.lyteScrollingY > .lyteScrollContainerY > .lyteScrollDiv,
+.lyteScrollingX > .lyteScrollContainerX > .lyteScrollDiv,
+.lyteScrollContainer .lyteScrollDiv:hover {
+	.scrollingLyteScrollDiv();
+	background: @bg;
+}
+.lyteScrollContainer.lyteScrollContainerY {
+	.lyteScrollContainerY();
+	width: @w;
+	top: @top;
+	bottom: @bottom;
+    @{property-right}: @right;
+    @{property-left}: auto;
+}
+.lyteScrollContainer.lyteScrollContainerX {
+	.lyteScrollContainerX();
+	height: @h;
+	top: auto;
+	bottom: @bottom;
+    @{property-right}: @right;
+    @{property-left}: @left;
+}
+.lyteScrollContainer .lyteScrollDiv {
+	.lyteScrollDiv();
+	background: @bg;
+	position: relative;
+	border-radius: @border-radius;
+}
+.lyteScrollContainerY .lyteScrollDiv {
+	width: 100%;
+}
+.lyteScrollContainerX .lyteScrollDiv {
+	height: 100%;
+}
+.lyteScrollContainer.lyteScrollContainerX.top {
+	.topScrollBar();
+	top: @top;
+	bottom: auto
+}
+.lyteScrollContainer.lyteScrollContainerY.left {
+	.leftScrollBar();
+    @{property-left}: @left;
+    @{property-right}: auto
+}
+
+
+/* import theme overrides - styles */
+@import (optional) "../themes/@{scrollbar}/ui-elements/scrollbar/scrollbar.styles.less";
+
+
+
+
+/* import custom css - final tweaks by the user */
+@import (optional) "../overrides/ui-elements/scrollbar.overrides.less";    

@@ -1,0 +1,73 @@
+.MessageBoxContent() {
+	@font-size: 15px;
+	@color: @messageBoxContentColor;
+}
+.MessageBox() {
+	@padding: 0 50px 0 0;
+	@z-index: @messageBoxzIndex;
+	@bg: @messageBoxBg;
+	@border-radius: 2px;
+	@color: @messageBoxContentColor;
+	@font-size: 15px;
+	@border: 1px solid transparent;
+	@min-w: 200px;
+}
+.successMessageicon() {
+	@border-color: @messageBoxSuccessBg;
+}
+.errorMessageicon() {
+	@border-color: @messageBoxErrorBg;
+}
+.warningMessageicon() {
+	@border-color: @messageBoxWarningBg;
+}
+.infoMessageicon() {
+	@border-color: @messageBoxInfoBg;
+}
+.messageBoxSymbol() {
+	@w: 50px;
+}
+.successMessageBoxSymbol() {
+	@bg: @messageBoxSuccessBg;
+}
+.errorMessageBoxSymbol() {
+	@bg: @messageBoxErrorBg;
+}
+.warningMessageBoxSymbol() {
+	@bg: @messageBoxWarningBg;
+}
+.infoMessageBoxSymbol() {
+	@bg: @messageBoxInfoBg;
+}
+.messageBoxIcon() {
+	@bg-img: @lytesprite;
+	@w: 22px;
+	@h: 20px;
+	@top: calc(50% - 10px);
+	@left: calc(50% - 11px);
+}
+.successMessageBoxIcon() {
+	@bg-pos: -287px -58px;
+}
+.errorMessageBoxIcon() {
+	@bg-pos: -317px -60px;
+	@w: 24px;
+	@left: calc(50% - 12px);
+}
+.warningMessageBoxIcon() {
+	@bg-pos: -347px -58px;
+}
+.infoMessageBoxIcon() {
+	@bg-pos: -377px -58px;
+}
+.messageBoxContent() {
+	@padding: 10px 15px 10px 65px;
+}
+.messageBoxClose() {
+	@bg-img: @lytesprite;
+	@bg-pos: -54px -2px;
+	@top: calc(50% - 4px);
+	@w: 8px;
+	@h: 8px;
+	@right: 15px;
+}

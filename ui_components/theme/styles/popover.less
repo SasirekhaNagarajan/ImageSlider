@@ -1,0 +1,163 @@
+
+/* Default theme imported */
+@import "../themes/default/ui-elements/popover/popover.variables.less";
+
+/* Loading theme in configuration */
+@import "../config.less";
+
+@import (optional) "../themes/@{popover}/ui-elements/popover/popover.variables.less";
+
+/* rtl files loading */
+
+@import (multiple,optional) "../themes/default/global/@{direction}.less";
+
+@import (multiple,optional) "../themes/@{popover}/global/@{direction}.less";
+
+/* Loading custom themes */
+@import (optional) "../overrides/ui-elements/popover.variables.less";
+
+
+/*  Popover related CSS BEGINS  */
+.bodyWrapper {
+	overflow: hidden;
+}
+.popoverWrapper {
+    .popoverWrapper();
+	top: @top;
+    bottom: @bottom;
+    left: @left;
+    right: @right;
+    z-index: @z-index;
+    position: fixed;
+}
+.popoverWrapper.noFreeze {
+    position: inherit;
+}
+.lytePopover {
+	.Popover();
+	background: @bg;
+	border: @border;
+	box-shadow: @box-shadow;
+	position: absolute;
+	z-index: @z-index;
+	opacity: 0;
+	border-radius: @border-radius;
+	transition: opacity ease 0.4s;
+	box-sizing: border-box;
+	font-family: @primaryFont;
+}
+.lytePopover.lyteZoom {
+    .popoverZoom();
+    transition: @transition;
+}
+.popoverWrapper.scrollable {
+	overflow: hidden;
+}
+.popoverWrapper.scrollable .lytePopoverContent {
+	overflow: auto;
+}
+.popoverWrapper.scrollable .lytePopover {
+	max-height: 100%;
+}
+lyte-popover-header {
+	.popoverHeader();
+	font-family: @secondaryFont;
+	font-size: @font-size;
+	color: @color;
+}
+lyte-popover-header, lyte-popover-content, lyte-popover-footer {
+	display: block;
+    box-sizing: border-box;
+}
+lyte-popover-freeze {
+	.popoverFreeze();
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: @z-index;
+	height: auto;
+	background: @bg;
+	display: block;
+	opacity: 0;
+	transition: opacity ease 0.15s;
+}
+.lytePopoverClose {
+	.PopoverClose();
+	background-image: @bg-img;
+	background-position: @bg-pos;
+	width: @w;
+	height: @h;
+	opacity: .5;
+	cursor: pointer;
+	position: absolute;
+    @{property-right}: @right;
+	top: @top;
+	display: block;
+    transform: scale(1.3);
+}
+.lytePopoverClose:hover {
+	opacity: 1;
+}
+lyte-popover-footer.left {
+	text-align: @value-textalign-left;
+}
+lyte-popover-footer.center {
+	text-align: center;
+}
+lyte-popover-footer.right {
+	text-align: @value-textalign-right;
+}
+lyte-popover-footer lyte-button {
+    .popoverFooterButton();
+    @{property-margin-left}: @margin-left;
+}
+lyte-popover-footer lyte-button:first-child {
+    @{property-margin-left}: 0;
+}
+.lytePopoverArrowIcon {
+    .popoverArrow();
+    width: @w;
+    height: @h;
+    position: absolute;
+    background: @bg;
+    transform: rotate(45deg);
+    display: block;
+}
+.lytePopoverArrowIcon.lytePopoverArrowTop {
+    .popoverArrowTop();
+    box-shadow: @box-shadow;
+    top: @top;
+}
+.lytePopoverArrowIcon.lytePopoverArrowBottom {
+    .popoverArrowBottom();
+    box-shadow: @box-shadow;
+    bottom: @bottom;
+}
+.lytePopoverArrowIcon.lytePopoverArrowRight {
+    .popoverArrowRight();
+    box-shadow: @box-shadow;
+    right: @right;
+}
+.lytePopoverArrowIcon.lytePopoverArrowLeft {
+    .popoverArrowLeft();
+    box-shadow: @box-shadow;
+    left: @left;
+}
+.lyteStopBodyScrolling {
+    overflow: hidden;
+}
+
+
+    /* import theme overrides - styles */
+@import (optional) "../themes/@{popover}/ui-elements/popover/popover.styles.less";
+
+
+
+
+/* import custom css - final tweaks by the user */
+@import (optional) "../overrides/ui-elements/popover.overrides.less";
+
+/*  Popover related CSS ENDS  */

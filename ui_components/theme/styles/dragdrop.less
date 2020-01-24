@@ -1,0 +1,192 @@
+/* Default theme imported */
+@import "../themes/default/ui-elements/dragdrop/dragdrop.variables.less";
+
+
+
+
+/* Loading theme in configuration */
+@import "../config.less";
+@import (optional) "../themes/@{dragdrop}/ui-elements/dragdrop/dragdrop.variables.less";
+
+
+/* rtl files loading */
+
+@import (multiple,optional) "../themes/default/global/@{direction}.less";
+
+@import (multiple,optional) "../themes/@{dragdrop}/global/@{direction}.less";
+
+/* Loading final tweaks to your variables */
+@import (optional) "../overrides/ui-elements/dragdrop.variables.less";
+
+
+
+/* LYTE-DRAGDROP */
+.lyteDragDropAvailable, .lyteDragDropSelected {
+	.lyteDragdrop();
+    width: @width;
+    border: @border;
+    box-sizing: @boxSizing;
+    margin-right: @marginRight;
+}
+
+
+
+/* LYTE-DRAGDROP - COLUMNS */
+.lyteDragDropColumns:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+.lytePosRel{
+    position: relative;
+}
+.lyteDragDropFL{
+	.lyteDragdropFL();
+    float: @float;
+}
+
+
+/* LYTE-DRAGDROP - HEADING */
+.lyteDragDropHeading {
+	.lyteDragdropHeading();
+    display: block;
+    font-weight: @fontWeight;
+    font-size: @fontSize;
+    margin-bottom: @marginBottom;
+}
+
+
+/* LYTE-DRAGDROP - SEARCH */
+.lyteDradDropSearch{
+	.lyteDragdropSearch();
+    height: @height;
+    padding: @padding;
+    border: @border;
+    border-bottom: @borderBottom;
+    width: @width;
+    outline: @outline;
+}
+.lyteSearchIcon {
+	.lyteSearchIcon();
+    background: @background;
+    width: @width;
+    height: @height;
+    position: absolute;
+    left: @left;
+    top: @top;
+}
+.lyteSearchClose {
+	.lyteSearchClose();
+    background: @background;
+    width: @width;
+    height: @height;
+    cursor: @cursor;
+    position: absolute;
+    right: @right;
+    top: @top;
+    opacity: @opacity;
+}
+.lyteSearchClose:hover{
+	.lyteSearchCloseHover();
+    opacity: @opacity;
+}
+
+
+
+/* LYTE-DRAGDROP - UL */
+.lyteAvailableUL, .lyteSelectedUL{
+	.lyteDragdropUl();
+    height: @height;
+    overflow-y: @overflowY;
+    overflow-x: @overflowX;
+}
+.lyteSelectedUL{
+	.lyteDragdropSelectedUl();
+    height: @height;
+}
+.lyteAvailableUL, .lyteSelectedUL {
+	.lyteDragdropUlMP();
+    margin: @margin;
+    padding: @padding;
+}
+
+
+/* LYTE-DRAGDROP - LI */
+.lyteAvailableUL li{
+    position: relative;
+}
+.lyteAvailableUL li, .lyteSelectedUL li {
+	.lyteDragdropLi();
+    list-style-type: @listStyleType;
+    padding: @padding;
+    cursor: @cursor;
+}
+.lyteAvailableUL li:hover, .lyteSelectedUL li:hover {
+	.lyteDragdropLiHover();
+    background-color: @backgroundColor;
+}
+
+
+/* LYTE-DRAGDROP - ADD ICON */
+.lyteDragDropAdd{
+	.lyteDragdropAdd();
+    background: @background;
+    width: @width;
+    height: @height;
+    cursor: @cursor;
+    float: @float;
+    margin-top: @marginTop;
+    visibility: @visibility;
+    opacity: @opacity;
+}
+
+
+
+/* LYTE-DRAGDROP - REMOVE ICON */
+.lyteDragDropRemove{
+	.lyteDragdropRempove();
+    background: @background;
+    width: @width;
+    height: @height;
+    cursor: @cursor;
+    float: @float;
+    margin-top: @marginTop;
+    visibility: @visibility;
+    opacity: @opacity;
+}
+
+
+
+/* LYTE-DRAGDROP - SELECTED NONE */
+.lyteSelectedNone{
+	.lyteDragdropSelectedNone();
+    position: absolute;
+    top: @top;
+    transform: @transform;
+    left: @left;
+    opacity: @opacity;
+}
+
+.lyteDragDropDropable{
+	.lyteDragdropDroppable();
+    background-color: @backgroundColor;
+    border: @border;
+}
+
+.lyteDraggableElem{
+	.lyteDraggableElem();
+    background-color: @backgroundColor;
+    z-index: @zIndex;
+}
+/* LYTE-DRAGDROP END*/
+
+
+
+/* import theme overrides - styles */
+@import (optional) "../themes/@{dragdrop}/ui-elements/dragdrop/dragdrop.styles.less";
+
+
+
+
+/* import custom css - final tweaks by the user */
+@import (optional) "../overrides/ui-elements/dragdrop.overrides.less";

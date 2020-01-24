@@ -1,0 +1,11 @@
+span.lyteTooltip{
+    padding: 5px;
+    font-size: 1em;
+    z-index: 99999;
+}
+span.lyteTooltip.lyteLeft{
+    padding-right: 8px;
+}
+span.lyteTooltip.lyteRight {
+    padding-left: 8px;
+}

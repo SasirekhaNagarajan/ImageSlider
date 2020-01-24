@@ -1,0 +1,66 @@
+.lyteSortableColumns{
+    content: '';
+    clear: both;
+    display: block;
+}
+.lyteSortableAvailable {
+    width: 280px;
+    border: 1px solid #e7e7e7;
+    box-sizing: border-box;
+    margin-right: 20px;
+    float: left;
+}
+.lyteSortableHeading {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.lyteSortableAvailableUL{
+    height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.lyteSortableAvailableUL{
+    margin: 0;
+    padding: 7px 7px;
+}
+.lyteSortableAvailableUL li{
+    text-align: center;
+    position: relative;
+}
+.lyteSortableAvailableUL li {
+    list-style-type: none;
+    padding: 7px 20px;
+    border: 1px dashed #e7e7e7;
+    /*cursor: move;*/
+}
+.lyteSortableAvailableUL li:hover {
+    background-color: #f7f7f7;
+}
+.lyteSortableAvailableUL li:hover{
+    visibility: visible;
+}
+
+.lyteSortablePlaceholder{
+    background-color: #F5F6CE;
+    /*border: 1px dashed #eee;*/
+}
+
+.lyteSortableElem{
+    background-color: #f7f7f7;
+}
+
+.anchor{
+    border: 2px solid #202423;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+.lyteSortableDisabledPlaceholder{
+    background-color: #ff9191;
+}
+.sortable-element-selected{
+    background-color: #e6e6e6;
+}
